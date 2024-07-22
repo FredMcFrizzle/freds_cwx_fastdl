@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/c_items/medic/c_hemoglobber/blood_bank"
+	"$bumpmap"     "models/weapons/c_items/medic/c_hemoglobber/blood_bank_normals"
+	"$nocull" "1"
+	
+	"$phong" "1"
+
+	"$phongboost" "5"	
+	"$phongexponent" "50"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.3 1 8]"
+
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[3 3 3]"	
+
+	"$translucent" "1"
+	
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+
+}
