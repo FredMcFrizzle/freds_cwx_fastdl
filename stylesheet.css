@@ -39,14 +39,17 @@ a:hover+table {
 
 .stickyimageleft
 {
+  object-fit: contain;
   border: 0.35vw solid #FFD700;
-  background-color: #3D352D;
+  background-color: #24201B;
   border-radius: 0.75vw;
   border-collapse: separate;
   position: absolute;
   opacity: 0;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  width: 40vw;
+  height: 40vw;
   left: 90%;
   right: auto;
   bottom: -300%;
@@ -64,14 +67,17 @@ a:hover+table {
 
 .stickyimageright
 {
+  object-fit: contain;
   border: 0.35vw solid #FFD700;
-  background-color: #3D352D;
+  background-color: #24201B;
   border-radius: 0.75vw;
   border-collapse: separate;
   position: absolute;
   opacity: 0;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  width: 40vw;
+  height: 40vw;
   left: auto;
   right: 200%;
   bottom: -300%;
