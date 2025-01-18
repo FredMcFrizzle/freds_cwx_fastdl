@@ -7,6 +7,21 @@
 	font-family: tf2secondary; src: url('TF2secondary.ttf'); 
 }
 
+*{
+  box-sizing: border-box;  
+}
+
+html{
+  font-size:18px;
+  font-family: "tf2secondary", "tf2build", "sans-serif";
+}
+
+a{
+    color: #EBE2CA;
+    font-weight: border;
+    text-decoration: none;
+}
+
 .empty
 {
   border: 0.35vw solid #3D352D;
