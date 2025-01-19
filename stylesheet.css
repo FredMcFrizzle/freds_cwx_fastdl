@@ -108,3 +108,17 @@ a:hover+table {
 {
   opacity: 0;
 }
+
+.NavBar
+{
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 0.35vw solid #756B5E;
+  background-color: #756B5E;
+  border-radius: 5%;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
