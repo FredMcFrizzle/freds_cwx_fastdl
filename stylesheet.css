@@ -48,6 +48,10 @@ a{
   z-index: unset;
 }
 
+.item:hover{
+  background-color: #5e5348;
+}
+
 a:hover+table {
   display: block;
 }
