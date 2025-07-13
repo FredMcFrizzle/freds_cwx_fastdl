@@ -6,7 +6,7 @@ const attributeColors = {
 const scout = 
 [
 	{ 
-		id: "Freds Website/items/scout/icon/Baby Face's Blaster.png", 
+		id: "Freds Website/items/scout/Baby Face's Blaster.png", 
 		name: "Baby Face's Blaster", 
 		quantity: 1, 
 		quality: "Unique",
@@ -18,7 +18,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Back Scatter.png", 
+		id: "Freds Website/items/scout/Back Scatter.png", 
 		name: "The Back Scatter", 
 		quantity: 1, 
 		quality: "Unique",
@@ -29,7 +29,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Candy Cane.png", 
+		id: "Freds Website/items/scout/Candy Cane.png", 
 		name: "The Candy Cane", 
 		quantity: 1, 
 		quality: "Unique",
@@ -44,7 +44,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Mad Milk.png", 
+		id: "Freds Website/items/scout/Mad Milk.png", 
 		name: "Mad Milk", 
 		quantity: 1, 
 		quality: "Unique",
@@ -55,7 +55,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Flying Guillotine.png", 
+		id: "Freds Website/items/scout/Flying Guillotine.png", 
 		name: "Mad Milk", 
 		quantity: 1, 
 		quality: "Unique",
@@ -68,7 +68,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Sandman.png", 
+		id: "Freds Website/items/scout/Sandman.png", 
 		name: "The Sandman", 
 		quantity: 1, 
 		quality: "Unique",
@@ -81,7 +81,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Shortstop.png", 
+		id: "Freds Website/items/scout/Shortstop.png", 
 		name: "The Shortstop", 
 		quantity: 1, 
 		quality: "Unique",
@@ -92,7 +92,7 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/icon/Sun-on-a-Stick.png", 
+		id: "Freds Website/items/scout/Sun-on-a-Stick.png", 
 		name: "The Sun-on-a-Stick", 
 		quantity: 1, 
 		quality: "Unique",
@@ -109,7 +109,7 @@ const scout =
 const soldier = 
 [
 	{ 
-		id: "Freds Website/items/soldier/icon/Air strike.png", 
+		id: "Freds Website/items/soldier/Air strike.png", 
 		name: "The Air strike", 
 		quantity: 1, 
 		quality: "Unique",
@@ -124,7 +124,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Buff Banner.png", 
+		id: "Freds Website/items/soldier/Buff Banner.png", 
 		name: "The Buff Banner", 
 		quantity: 1, 
 		quality: "Unique",
@@ -135,7 +135,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Disciplinary Action.png", 
+		id: "Freds Website/items/soldier/Disciplinary Action.png", 
 		name: "The Disciplinary Action", 
 		quantity: 1, 
 		quality: "Unique",
@@ -149,7 +149,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Righteous Bison.png", 
+		id: "Freds Website/items/soldier/Righteous Bison.png", 
 		name: "The Righteous Bison", 
 		quantity: 1, 
 		quality: "Unique",
@@ -161,7 +161,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Liberty Launcher.png", 
+		id: "Freds Website/items/soldier/Liberty Launcher.png", 
 		name: "The Liberty Launcher", 
 		quantity: 1, 
 		quality: "Unique",
@@ -174,7 +174,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Mantreads.png", 
+		id: "Freds Website/items/soldier/Mantreads.png", 
 		name: "The Mantreads", 
 		quantity: 1, 
 		quality: "Unique",
@@ -185,7 +185,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Market Gardener.png", 
+		id: "Freds Website/items/soldier/Market Gardener.png", 
 		name: "The Market Gardener", 
 		quantity: 1, 
 		quality: "Unique",
@@ -197,7 +197,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Original.png", 
+		id: "Freds Website/items/soldier/Original.png", 
 		name: "The Original", 
 		quantity: 1, 
 		quality: "Unique",
@@ -214,7 +214,7 @@ const soldier =
 const pyro = 
 [
 	{ 
-		id: "Freds Website/items/pyro/icon/Axtinguisher.png", 
+		id: "Freds Website/items/pyro/Axtinguisher.png", 
 		name: "The Axtinguisher", 
 		quantity: 1, 
 		quality: "Unique",
@@ -226,7 +226,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Back Scratcher.png", 
+		id: "Freds Website/items/pyro/Back Scratcher.png", 
 		name: "The Back Scratcher", 
 		quantity: 1, 
 		quality: "Unique",
@@ -237,7 +237,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Degreaser.png", 
+		id: "Freds Website/items/pyro/Degreaser.png", 
 		name: "The Degreaser", 
 		quantity: 1, 
 		quality: "Unique",
@@ -248,7 +248,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Detonator.png", 
+		id: "Freds Website/items/pyro/Detonator.png", 
 		name: "The Detonator", 
 		quantity: 1, 
 		quality: "Unique",
@@ -259,7 +259,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Gas Passer.png", 
+		id: "Freds Website/items/pyro/Gas Passer.png", 
 		name: "The Gas Passer", 
 		quantity: 1, 
 		quality: "Unique",
@@ -272,7 +272,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Manmelter.png", 
+		id: "Freds Website/items/pyro/Manmelter.png", 
 		name: "The Manmelter", 
 		quantity: 1, 
 		quality: "Unique",
@@ -286,7 +286,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Neon Annihilator.png", 
+		id: "Freds Website/items/pyro/Neon Annihilator.png", 
 		name: "The Neon Annihilator", 
 		quantity: 1, 
 		quality: "Unique",
@@ -302,7 +302,7 @@ const pyro =
 		]
 	},
 	{	 
-		id: "Freds Website/items/pyro/icon/Powerjack.png", 
+		id: "Freds Website/items/pyro/Powerjack.png", 
 		name: "The Powerjack", 
 		quantity: 1, 
 		quality: "Unique",
@@ -315,7 +315,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Scorch Shot.png", 
+		id: "Freds Website/items/pyro/Scorch Shot.png", 
 		name: "The Scorch Shot", 
 		quantity: 1, 
 		quality: "Unique",
@@ -326,7 +326,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Sharpened Volcano Fragment.png", 
+		id: "Freds Website/items/pyro/Sharpened Volcano Fragment.png", 
 		name: "Sharpened Volcano Fragment", 
 		quantity: 1, 
 		quality: "Unique",
@@ -340,7 +340,7 @@ const pyro =
 		]
 	},	
 	{ 
-		id: "Freds Website/items/pyro/icon/Thermal Thruster.png", 
+		id: "Freds Website/items/pyro/Thermal Thruster.png", 
 		name: "The Thermal Thruster", 
 		quantity: 1, 
 		quality: "Unique",
@@ -353,7 +353,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Third Degree.png", 
+		id: "Freds Website/items/pyro/Third Degree.png", 
 		name: "The Third Degree", 
 		quantity: 1, 
 		quality: "Unique",
@@ -366,7 +366,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Hot Hand.png", 
+		id: "Freds Website/items/pyro/Hot Hand.png", 
 		name: "The Hot Hand", 
 		quantity: 1, 
 		quality: "Unique",
@@ -381,7 +381,7 @@ const pyro =
 const demoman = 
 [
 	{ 
-		id: "Freds Website/items/demo/icon/Ali Baba's Wee Booties.png", 
+		id: "Freds Website/items/demo/Ali Baba's Wee Booties.png", 
 		name: "Ali Baba's Wee Booties", 
 		quantity: 1, 
 		quality: "Unique",
@@ -395,7 +395,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Bootlegger.png", 
+		id: "Freds Website/items/demo/Bootlegger.png", 
 		name: "The Bootlegger", 
 		quantity: 1, 
 		quality: "Unique",
@@ -406,7 +406,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Chargin' Targe.png", 
+		id: "Freds Website/items/demo/Chargin' Targe.png", 
 		name: "The Chargin' Targe", 
 		quantity: 1, 
 		quality: "Unique",
@@ -418,7 +418,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Claidheamh Mor.png", 
+		id: "Freds Website/items/demo/Claidheamh Mor.png", 
 		name: "The Claidheamh Mor", 
 		quantity: 1, 
 		quality: "Unique",
@@ -432,7 +432,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Loose Cannon.png", 
+		id: "Freds Website/items/demo/Loose Cannon.png", 
 		name: "The Loose Cannon", 
 		quantity: 1, 
 		quality: "Unique",
@@ -443,7 +443,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Scotsman's Skullcutter.png", 
+		id: "Freds Website/items/demo/Scotsman's Skullcutter.png", 
 		name: "The Scotsman's Skullcutter", 
 		quantity: 1, 
 		quality: "Unique",
@@ -454,7 +454,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Scottish Handshake.png", 
+		id: "Freds Website/items/demo/Scottish Handshake.png", 
 		name: "The Scottish Handshake", 
 		quantity: 1, 
 		quality: "Unique",
@@ -468,7 +468,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Scottish Resistance.png", 
+		id: "Freds Website/items/demo/Scottish Resistance.png", 
 		name: "The Scottish Resistance", 
 		quantity: 1, 
 		quality: "Unique",
@@ -479,7 +479,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Splendid Screen.png", 
+		id: "Freds Website/items/demo/Splendid Screen.png", 
 		name: "The Splendid Screen", 
 		quantity: 1, 
 		quality: "Unique",
@@ -495,7 +495,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Ullapool Caber.png", 
+		id: "Freds Website/items/demo/Ullapool Caber.png", 
 		name: "The Ullapool Caber", 
 		quantity: 1, 
 		quality: "Unique",
@@ -506,7 +506,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Nessie's Nine Iron.png", 
+		id: "Freds Website/items/demo/Nessie's Nine Iron.png", 
 		name: "Nessie's Nine Iron", 
 		quantity: 1, 
 		quality: "Unique",
@@ -519,7 +519,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Loch-n-Load.png", 
+		id: "Freds Website/items/demo/Loch-n-Load.png", 
 		name: "The Loch-n-Load", 
 		quantity: 1, 
 		quality: "Unique",
@@ -534,7 +534,7 @@ const demoman =
 const heavy = 
 [
 	{ 
-		id: "Freds Website/items/heavy/icon/Brass Beast.png", 
+		id: "Freds Website/items/heavy/Brass Beast.png", 
 		name: "The Brass Beast", 
 		quantity: 1, 
 		quality: "Unique",
@@ -547,7 +547,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Buffalo Steak Sandvich.png", 
+		id: "Freds Website/items/heavy/Buffalo Steak Sandvich.png", 
 		name: "The Buffalo Steak Sandvich", 
 		quantity: 1, 
 		quality: "Unique",
@@ -560,7 +560,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Dalokohs Bar.png", 
+		id: "Freds Website/items/heavy/Dalokohs Bar.png", 
 		name: "The Dalokohs Bar", 
 		quantity: 1, 
 		quality: "Unique",
@@ -571,7 +571,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Eviction Notice.png", 
+		id: "Freds Website/items/heavy/Eviction Notice.png", 
 		name: "The Eviction Notice", 
 		quantity: 1, 
 		quality: "Unique",
@@ -585,7 +585,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Family Business.png", 
+		id: "Freds Website/items/heavy/Family Business.png", 
 		name: "The Family Business", 
 		quantity: 1, 
 		quality: "Unique",
@@ -598,7 +598,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Holiday Punch.png", 
+		id: "Freds Website/items/heavy/Holiday Punch.png", 
 		name: "The Holiday Punch", 
 		quantity: 1, 
 		quality: "Unique",
@@ -610,7 +610,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Huo-Long Heater.png", 
+		id: "Freds Website/items/heavy/Huo-Long Heater.png", 
 		name: "The Huo-Long Heater", 
 		quantity: 1, 
 		quality: "Unique",
@@ -623,7 +623,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Killing Gloves of Boxing.png", 
+		id: "Freds Website/items/heavy/Killing Gloves of Boxing.png", 
 		name: "The Killing Gloves of Boxing", 
 		quantity: 1, 
 		quality: "Unique",
@@ -640,7 +640,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Natascha.png", 
+		id: "Freds Website/items/heavy/Natascha.png", 
 		name: "Natascha", 
 		quantity: 1, 
 		quality: "Unique",
@@ -655,7 +655,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Sandvich.png", 
+		id: "Freds Website/items/heavy/Sandvich.png", 
 		name: "The Sandvich", 
 		quantity: 1, 
 		quality: "Unique",
@@ -666,7 +666,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Second Banana.png", 
+		id: "Freds Website/items/heavy/Second Banana.png", 
 		name: "The Second Banana", 
 		quantity: 1, 
 		quality: "Unique",
@@ -677,7 +677,7 @@ const heavy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/heavy/icon/Warrior's Spirit.png", 
+		id: "Freds Website/items/heavy/Warrior's Spirit.png", 
 		name: "The Warrior's Spirit", 
 		quantity: 1, 
 		quality: "Unique",
@@ -697,7 +697,7 @@ const heavy =
 const engineer = 
 [
 	{ 
-		id: "Freds Website/items/engineer/icon/Eureka Effect.png", 
+		id: "Freds Website/items/engineer/Eureka Effect.png", 
 		name: "The Eureka Effect", 
 		quantity: 1, 
 		quality: "Unique",
@@ -708,7 +708,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/engineer/icon/Jag.png", 
+		id: "Freds Website/items/engineer/Jag.png", 
 		name: "The Jag", 
 		quantity: 1, 
 		quality: "Unique",
@@ -719,7 +719,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/engineer/icon/Pomson 6000.png", 
+		id: "Freds Website/items/engineer/Pomson 6000.png", 
 		name: "The Pomson 6000", 
 		quantity: 1, 
 		quality: "Unique",
@@ -737,7 +737,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/engineer/icon/Short Circuit.png", 
+		id: "Freds Website/items/engineer/Short Circuit.png", 
 		name: "The Short Circuit", 
 		quantity: 1, 
 		quality: "Unique",
@@ -750,7 +750,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/engineer/icon/Southern Hospitality.png", 
+		id: "Freds Website/items/engineer/Southern Hospitality.png", 
 		name: "The Southern Hospitality", 
 		quantity: 1, 
 		quality: "Unique",
@@ -764,7 +764,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/engineer/icon/Widowmaker.png", 
+		id: "Freds Website/items/engineer/Widowmaker.png", 
 		name: "The Widowmaker", 
 		quantity: 1, 
 		quality: "Unique",
@@ -775,7 +775,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/engineer/icon/Wrangler.png", 
+		id: "Freds Website/items/engineer/Wrangler.png", 
 		name: "The Wrangler", 
 		quantity: 1, 
 		quality: "Unique",
@@ -790,7 +790,7 @@ const engineer =
 const medic = 
 [
 	{ 
-		id: "Freds Website/items/medic/icon/Amputator.png", 
+		id: "Freds Website/items/medic/Amputator.png", 
 		name: "The Amputator", 
 		quantity: 1, 
 		quality: "Unique",
@@ -803,7 +803,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Blutsauger.png", 
+		id: "Freds Website/items/medic/Blutsauger.png", 
 		name: "The Blutsauger", 
 		quantity: 1, 
 		quality: "Unique",
@@ -817,7 +817,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Crusader's Crossbow.png", 
+		id: "Freds Website/items/medic/Crusader's Crossbow.png", 
 		name: "Crusader's Crossbow", 
 		quantity: 1, 
 		quality: "Unique",
@@ -828,7 +828,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Overdose.png", 
+		id: "Freds Website/items/medic/Overdose.png", 
 		name: "The Overdose", 
 		quantity: 1, 
 		quality: "Unique",
@@ -839,7 +839,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Solemn Vow.png", 
+		id: "Freds Website/items/medic/Solemn Vow.png", 
 		name: "The Solemn Vow", 
 		quantity: 1, 
 		quality: "Unique",
@@ -853,7 +853,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Ubersaw.png", 
+		id: "Freds Website/items/medic/Ubersaw.png", 
 		name: "The Ubersaw", 
 		quantity: 1, 
 		quality: "Unique",
@@ -864,7 +864,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Vaccinator.png", 
+		id: "Freds Website/items/medic/Vaccinator.png", 
 		name: "The Vaccinator", 
 		quantity: 1, 
 		quality: "Unique",
@@ -882,7 +882,7 @@ const medic =
 const sniper = 
 [
 	{ 
-		id: "Freds Website/items/sniper/icon/Sniper Rifle.png", 
+		id: "Freds Website/items/sniper/Sniper Rifle.png", 
 		name: "All Sniper Rifles", 
 		quantity: 1, 
 		quality: "Normal",
@@ -893,7 +893,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Bushwacka.png", 
+		id: "Freds Website/items/sniper/Bushwacka.png", 
 		name: "The Bushwacka", 
 		quantity: 1, 
 		quality: "Unique",
@@ -904,7 +904,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Classic.png", 
+		id: "Freds Website/items/sniper/Classic.png", 
 		name: "The Classic", 
 		quantity: 1, 
 		quality: "Unique",
@@ -915,7 +915,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Cleaner's Carbine.png", 
+		id: "Freds Website/items/sniper/Cleaner's Carbine.png", 
 		name: "The Cleaner's Carbine", 
 		quantity: 1, 
 		quality: "Unique",
@@ -926,7 +926,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Darwin's Danger Shield.png", 
+		id: "Freds Website/items/sniper/Darwin's Danger Shield.png", 
 		name: "Darwin's Danger Shield", 
 		quantity: 1, 
 		quality: "Unique",
@@ -939,7 +939,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Fortified Compound.png", 
+		id: "Freds Website/items/sniper/Fortified Compound.png", 
 		name: "The Fortified Compound", 
 		quantity: 1, 
 		quality: "Unique",
@@ -951,7 +951,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Jarate.png", 
+		id: "Freds Website/items/sniper/Jarate.png", 
 		name: "The Jarate", 
 		quantity: 1, 
 		quality: "Unique",
@@ -962,7 +962,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Machina.png", 
+		id: "Freds Website/items/sniper/Machina.png", 
 		name: "The Machina", 
 		quantity: 1, 
 		quality: "Unique",
@@ -973,7 +973,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Razorback.png", 
+		id: "Freds Website/items/sniper/Razorback.png", 
 		name: "The Razorback", 
 		quantity: 1, 
 		quality: "Unique",
@@ -987,7 +987,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Sydney Sleeper.png", 
+		id: "Freds Website/items/sniper/Sydney Sleeper.png", 
 		name: "The Sydney Sleeper", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1003,7 +1003,7 @@ const sniper =
 		]
 	},
 	{ 
-		id: "Freds Website/items/sniper/icon/Tribalman's Shiv.png", 
+		id: "Freds Website/items/sniper/Tribalman's Shiv.png", 
 		name: "The Tribalman's Shiv", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1021,7 +1021,7 @@ const sniper =
 const spy = 
 [
 	{ 
-		id: "Freds Website/items/spy/icon/Spy.png", 
+		id: "Freds Website/items/spy/Spy.png", 
 		name: "The Spy", 
 		quantity: 1, 
 		quality: "Normal",
@@ -1032,7 +1032,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/icon/Ambassador.png", 
+		id: "Freds Website/items/spy/Ambassador.png", 
 		name: "The Ambassador", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1047,7 +1047,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/icon/Diamondback.png", 
+		id: "Freds Website/items/spy/Diamondback.png", 
 		name: "The Diamondback", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1058,7 +1058,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/icon/Enforcer.png", 
+		id: "Freds Website/items/spy/Enforcer.png", 
 		name: "The Enforcer", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1071,7 +1071,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/icon/Red-Tape Recorder.png", 
+		id: "Freds Website/items/spy/Red-Tape Recorder.png", 
 		name: "The Red-Tape Recorder", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1082,7 +1082,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/icon/Spy-Cicle.png", 
+		id: "Freds Website/items/spy/Spy-Cicle.png", 
 		name: "The Spy-Cicle", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1094,7 +1094,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/icon/Your Eternal Reward.png", 
+		id: "Freds Website/items/spy/Your Eternal Reward.png", 
 		name: "Your Eternal Reward", 
 		quantity: 1, 
 		quality: "Unique",

@@ -7,7 +7,7 @@ const attributeColors = {
 const scout = 
 [
 	{ 
-		id: "Freds Website/items/multi/icon/Gambit.png", 
+		id: "Freds Website/items/multi/Gambit.png", 
 		name: "The Gambit", 
 		quantity: 1, 
 		quality: "Unique",
@@ -25,7 +25,7 @@ const scout =
 const soldier = 
 [
 	{ 
-		id: "Freds Website/items/multi/icon/Vintimille.png", 
+		id: "Freds Website/items/multi/Vintimille.png", 
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
@@ -39,7 +39,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/multi/icon/Soft Soles.png", 
+		id: "Freds Website/items/multi/Soft Soles.png", 
 		name: "The Soft Soles", 
 		quantity: 1, 
 		quality: "Unique",
@@ -49,7 +49,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Monroe Doctrine.png", 
+		id: "Freds Website/items/soldier/Monroe Doctrine.png", 
 		name: "The Monroe Doctrine", 
 		quantity: 1, 
 		quality: "Unique",
@@ -64,7 +64,7 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/icon/Hornet's Nest.png", 
+		id: "Freds Website/items/soldier/Hornet's Nest.png", 
 		name: "The Hornet's Nest", 
 		quantity: 1, 
 		quality: "Unique",
@@ -82,7 +82,7 @@ const soldier =
 const pyro = 
 [
 	{ 
-		id: "Freds Website/items/multi/icon/Vintimille.png", 
+		id: "Freds Website/items/multi/Vintimille.png", 
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
@@ -96,7 +96,7 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/icon/Ice Breaker.png", 
+		id: "Freds Website/items/pyro/Ice Breaker.png", 
 		name: "The Ice Breaker", 
 		quantity: 1, 
 		quality: "Unique",
@@ -112,7 +112,7 @@ const pyro =
 const demoman = 
 [
 	{ 
-		id: "Freds Website/items/multi/icon/Soft Soles.png", 
+		id: "Freds Website/items/multi/Soft Soles.png", 
 		name: "The Soft Soles", 
 		quantity: 1, 
 		quality: "Unique",
@@ -122,7 +122,7 @@ const demoman =
 		]
 	},
 	{ 
-		id: "Freds Website/items/demo/icon/Primed Directive.png", 
+		id: "Freds Website/items/demo/Primed Directive.png", 
 		name: "The Primed Directive", 
 		quantity: 1, 
 		quality: "Unique",
@@ -139,7 +139,7 @@ const demoman =
 const heavy = 
 [
 	{ 
-		id: "Freds Website/items/multi/icon/Vintimille.png", 
+		id: "Freds Website/items/multi/Vintimille.png", 
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
@@ -157,7 +157,7 @@ const heavy =
 const engineer = 
 [
 	{ 
-		id: "Freds Website/items/multi/icon/Vintimille.png", 
+		id: "Freds Website/items/multi/Vintimille.png", 
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
@@ -171,7 +171,7 @@ const engineer =
 		]
 	},
 	{ 
-		id: "Freds Website/items/multi/icon/Gambit.png", 
+		id: "Freds Website/items/multi/Gambit.png", 
 		name: "The Gambit", 
 		quantity: 1, 
 		quality: "Unique",
@@ -189,7 +189,7 @@ const engineer =
 const medic = 
 [
 	{ 
-		id: "Freds Website/items/medic/icon/Anesthetizer.png", 
+		id: "Freds Website/items/medic/Anesthetizer.png", 
 		name: "The Anesthetizer", 
 		quantity: 1, 
 		quality: "Unique",
@@ -203,7 +203,7 @@ const medic =
 		]
 	},
 	{ 
-		id: "Freds Website/items/medic/icon/Hypodermic Injector.png", 
+		id: "Freds Website/items/medic/Hypodermic Injector.png", 
 		name: "The Hypodermic Injector", 
 		quantity: 1, 
 		quality: "Unique",
@@ -224,7 +224,7 @@ const sniper =
 const spy = 
 [
 	{ 
-		id: "Freds Website/items/spy/icon/En Passant.png", 
+		id: "Freds Website/items/spy/En Passant.png", 
 		name: "The En Passant", 
 		quantity: 1, 
 		quality: "Unique",
