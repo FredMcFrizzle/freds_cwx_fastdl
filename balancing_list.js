@@ -110,7 +110,7 @@ const soldier =
 [
 	{ 
 		id: "Freds Website/items/soldier/Air Strike.png", 
-		name: "The Air strike", 
+		name: "The Air Strike", 
 		quantity: 1, 
 		quality: "Unique",
 		stats: 
@@ -1083,7 +1083,7 @@ const spy =
 	},
 	{ 
 		id: "Freds Website/items/spy/Spy-cicle.png", 
-		name: "The Spy-Cicle", 
+		name: "The Spy-cicle", 
 		quantity: 1, 
 		quality: "Unique",
 		stats: 
