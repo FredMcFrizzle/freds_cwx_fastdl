@@ -109,7 +109,7 @@ const scout =
 const soldier = 
 [
 	{ 
-		id: "Freds Website/items/soldier/Air strike.png", 
+		id: "Freds Website/items/soldier/Air Strike.png", 
 		name: "The Air strike", 
 		quantity: 1, 
 		quality: "Unique",
@@ -1082,7 +1082,7 @@ const spy =
 		]
 	},
 	{ 
-		id: "Freds Website/items/spy/Spy-Cicle.png", 
+		id: "Freds Website/items/spy/Spy-cicle.png", 
 		name: "The Spy-Cicle", 
 		quantity: 1, 
 		quality: "Unique",
