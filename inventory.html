@@ -43,12 +43,12 @@
 	}
 	a.a
 	{
-		color:#FFD700;
+		color:#EBE2CA;
 		font-family: "tf2build", arial;
 	}
 	a.a:hover
 	{
-		color:#CD9B1D;
+		color:#756B5E;
 		font-family: "tf2build", arial;
 	}
 	a.b
@@ -69,13 +69,12 @@
 	}
 	h1.a
 	{
-		display: block;
+		display: flex;
 		color:#EBE2CA;
 		font-family: "tf2build", arial;
+		align-self: center;
 		
-		margin-left: 10%;
-		margin-right: auto;
-		margin-top: 2%;
+		margin-top: 5%;
 	}
 	</style>
 	</head>
@@ -89,12 +88,12 @@
 		<body>
 			<div style="display: flex;">
 				<div id="inventory-wrapper">
-					<h1 class="a" style="margin-left: 7vw;"><u>Backpack:</u></h1>
+					<div id="InvTitle"class="playerInv"><u>NULL's Inventory:</u></div>
   					<div id="inventory" class="inventory-grid">
 					</div>
   					<div id="pageBar" style="position: relative; margin-top: 1vw;">
     					<button id="prevBtn" class="invPage"><img src="Freds Website/button_arrow_left.png"></img></button>
-						<span id="pageDisplay" class="invPage" style="width: 10vw; text-align: center;">1 / 1</span>
+						<span id="pageDisplay" class="invPage" style="width: 28vw; text-align: center;">1/1</span>
     					<button id="nextBtn" class="invPage"><img src="Freds Website/button_arrow_right.png"></img></button>
   					</div>
 				</div>
@@ -105,10 +104,12 @@
 						<span id="name" style="color: Normal"></span>
 						<div id="stats" class="itemStats"></div>
 					</div>
+					<button id="equip" class="equipbutton"></button>
+					</div>
 				</div>
 			</div>
-			<script src="balance_list.js"></script>
-			<script src="invscript.js"></script>
 		</body>
 	</body>
+	<script src="inventory_colors.js"></script>
+	<script src="inventory_script.js"></script>
 </html>

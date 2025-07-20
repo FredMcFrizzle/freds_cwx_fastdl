@@ -1,5 +1,15 @@
 const ITEMS_PER_PAGE = 16;
 let currentPage = 0;
+let playerInv = [];
+
+const steamInfo = getSteamInfo();
+console.log("Steam Info:", steamInfo);
+
+async function loadInventory(id) {
+  const res = await fetch(`https://script.google.com/macros/s/AKfycbxtZvREIwIDtOSQHzTlQ6PVOMweoZmpRehMxOl3D4xHcNFYUyuD6ZLxchhp5eut8kkjNw/exec?steam=${id}`);
+  const data = await res.json();
+  return data;
+}
 
 const qualityTextColors = {
     Normal: '#B2B2B2',
@@ -19,13 +29,20 @@ const itemPreview = document.getElementById('item-preview');
 const itemName = document.getElementById('name');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const equip = document.getElementById('equip');
+
+const { steamID } = getSteamInfo();
+loadInventory(steamID).then(inv => {
+  playerInv = inv;
+  renderInventory();
+});
 
 function renderInventory() {
-  inventoryEl.innerHTML = '';
+inventoryEl.innerHTML = '';
 
   const start = currentPage * ITEMS_PER_PAGE;
   const end = start + ITEMS_PER_PAGE;
-  const visibleItems = userInventory.slice(start, end);
+  const visibleItems = playerInv.slice(start, end);
 
   for (let i = 0; i < ITEMS_PER_PAGE; i++) {
     const item = visibleItems[i];
@@ -54,42 +71,43 @@ function renderInventory() {
 
   updateButtons();
   updatePageDisplay();
+  updateTitle();
 }
 
 function updateButtons() {
-  const totalPages = Math.ceil(userInventory.length / ITEMS_PER_PAGE);
-  prevBtn.disabled = currentPage === 0;
-  nextBtn.disabled = currentPage >= totalPages - 1;
+  const totalPages = Math.ceil(playerInv.length / ITEMS_PER_PAGE);
+  prevBtn.disabled = currentPage <= 0;
+  nextBtn.disabled = currentPage >= totalPages;
+  equip.disabled = true;
 }
 
 function updatePageDisplay() {
-  const pageDisplay = document.getElementById('pageDisplay');
-  const totalPages = Math.max(1, Math.ceil(userInventory.length / ITEMS_PER_PAGE));
-  pageDisplay.textContent = `${currentPage + 1} / ${totalPages}`;
+  if (playerInv.length != 0)
+  {
+    pageDisplay.textContent = `${currentPage + 1} / ${Math.ceil(playerInv.length / ITEMS_PER_PAGE)}`;
+  } else {
+    pageDisplay.textContent = `Empty`
+  }
 }
 
+function updateTitle() {
+  const { steamName } = getSteamInfo();
+  InvTitle.innerHTML = `<u>${steamName}'s Backpack:</u>`;
+}
+
+
 function preview(item) {
-    const qualities = ['Normal', 'Unique', 'Vintage', 'Genuine', 'Strange', 'Unusual', 'Haunted', 'Collectors', 'Community', 'Valve'];
+    const qualities = Object.keys(qualityTextColors);
     itemPreview.innerHTML = `<img src="${item.id}" alt="${item.name}">;`;
     qualities.forEach(q => itemPreview.classList.remove(q));
     itemPreview.classList.add(`${item.quality}`);
 
-    const qualityTextColors = {
-        Normal: '#B2B2B2',
-        Unique: '#FFD700',
-        Vintage: '#476291',
-        Genuine: '#4D7455',
-        Strange: '#CF6A32',
-        Unusual: '#8650AC',
-        Haunted: '#38F3AB',
-        Collectors: '#AA0000',
-        Community: '#70B04A',
-        Valve: '#A50F79'
-    };
     itemName.textContent = `${item.name}`;
     itemName.style.color = qualityTextColors[item.quality];
     itemName.style.fontFamily = "tf2build"
     itemName.style.marginTop = "2%"
+    equip.disabled = false;
+    equip.textContent = `EQUIP`
 
     const statsEl = document.getElementById("stats");
     if (Array.isArray(item.stats)) {
@@ -117,11 +135,27 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-  const maxPage = Math.floor(userInventory.length / ITEMS_PER_PAGE);
+  const maxPage = Math.floor(playerInv.length / ITEMS_PER_PAGE);
   if (currentPage < maxPage) {
     currentPage++;
     renderInventory();
   }
 });
+
+equip.addEventListener('click', () => {
+  if (equip.disabled == false) {
+    equip.disabled = true;
+    equip.textContent = `EQUIPPED`;
+    renderInventory();
+  }
+});
+
+function getSteamInfo() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    steamID: params.get('steam'),
+    steamName: decodeURIComponent(params.get('name'))
+  };
+}
 
 renderInventory();

@@ -52,6 +52,19 @@ a:hover+table {
   align-self: center;
 }
 
+.playerInv
+{
+	display: flex;
+	color:#EBE2CA;
+	font-family: "tf2build", arial;
+	align-self: center;
+  size-adjust: inherit;
+  font-size: 2.5vw;
+	
+	margin-top: 1%;
+  margin-bottom: 2%;
+}
+
 #inventory-wrapper
 {
   display: flex;
@@ -191,6 +204,32 @@ a:hover+table {
   object-fit: contain;
   z-index: 1;
 }
+
+.equipbutton
+{
+  color: #EBE2CA;
+  font-family: tf2build;
+  text-align: center;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 0.35vw solid #756B5E;
+  border-radius: 10px;
+  background-color: #756B5E;
+}
+.equipbutton:enabled:hover
+{
+  background-color: #EBE2CA;
+  border-color: #EBE2CA;
+  color: #756B5E;
+}
+
 .itemlist
 {
   color: #B2B2B2;
