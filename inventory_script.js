@@ -226,7 +226,7 @@ equip.addEventListener('click', () => {
 });
  
 function SendToTF2() {
-  fetch(`http://10.0.0.79:8081/?action=equip&steam=${steamID}&uid=${selectedItem.uid}`)
+  fetch(`http://70.77.125.151:8081/?action=equip&steam=${steamID}&uid=${selectedItem.uid}`)
     .then(res => res.text())
     .then(console.log)
     .catch(console.error);
