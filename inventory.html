@@ -11,19 +11,18 @@
 	body 
 	{
 		background-color: #2B2724;
-		.p1
-		{
-			font-family: "tf2build", verdana, arial;
-		}
-		.p2
-		{
-			font-family: "tf2secondary", verdana, arial;
-		}
-		.p3
-		{
-			font-family: "verdana", arial;
-		}
-		
+	}
+	.p1
+	{
+		font-family: "tf2build", verdana, arial;
+	}
+	.p2
+	{
+		font-family: "tf2secondary", verdana, arial;
+	}
+	.p3
+	{
+		font-family: "verdana", arial;
 	}
 	table.a
 	{
@@ -85,31 +84,64 @@
 			<div><p><a href="balancing.html" class="a">Balancing</a></p></div>
 			<div><p><a href="new_items.html" class="a">New Items</a></p></div>
 		</div>
-		<body>
-			<div style="display: flex;">
-				<div id="inventory-wrapper">
-					<div id="InvTitle"class="playerInv"><u>NULL's Inventory:</u></div>
-  					<div id="inventory" class="inventory-grid">
-					</div>
-  					<div id="pageBar" style="position: relative; margin-top: 1vw;">
-    					<button id="prevBtn" class="invPage"><img src="Freds Website/button_arrow_left.png"></img></button>
-						<span id="pageDisplay" class="invPage" style="width: 28vw; text-align: center;">1/1</span>
-    					<button id="nextBtn" class="invPage"><img src="Freds Website/button_arrow_right.png"></img></button>
-  					</div>
+		<div style="display: flex;">
+			<div id="inventory-wrapper">
+				<div id="InvTitle"class="playerInv"><u>NULL's Inventory:</u></div>
+  				<div id="inventory" class="inventory-grid">
 				</div>
-				<div id="inventory-display">
-					<div id="item-preview" class="item">
-					</div>
-					<div id="list" class="itemlist">
-						<span id="name" style="color: Normal"></span>
-						<div id="stats" class="itemStats"></div>
-					</div>
-					<button id="equip" class="equipbutton"></button>
-					</div>
+  				<div id="pageBar" style="position: relative; margin-top: 1vw;">
+    				<button id="prevBtn" class="invPage"><img src="Freds Website/button_arrow_left.png"/></button>
+					<span id="pageDisplay" class="invPage" style="width: 28vw; text-align: center;">1/1</span>
+    				<button id="nextBtn" class="invPage"><img src="Freds Website/button_arrow_right.png"/></button>
+  				</div>
+			</div>
+			<div id="inventory-display">
+				<div id="item-preview" class="item">
+				</div>
+				<div id="list" class="itemlist">
+					<span id="name" style="color: Normal"></span>
+					<div id="stats" class="itemStats"></div>
+				</div>
+				<button id="equip" class="equipbutton"></button>
 				</div>
 			</div>
-		</body>
-	</body>
+		</div>
+	<script type="module">
+
+ 	// Import the functions you need from the SDKs you need
+
+  	import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+  	import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
+	import { getDatabase, ref, get, child } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
+	
+ 	 // TODO: Add SDKs for Firebase products that you want to use
+
+ 	 // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  	// Your web app's Firebase configuration
+
+ 	 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  	const firebaseConfig = {
+
+   		apiKey: "AIzaSyBj3YZIxw4X7_FK-SrAjA89uYfE2WfVWp0",
+    	authDomain: "tf2server-invsystem.firebaseapp.com",
+	    databaseURL: "https://tf2server-invsystem-default-rtdb.firebaseio.com",
+    	projectId: "tf2server-invsystem",
+    	storageBucket: "tf2server-invsystem.firebasestorage.app",
+    	messagingSenderId: "613269989407",
+    	appId: "1:613269989407:web:4055049653d12a122d8d2a",
+    	measurementId: "G-G3HPZFW9R2"
+
+  	};
+  	// Initialize Firebase
+  	const app = initializeApp(firebaseConfig);
+  	const analytics = getAnalytics(app);
+	const db = getDatabase(app);
+
+	</script>
 	<script src="inventory_colors.js"></script>
-	<script src="inventory_script.js"></script>
+	<script type="module" src="inventory_script.js"></script>
+	</body>
 </html>

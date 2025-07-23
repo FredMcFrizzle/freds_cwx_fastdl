@@ -1,14 +1,79 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import { getDatabase, ref, set, get, push, child } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-database.js";
+	
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyBj3YZIxw4X7_FK-SrAjA89uYfE2WfVWp0",
+  authDomain: "tf2server-invsystem.firebaseapp.com",
+  databaseURL: "https://tf2server-invsystem-default-rtdb.firebaseio.com",
+  projectId: "tf2server-invsystem",
+  storageBucket: "tf2server-invsystem.firebasestorage.app",
+  messagingSenderId: "613269989407",
+  appId: "1:613269989407:web:4055049653d12a122d8d2a",
+  measurementId: "G-G3HPZFW9R2"
+
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+
+
 const ITEMS_PER_PAGE = 16;
 let currentPage = 0;
 let playerInv = [];
+let selectedItem = null;
 
 const steamInfo = getSteamInfo();
 console.log("Steam Info:", steamInfo);
 
 async function loadInventory(id) {
-  const res = await fetch(`https://script.google.com/macros/s/AKfycbxtZvREIwIDtOSQHzTlQ6PVOMweoZmpRehMxOl3D4xHcNFYUyuD6ZLxchhp5eut8kkjNw/exec?steam=${id}`);
-  const data = await res.json();
-  return data;
+  const dbRef = ref(db);
+  const snapshot = await get(child(dbRef, `inventories/${id}`));
+  if (snapshot.exists())  
+  {
+    console.log("inventory:", snapshot.val());
+    const inventory = await get(child(dbRef, `inventories/${id}/items`))
+    if (inventory.exists())
+    {
+      return inventory.val();
+    }
+    else
+    {
+      return [];
+    }
+  } 
+  else 
+  {
+    console.log("No inventory found user, creating inventory...");
+    try {
+      await set(child(dbRef, `inventories/` + id), {
+        items: [
+          {
+            "name": "",
+            "id": "",
+            "quantity": 0,
+            "quality": "",
+            "sound": "",
+            "uid": "",
+            "stats": [
+              {"text": "No stats available", "color": "Description"}
+            ]
+          }
+        ]
+      });
+      console.log("Default inventory created.");
+      return [];
+    } catch (e) {
+      console.error("Failed to create default inventory:", e);
+      return [];
+    }
+  }
 }
 
 const qualityTextColors = {
@@ -30,6 +95,8 @@ const itemName = document.getElementById('name');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const equip = document.getElementById('equip');
+const pageDisplay = document.getElementById('pageDisplay');
+const InvTitle = document.getElementById('InvTitle');
 
 const { steamID } = getSteamInfo();
 loadInventory(steamID).then(inv => {
@@ -38,7 +105,10 @@ loadInventory(steamID).then(inv => {
 });
 
 function renderInventory() {
-inventoryEl.innerHTML = '';
+  if (!Array.isArray(playerInv)) {
+    playerInv = [];
+  }
+  inventoryEl.innerHTML = '';
 
   const start = currentPage * ITEMS_PER_PAGE;
   const end = start + ITEMS_PER_PAGE;
@@ -97,7 +167,10 @@ function updateTitle() {
 
 
 function preview(item) {
+    selectedItem = item;
     const qualities = Object.keys(qualityTextColors);
+    const grabSound = new Audio(`sound/pickup/${item.sound}.wav`);
+    grabSound.play();
     itemPreview.innerHTML = `<img src="${item.id}" alt="${item.name}">;`;
     qualities.forEach(q => itemPreview.classList.remove(q));
     itemPreview.classList.add(`${item.quality}`);
@@ -145,10 +218,19 @@ nextBtn.addEventListener('click', () => {
 equip.addEventListener('click', () => {
   if (equip.disabled == false) {
     equip.disabled = true;
-    equip.textContent = `EQUIPPED`;
+    const click = new Audio(`sound/buttonclick.wav`);
+    click.play();
+    SendToTF2();
     renderInventory();
   }
 });
+ 
+function SendToTF2() {
+  fetch(`http://10.0.0.79:8081/?action=equip&steam=${steamID}&uid=${selectedItem.uid}`)
+    .then(res => res.text())
+    .then(console.log)
+    .catch(console.error);
+}
 
 function getSteamInfo() {
   const params = new URLSearchParams(window.location.search);

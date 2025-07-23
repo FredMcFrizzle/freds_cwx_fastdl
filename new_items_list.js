@@ -97,7 +97,7 @@ const pyro =
 	},
 	{ 
 		id: "Freds Website/items/pyro/Ice Breaker.png", 
-		name: "The Ice Breaker", 
+		name: "Ice Breaker", 
 		quantity: 1, 
 		quality: "Unique",
 		stats: 
