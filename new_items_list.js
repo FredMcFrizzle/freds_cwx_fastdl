@@ -77,6 +77,18 @@ const soldier =
 			{ text: "+2 degrees random projectile deviation", color: "Negative" },
 		]
 	},
+	{ 
+		id: "Freds Website/items/multi/Lead Barrel.png", 
+		name: "The Lead Barrel", 
+		quantity: 1, 
+		quality: "Haunted",
+		stats: 
+		[
+			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
+			{ text: "Holiday Restriction: Halloween / Full Moon", color: "Negative" },
+			{ text: "In the future, Weapons will be randomly generated!", color: "Description" },
+		]
+	},
 ];
 
 const pyro = 
@@ -105,6 +117,18 @@ const pyro =
 			{ text: "On Hit: Freeze target for 8 seconds", color: "Positive" },
 			{ text: "50% fire damage dealt to frozen targets is returned as health", color: "Positive" },
 			{ text: "-24% damage penalty", color: "Negative" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/multi/Lead Barrel.png", 
+		name: "The Lead Barrel", 
+		quantity: 1, 
+		quality: "Haunted",
+		stats: 
+		[
+			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
+			{ text: "Holiday Restriction: Halloween / Full Moon", color: "Negative" },
+			{ text: "In the future, Weapons will be randomly generated!", color: "Description" },
 		]
 	},
 ];
@@ -152,6 +176,18 @@ const heavy =
 			{ text: "20% slower reload time", color: "Negative" },
 		]
 	},
+	{ 
+		id: "Freds Website/items/multi/Lead Barrel.png", 
+		name: "The Lead Barrel", 
+		quantity: 1, 
+		quality: "Haunted",
+		stats: 
+		[
+			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
+			{ text: "Holiday Restriction: Halloween / Full Moon", color: "Negative" },
+			{ text: "In the future, Weapons will be randomly generated!", color: "Description" },
+		]
+	},
 ];
 
 const engineer = 
@@ -182,6 +218,18 @@ const engineer =
 			{ text: "+100% max secondary ammo on wearer", color: "Positive" },
 			{ text: "-50% damage penalty", color: "Negative" },
 			{ text: "20% less accurate", color: "Negative" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/multi/Lead Barrel.png", 
+		name: "The Lead Barrel", 
+		quantity: 1, 
+		quality: "Haunted",
+		stats: 
+		[
+			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
+			{ text: "Holiday Restriction: Halloween / Full Moon", color: "Negative" },
+			{ text: "In the future, Weapons will be randomly generated!", color: "Description" },
 		]
 	},
 ];
