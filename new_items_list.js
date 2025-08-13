@@ -267,6 +267,20 @@ const medic =
 
 const sniper = 
 [
+	{ 
+		id: "Freds Website/items/sniper/Usurper.png", 
+		name: "The Usurper", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: 
+		[
+			{ text: "Crits on headshot", color: "Positive" },
+			{ text: "+20% clip size", color: "Positive" },
+			{ text: "+15 max health on wearer", color: "Positive" },
+			{ text: "+20% max secondary ammo on wearer", color: "Positive" },
+			{ text: "-88% max primary ammo on wearer", color: "Negative" },
+		]
+	},
 ];
 
 const spy = 

@@ -44,19 +44,8 @@ const scout =
 		]
 	},
 	{ 
-		id: "Freds Website/items/scout/Mad Milk.png", 
-		name: "Mad Milk", 
-		quantity: 1, 
-		quality: "Unique",
-		stats: 
-		[
-			{ text: "Added:", color: "Neutral" },
-			{ text: "Resupply does not affect Milk meter", color: "Negative" },
-		]
-	},
-	{ 
 		id: "Freds Website/items/scout/Flying Guillotine.png", 
-		name: "Mad Milk", 
+		name: "The Flying Guillotine", 
 		quantity: 1, 
 		quality: "Unique",
 		stats: 
@@ -65,6 +54,17 @@ const scout =
 			{ text: "+50% damage vs stunned players", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Increased charge timer from 5 seconds to 7 seconds", color: "Negative" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/scout/Mad Milk.png", 
+		name: "Mad Milk", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: 
+		[
+			{ text: "Added:", color: "Neutral" },
+			{ text: "Resupply does not affect Milk meter", color: "Negative" },
 		]
 	},
 	{ 
@@ -104,17 +104,27 @@ const scout =
 			{ text: "-25% damage penalty", color: "Negative" },
 		]
 	},
+	{ 
+		id: "Freds Website/items/scout/Winger.png", 
+		name: "The Winger", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: 
+		[
+			{ text: "Added:", color: "Neutral" },
+			{ text: "User takes no fall damage while active.", color: "Positive" },
+		]
+	},
 ];
 
 const soldier = 
 [
 	{ 
-		id: "Freds Website/items/soldier/AirStrike.png", 
+		id: "Freds Website/items/soldier/Air Strike.png", 
 		name: "The Air Strike", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+15% faster reload time", color: "Positive" },
 			{ text: "-15% slower projectile speed", color: "Negative" },
@@ -124,12 +134,21 @@ const soldier =
 		]
 	},
 	{ 
+		id: "Freds Website/items/soldier/Beggar's Bazooka.png", 
+		name: "The Beggar's Bazooka", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Removed:", color: "Neutral" },
+			{ text: "No ammo from dispensers when active", color: "Negative" },
+		]
+	},
+	{ 
 		id: "Freds Website/items/soldier/Buff Banner.png", 
 		name: "The Buff Banner", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+25% max primary ammo on wearer", color: "Positive" },
 		]
@@ -139,8 +158,7 @@ const soldier =
 		name: "The Disciplinary Action", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "On Hit: Gain a small speed boost for 3 seconds", color: "Positive" },
 			{ text: "This weapon deploys and holsters slower", color: "Negative" },
@@ -149,15 +167,16 @@ const soldier =
 		]
 	},
 	{ 
-		id: "Freds Website/items/soldier/Righteous Bison.png", 
-		name: "The Righteous Bison", 
+		id: "Freds Website/items/soldier/Equalizer.png", 
+		name: "The Equalizer", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
-			{ text: "Added:", color: "Neutral" },
-			{ text: "+35% faster projectile speed", color: "Positive" },
-			{ text: "+45% damage bonus", color: "Positive" },
+		stats: [
+			{ text: "New Stats:", color: "Neutral" },
+			{ text: "While weapon is active:", color: "Neutral" },
+			{ text: "Deals bonus damage equal to halve the difference between your health and your targets", color: "Positive" },
+			{ text: "-25% damage penalty", color: "Negative" },
+			{ text: "-90% less healing from Medic sources", color: "Negative" },
 		]
 	},
 	{ 
@@ -165,8 +184,7 @@ const soldier =
 		name: "The Liberty Launcher", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+30% more explosion knockback", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
@@ -178,8 +196,7 @@ const soldier =
 		name: "The Mantreads", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+15% faster move speed on wearer", color: "Positive" },
 		]
@@ -189,8 +206,7 @@ const soldier =
 		name: "The Market Gardener", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+2% damage bonus", color: "Positive" },
 			{ text: "Weapon glows while blast jumping", color: "Neutral" },
@@ -201,15 +217,28 @@ const soldier =
 		name: "The Original", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "New Stats:", color: "Neutral" },
 			{ text: "No Clip", color: "Positive" },
 			{ text: "-35% damage penalty", color: "Negative" },
 			{ text: "-20% max primary ammo on wearer", color: "Negative" },
 		]
 	},
-];
+	{ 
+		id: "Freds Website/items/soldier/Righteous Bison.png", 
+		name: "The Righteous Bison", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Added:", color: "Neutral" },
+			{ text: "+35% faster projectile speed", color: "Positive" },
+			{ text: "+45% damage bonus", color: "Positive" },
+			{ text: "Removed:", color: "Neutral" },
+			{ text: "hidden -33% clip size penalty", color: "Negative" },
+		]
+	}
+]
+;
 
 const pyro = 
 [
@@ -218,8 +247,7 @@ const pyro =
 		name: "The Axtinguisher", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Decreased damage penalty from -33% to -25%", color: "Positive" },
 			{ text: "Decreased weapon holster time from 35% to 25% slower", color: "Positive" },
@@ -230,8 +258,7 @@ const pyro =
 		name: "The Back Scratcher", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "On Kill: Gain 20% of base health", color: "Positive" },
 		]
@@ -241,8 +268,7 @@ const pyro =
 		name: "The Degreaser", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Afterburn damage penalty decreased from -66% to -50%", color: "Positive" },
 		]
@@ -252,8 +278,7 @@ const pyro =
 		name: "The Detonator", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+15% self damage force", color: "Positive" },
 		]
@@ -263,8 +288,7 @@ const pyro =
 		name: "The Gas Passer", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Gas covered enemies explode on ignite", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
@@ -272,12 +296,31 @@ const pyro =
 		]
 	},
 	{ 
+		id: "Freds Website/items/pyro/Homewrecker.png", 
+		name: "The Homewrecker", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Added:", color: "Neutral" },
+			{ text: "66% reduction in push force taken from damage while active", color: "Positive" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/pyro/Hot Hand.png", 
+		name: "The Hot Hand", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Removed:", color: "Neutral" },
+			{ text: "-20% damage penalty", color: "Negative" },
+		]
+	},
+	{ 
 		id: "Freds Website/items/pyro/Manmelter.png", 
 		name: "The Manmelter", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+35% damage bonus vs burning players", color: "Positive" },
 			{ text: "Projectiles home toward burning players and dont arch", color: "Positive" },
@@ -290,8 +333,7 @@ const pyro =
 		name: "The Neon Annihilator", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Water doesn't slow wearer", color: "Positive" },
 			{ text: "Wearer is immune to being wet", color: "Positive" },
@@ -301,13 +343,12 @@ const pyro =
 			{ text: "Damage removes sappers", color: "Positive" },
 		]
 	},
-	{	 
+	{ 
 		id: "Freds Website/items/pyro/Powerjack.png", 
 		name: "The Powerjack", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Increased movement speed while active from +15% to +20%", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
@@ -319,33 +360,17 @@ const pyro =
 		name: "The Scorch Shot", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "+100% mini-crits vs burning players", color: "Positive" },
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/Sharpened Volcano Fragment.png", 
-		name: "Sharpened Volcano Fragment", 
-		quantity: 1, 
-		quality: "Unique",
-		stats: 
-		[
-			{ text: "Added:", color: "Neutral" },
-			{ text: "+100% mini-crits vs burning players", color: "Positive" },
-			{ text: "-35% damage penalty vs non-burning players", color: "Negative" },
-			{ text: "Removed:", color: "Neutral" },
-			{ text: "-20% damage penalty", color: "Negative" },
-		]
-	},	
-	{ 
 		id: "Freds Website/items/pyro/Thermal Thruster.png", 
 		name: "The Thermal Thruster", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Able to re-launch while already in flight", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
@@ -357,8 +382,7 @@ const pyro =
 		name: "The Third Degree", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "100% mini-crits from behind", color: "Positive" },
 			{ text: "+15% damage vs burning players", color: "Positive" },
@@ -366,16 +390,19 @@ const pyro =
 		]
 	},
 	{ 
-		id: "Freds Website/items/pyro/Hot Hand.png", 
-		name: "The Hot Hand", 
+		id: "Freds Website/items/pyro/Sharpened Volcano Fragment.png", 
+		name: "Sharpened Volcano Fragment", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
+			{ text: "Added:", color: "Neutral" },
+			{ text: "+100% mini-crits vs burning players", color: "Positive" },
+			{ text: "25% slower firing speed", color: "Negative" },
+			{ text: "-35% damage penalty vs non-burning players", color: "Negative" },
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "-20% damage penalty", color: "Negative" },
 		]
-	},
+	}
 ];
 
 const demoman = 
@@ -385,8 +412,7 @@ const demoman =
 		name: "Ali Baba's Wee Booties", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "New Stats:", color: "Neutral" },
 			{ text: "-40% blast damage from explosive jumping", color: "Positive" },
 			{ text: "+400% increase in turning control while charging", color: "Positive" },
@@ -399,8 +425,7 @@ const demoman =
 		name: "The Bootlegger", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Altered footstep sound effect to sound more peglegged", color: "Neutral" },
 		]
@@ -410,8 +435,7 @@ const demoman =
 		name: "The Chargin' Targe", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+75% increase in charge impact damage", color: "Positive" },
 			{ text: "+33% increase in charge recharge rate", color: "Positive" },
@@ -422,8 +446,7 @@ const demoman =
 		name: "The Claidheamh Mor", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "-15 max health on wearer", color: "Negative" },
 			{ text: "Removed:", color: "Neutral" },
@@ -432,14 +455,35 @@ const demoman =
 		]
 	},
 	{ 
+		id: "Freds Website/items/demo/Loch-n-Load.png", 
+		name: "The Loch-n-Load", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Added:", color: "Neutral" },
+			{ text: "Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs", color: "Positive" },
+		]
+	},
+	{ 
 		id: "Freds Website/items/demo/Loose Cannon.png", 
 		name: "The Loose Cannon", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "-20% blast damage from explosive jumping", color: "Positive" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/demo/Nessie's Nine Iron.png", 
+		name: "Nessie's Nine Iron", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "New Stats:", color: "Neutral" },
+			{ text: "+100% Knockback on target", color: "Positive" },
+			{ text: "This weapon has a longer melee range and deploys slower", color: "Neutral" },
+			{ text: "20% slower firing speed", color: "Negative" },
 		]
 	},
 	{ 
@@ -447,8 +491,7 @@ const demoman =
 		name: "The Scotsman's Skullcutter", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Melee attacks hit all enemies in range", color: "Positive" },
 		]
@@ -458,8 +501,7 @@ const demoman =
 		name: "The Scottish Handshake", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "New Stats:", color: "Neutral" },
 			{ text: "Deals crits while the wielder is blast jumping", color: "Positive" },
 			{ text: "+2% damage bonus", color: "Positive" },
@@ -472,8 +514,7 @@ const demoman =
 		name: "The Scottish Resistance", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+15% faster reload time", color: "Positive" },
 		]
@@ -483,8 +524,7 @@ const demoman =
 		name: "The Splendid Screen", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "New Stats:", color: "Neutral" },
 			{ text: "75% reduction in push force taken from airblast", color: "Positive" },
 			{ text: "50% reduction in push force taken from damage", color: "Positive" },
@@ -499,36 +539,11 @@ const demoman =
 		name: "The Ullapool Caber", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Caber becomes re-armed after 30 seconds or on kill", color: "Positive" },
 		]
-	},
-	{ 
-		id: "Freds Website/items/demo/Nessie's Nine Iron.png", 
-		name: "Nessie's Nine Iron", 
-		quantity: 1, 
-		quality: "Unique",
-		stats: 
-		[
-			{ text: "New Stats:", color: "Neutral" },
-			{ text: "+100% Knockback on target", color: "Positive" },
-			{ text: "This weapon has a longer melee range and deploys slower", color: "Neutral" },
-			{ text: "20% slower firing speed", color: "Negative" },
-		]
-	},
-	{ 
-		id: "Freds Website/items/demo/Loch-n-Load.png", 
-		name: "The Loch-n-Load", 
-		quantity: 1, 
-		quality: "Unique",
-		stats: 
-		[
-			{ text: "Added:", color: "Neutral" },
-			{ text: "Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs", color: "Positive" },
-		]
-	},
+	}
 ];
 
 const heavy = 
@@ -538,12 +553,11 @@ const heavy =
 		name: "The Brass Beast", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Increased damage bonus from 20% to 30%", color: "Positive" },
 			{ text: "Increased damage resistance when spun up and below 50% health from 20% to 35%", color: "Positive" },
-			{ text: "Increased move speed penalty while active from 60% to 100%", color: "Negative" },
+			{ text: "Increased move speed penalty while active from 60% to 100%", color: "Negative" }
 		]
 	},
 	{ 
@@ -551,12 +565,11 @@ const heavy =
 		name: "The Buffalo Steak Sandvich", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+33% faster recharge rate", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
-			{ text: "+20% damage vulernability while active", color: "Negative" },
+			{ text: "+20% damage vulernability while active", color: "Negative" }
 		]
 	},
 	{ 
@@ -564,10 +577,9 @@ const heavy =
 		name: "The Dalokohs Bar", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
-			{ text: "+57% faster recharge rate", color: "Positive" },
+			{ text: "+57% faster recharge rate", color: "Positive" }
 		]
 	},
 	{ 
@@ -575,13 +587,12 @@ const heavy =
 		name: "The Eviction Notice", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Decreased damage penalty from 60% to 50%", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "+15% faster move speed on wearer", color: "Positive" },
-			{ text: "Maximum health is drained while item is active", color: "Negative" },
+			{ text: "Maximum health is drained while item is active", color: "Negative" }
 		]
 	},
 	{ 
@@ -589,12 +600,9 @@ const heavy =
 		name: "The Family Business", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+20% faster reload speed", color: "Positive" },
-			{ text: "Changed:", color: "Neutral" },
-			{ text: "Increased damage penalty from 15% to 20%", color: "Negative" },
 		]
 	},
 	{ 
@@ -602,11 +610,10 @@ const heavy =
 		name: "The Holiday Punch", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+20% faster firing speed", color: "Positive" },
-			{ text: "-26% damage penalty", color: "Negative" },
+			{ text: "-26% damage penalty", color: "Negative" }
 		]
 	},
 	{ 
@@ -614,12 +621,11 @@ const heavy =
 		name: "The Huo-Long Heater", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "100% mini-crits vs burning players", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
-			{ text: "+25% damage bonus vs burning players", color: "Positive" },
+			{ text: "+25% damage bonus vs burning players", color: "Positive" }
 		]
 	},
 	{ 
@@ -627,16 +633,15 @@ const heavy =
 		name: "The Killing Gloves of Boxing", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "Killing the same class gives +1 to your combo which increases fire rate. (stacks up to 3)", color: "Positive" },
 			{ text: "Killing an enemy while under the effects of a lunchbox item will reset the duration of the effect.", color: "Positive" },
-			{ text: "Killing an enemy restores 25% of base health", color: "Positive" },
+			{ text: "Killing an enemy restores 30% of base health", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "fire rate penalty increased from -20% to -30%", color: "Negative" },
 			{ text: "Removed:", color: "Neutral" },
-			{ text: "On Kill: 5 seconds of 100% critical chance", color: "Negative" },
+			{ text: "On Kill: 5 seconds of 100% critical chance", color: "Negative" }
 		]
 	},
 	{ 
@@ -644,14 +649,13 @@ const heavy =
 		name: "Natascha", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "On Hit: Gain a speed boost for 1 second", color: "Positive" },
 			{ text: "+25% faster move speed while deployed", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "+20% damage resistance when below 50% health and spun up", color: "Positive" },
-			{ text: "On Hit: 100% chance to slow target", color: "Positive" },
+			{ text: "On Hit: 100% chance to slow target", color: "Positive" }
 		]
 	},
 	{ 
@@ -659,10 +663,9 @@ const heavy =
 		name: "The Sandvich", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Changed:", color: "Neutral" },
-			{ text: "Increased health healed from 300hp to 400hp", color: "Positive" },
+			{ text: "Increased health healed from 300hp to 400hp", color: "Positive" }
 		]
 	},
 	{ 
@@ -670,10 +673,9 @@ const heavy =
 		name: "The Second Banana", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
-			{ text: "+25% faster consuption rate", color: "Positive" },
+			{ text: "+25% faster consuption rate", color: "Positive" }
 		]
 	},
 	{ 
@@ -681,17 +683,16 @@ const heavy =
 		name: "The Warrior's Spirit", 
 		quantity: 1, 
 		quality: "Unique",
-		stats: 
-		[
+		stats: [
 			{ text: "Added:", color: "Neutral" },
 			{ text: "-50% maximum overheal on wearer", color: "Negative" },
 			{ text: "This weapon deploys 50% slower", color: "Negative" },
 			{ text: "This weapon holsters 75% slower", color: "Negative" },
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "While weapon is active", color: "Neutral" },
-			{ text: "30% damage vulnerability on wearer", color: "Negative" },
+			{ text: "30% damage vulnerability on wearer", color: "Negative" }
 		]
-	},
+	}
 ];
 
 const engineer = 
@@ -892,7 +893,7 @@ const sniper =
 			{ text: "Weapon fires tracer rounds", color: "Negative" },
 		]
 	},
-	{ 
+{ 
 		id: "Freds Website/items/sniper/Bushwacka.png", 
 		name: "The Bushwacka", 
 		quantity: 1, 
