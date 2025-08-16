@@ -99,9 +99,9 @@ const scout =
 		stats: 
 		[
 			{ text: "Added:", color: "Neutral" },
-			{ text: "-25% damage vs non-burning players", color: "Negative" },
-			{ text: "Removed:", color: "Neutral" },
-			{ text: "-25% damage penalty", color: "Negative" },
+			{ text: "Alt-Fire: Launches a flaming baseball that explodes and ignites for 4 seconds on hit.", color: "Positive" },
+			{ text: "Changed:", color: "Neutral" },
+			{ text: "Increased damage penalty from -25% to -33%", color: "Negative" },
 		]
 	},
 	{ 
@@ -322,7 +322,7 @@ const pyro =
 		quality: "Unique",
 		stats: [
 			{ text: "Added:", color: "Neutral" },
-			{ text: "+35% damage bonus vs burning players", color: "Positive" },
+			{ text: "+33% damage bonus vs burning players", color: "Positive" },
 			{ text: "Projectiles home toward burning players and dont arch", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Decreased projectile speed from +50% to -20%", color: "Negative" },

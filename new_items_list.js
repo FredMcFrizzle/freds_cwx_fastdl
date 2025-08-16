@@ -279,6 +279,7 @@ const sniper =
 			{ text: "+15 max health on wearer", color: "Positive" },
 			{ text: "+20% max secondary ammo on wearer", color: "Positive" },
 			{ text: "-88% max primary ammo on wearer", color: "Negative" },
+			{ text: "Critical damage is affected by range", color: "Negative" },
 		]
 	},
 ];
