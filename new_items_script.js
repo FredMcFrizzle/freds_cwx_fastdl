@@ -90,40 +90,43 @@ function updatePageDisplay() {
   pageDisplay.textContent = `${classNames[currentClass]}`;
 }
 
-function preview(item) {
-    const qualities = Object.keys(qualityTextColors);
-    itemPreview.innerHTML = `<img src="${item.id}" alt="${item.name}">;`;
-    qualities.forEach(q => itemPreview.classList.remove(q));
-    itemPreview.classList.add(`${item.quality}`);
+function preview(item) 
+{
+	const qualities = Object.keys(qualityTextColors);
+	itemPreview.innerHTML = `<img src="${item.id}" alt="${item.name}">;`;
+	qualities.forEach(q => itemPreview.classList.remove(q));
+	itemPreview.classList.add(`${item.quality}`);
 
-    itemName.textContent = `${item.name}`;
-    itemName.style.color = qualityTextColors[item.quality];
-    itemName.style.fontFamily = "tf2build"
-    itemName.style.marginTop = "2%"
+	itemName.textContent = `${item.name}`;
+	itemName.style.color = qualityTextColors[item.quality];
+	itemName.style.fontFamily = "tf2build"
+	itemName.style.marginTop = "2%"
 
-    const statsEl = document.getElementById("stats");
-    if (Array.isArray(item.stats)) {
-      statsEl.innerHTML = item.stats.map(stat => {
-        if (typeof stat === 'string') {
-          // support legacy string-only stats
-          return `<div>${stat}</div>`;
-        } else {
-          const safeText = stat.text || '';
-          const safeColor = stat.color || 'Neutral';
-          const StatColor = attributeColors[safeColor] || 'white';
-          return `<div style="color: ${StatColor}">${safeText}</div>`;
-        }
-      }).join('');
-    } else {
-      statsEl.innerHTML = `<div>No stats available</div>`;
-    }
-    if (item.url) {
-      workshop.style.display = "flex";
-      workshop.onclick = () => window.open(item.url, "_blank");
-    } else {
-      workshop.style.display = "none";
-    }
-  }
+	const statsEl = document.getElementById("stats");
+	if (Array.isArray(item.stats)) 
+	{
+		statsEl.innerHTML = item.stats.map(stat => 
+		{
+			if (typeof stat === 'string') {
+			// support legacy string-only stats
+			return `<div>${stat}</div>`;
+			} else {
+				const safeText = stat.text || '';
+				const safeColor = stat.color || 'Neutral';
+				const StatColor = attributeColors[safeColor] || 'white';
+				return `<div style="color: ${StatColor}">${safeText}</div>`;
+			}
+		}).join('');
+	} else {
+		statsEl.innerHTML = `<div>No stats available</div>`;
+	}
+	if (item.url) {
+	workshop.style.display = "flex";
+	workshop.onclick = () => window.open(item.url, "_blank");
+	} else {
+		workshop.style.display = "none";
+	}
+}
 
 prevBtn.addEventListener('click', () => {
   if (currentClass > 1) {
