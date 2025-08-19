@@ -170,6 +170,30 @@ a:hover+table {
   font-family: "tf2build", "tf2build", "sans-serif";
 }
 
+.workshop
+{
+  position: absolute;
+  display: none;
+  align-self: flex-end;
+  background: none;
+  border-style: hidden;
+
+  margin-top: 1%;
+  margin-right: 1%;
+  width: 4vw;
+  height: 4vw;
+}
+
+.workshop-img
+{
+  filter: brightness(20%) sepia(100%) saturate(100%);
+}
+.workshop-img:hover
+{
+  cursor: pointer;
+  filter: brightness(40%) sepia(100%) saturate(100%);
+}
+
 #inventory-display
 {
   display: flex;

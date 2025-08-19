@@ -541,7 +541,7 @@ const demoman =
 		quality: "Unique",
 		stats: [
 			{ text: "Added:", color: "Neutral" },
-			{ text: "Caber becomes re-armed after 30 seconds or on kill", color: "Positive" },
+			{ text: "On Kill: Caber becomes re-armed", color: "Positive" },
 		]
 	}
 ];

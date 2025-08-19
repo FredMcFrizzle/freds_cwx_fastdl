@@ -11,6 +11,7 @@ const scout =
 		name: "The Gambit", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2933504975",
 		stats: 
 		[
 			{ text: "50% faster firing speed", color: "Positive" },
@@ -29,6 +30,7 @@ const soldier =
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3131465908",
 		stats: 
 		[
 			{ text: "+120% damage bonus", color: "Positive" },
@@ -53,6 +55,7 @@ const soldier =
 		name: "The Monroe Doctrine", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3238530771",
 		stats: 
 		[
 			{ text: "+35% damage bonus", color: "Positive" },
@@ -68,6 +71,7 @@ const soldier =
 		name: "The Hornet's Nest", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=875862228",
 		stats: 
 		[
 			{ text: "+50% clip size", color: "Positive" },
@@ -80,6 +84,7 @@ const soldier =
 	{ 
 		id: "Freds Website/items/multi/Lead Barrel.png", 
 		name: "The Lead Barrel", 
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2485133469",
 		quantity: 1, 
 		quality: "Haunted",
 		stats: 
@@ -98,6 +103,7 @@ const pyro =
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3131465908",
 		stats: 
 		[
 			{ text: "+120% damage bonus", color: "Positive" },
@@ -112,6 +118,7 @@ const pyro =
 		name: "Ice Breaker", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=113310453",
 		stats: 
 		[
 			{ text: "On Hit: Freeze target for 8 seconds", color: "Positive" },
@@ -124,6 +131,7 @@ const pyro =
 		name: "The Lead Barrel", 
 		quantity: 1, 
 		quality: "Haunted",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2485133469",
 		stats: 
 		[
 			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
@@ -150,6 +158,7 @@ const demoman =
 		name: "The Primed Directive", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1439260629",
 		stats: 
 		[
 			{ text: "Hold down primary fire to prevent detonation", color: "Neutral" },
@@ -167,6 +176,7 @@ const heavy =
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3131465908",
 		stats: 
 		[
 			{ text: "+120% damage bonus", color: "Positive" },
@@ -181,6 +191,7 @@ const heavy =
 		name: "The Lead Barrel", 
 		quantity: 1, 
 		quality: "Haunted",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2485133469",
 		stats: 
 		[
 			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
@@ -197,6 +208,7 @@ const engineer =
 		name: "The Vintimille", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3131465908",
 		stats: 
 		[
 			{ text: "+120% damage bonus", color: "Positive" },
@@ -211,6 +223,7 @@ const engineer =
 		name: "The Gambit", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2933504975",
 		stats: 
 		[
 			{ text: "50% faster firing speed", color: "Positive" },
@@ -225,6 +238,7 @@ const engineer =
 		name: "The Lead Barrel", 
 		quantity: 1, 
 		quality: "Haunted",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2485133469",
 		stats: 
 		[
 			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
@@ -241,6 +255,7 @@ const medic =
 		name: "The Anesthetizer", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2822325393",
 		stats: 
 		[
 			{ text: "Attach to an enemy to drain health", color: "Positive" },
@@ -255,6 +270,7 @@ const medic =
 		name: "The Hypodermic Injector", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=433097312",
 		stats: 
 		[
 			{ text: "On Hit Teammate: Heal +75 health", color: "Positive" },
@@ -272,6 +288,7 @@ const sniper =
 		name: "The Usurper", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3367685493",
 		stats: 
 		[
 			{ text: "Crits on headshot", color: "Positive" },
@@ -291,6 +308,7 @@ const spy =
 		name: "The En Passant", 
 		quantity: 1, 
 		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=2854346396",
 		stats: 
 		[
 			{ text: "On a successful sidestab: +1 speed bonus and decloak time bonus (stacks up to 3)", color: "Positive" },

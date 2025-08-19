@@ -40,6 +40,7 @@ const itemPreview = document.getElementById('item-preview');
 const itemName = document.getElementById('name');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const workshop = document.getElementById('workshopbutton');
 
 function renderInventory() {
 inventoryEl.innerHTML = '';
@@ -115,6 +116,12 @@ function preview(item) {
       }).join('');
     } else {
       statsEl.innerHTML = `<div>No stats available</div>`;
+    }
+    if (item.url) {
+      workshop.style.display = "flex";
+      workshop.onclick = () => window.open(item.url, "_blank");
+    } else {
+      workshop.style.display = "none";
     }
   }
 
