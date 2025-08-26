@@ -102,6 +102,8 @@ const scout =
 			{ text: "Alt-Fire: Launches a flaming baseball that explodes and ignites for 4 seconds on hit.", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Increased damage penalty from -25% to -33%", color: "Negative" },
+			{ text: "Removed:", color: "Neutral" },
+			{ text: "+25% fire damage resistance while deployed", color: "Positive" },
 		]
 	},
 	{ 
