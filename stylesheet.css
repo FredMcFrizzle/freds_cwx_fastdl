@@ -179,19 +179,23 @@ a:hover+table {
   border-style: hidden;
 
   margin-top: 1%;
-  margin-right: 1%;
-  width: 5vw;
-  height: 5vw;
+  margin-right: 1%
 }
 
 .workshop-img
 {
   filter: brightness(20%) sepia(100%) saturate(100%);
+  object-fit: contain;
+  width: 5vw;
+  height: 5vw;
 }
 .workshop-img:hover
 {
   cursor: pointer;
   filter: brightness(40%) sepia(100%) saturate(100%);
+  object-fit: contain;
+  width: 5vw;
+  height: 5vw;
 }
 
 #inventory-display

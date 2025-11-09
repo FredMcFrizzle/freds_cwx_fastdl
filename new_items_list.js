@@ -246,6 +246,19 @@ const engineer =
 			{ text: "In the future, Weapons will be randomly generated!", color: "Description" },
 		]
 	},
+	{ 
+		id: "Freds Website/items/engineer/Scrap Sentinel.png", 
+		name: "The Scrap Sentinel", 
+		quantity: 1, 
+		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=673352097",
+		stats: 
+		[
+			{ text: "Replaces the Sentry with a Sentry-Drone that follows the player", color: "Positive" },
+			{ text: "Sentry gun cannot be upgraded", color: "Negative" },
+			{ text: "-15 max health on wearer", color: "Negative" },
+		]
+	},
 ];
 
 const medic = 

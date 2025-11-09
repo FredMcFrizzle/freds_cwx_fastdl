@@ -121,7 +121,7 @@ function preview(item)
 		statsEl.innerHTML = `<div>No stats available</div>`;
 	}
 	if (item.url) {
-	workshop.style.display = "flex";
+	workshop.style.display = "block";
 	workshop.onclick = () => window.open(item.url, "_blank");
 	} else {
 		workshop.style.display = "none";
