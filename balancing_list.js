@@ -51,7 +51,7 @@ const scout =
 		stats: 
 		[
 			{ text: "Added:", color: "Neutral" },
-			{ text: "+50% damage vs stunned players", color: "Positive" },
+			{ text: "+50% damage vs slowed players", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Increased charge timer from 5 seconds to 7 seconds", color: "Negative" },
 		]
