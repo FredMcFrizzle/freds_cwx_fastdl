@@ -105,6 +105,7 @@ const soldier =
 			{ text: "+50% bullets per shot", color: "Positive" },
 			{ text: "+30% faster firing speed", color: "Positive" },
 			{ text: "Knockback on the target and shooter", color: "Positive" },
+			{ text: "Alt-Fire: Fires a Meathook, which launches you toward the target", color: "Positive" },
 			{ text: "Weapon spread increases as health decreases", color: "Negative" },
 			{ text: "-67% clip size penalty", color: "Negative" },
 		]
@@ -152,6 +153,22 @@ const pyro =
 			{ text: "Gain 4 random attributes on respawn", color: "Positive" },
 			{ text: "Holiday Restriction: Halloween / Full Moon", color: "Negative" },
 			{ text: "In the future, Weapons will be randomly generated!", color: "Description" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/soldier/Double Trouble.png", 
+		name: "The Double Trouble", 
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3377417391",
+		quantity: 1, 
+		quality: "Unique",
+		stats: 
+		[
+			{ text: "+50% bullets per shot", color: "Positive" },
+			{ text: "+30% faster firing speed", color: "Positive" },
+			{ text: "Knockback on the target and shooter", color: "Positive" },
+			{ text: "Alt-Fire: Fires a Meathook, which launches you toward the target", color: "Positive" },
+			{ text: "Weapon spread increases as health decreases", color: "Negative" },
+			{ text: "-67% clip size penalty", color: "Negative" },
 		]
 	},
 ];
