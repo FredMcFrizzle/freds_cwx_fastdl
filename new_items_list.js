@@ -108,6 +108,7 @@ const soldier =
 			{ text: "Alt-Fire: Fires a Meathook, which launches you toward the target", color: "Positive" },
 			{ text: "Weapon spread increases as health decreases", color: "Negative" },
 			{ text: "-67% clip size penalty", color: "Negative" },
+			{ text: "-20% damage penalty", color: "Negative" },
 		]
 	},
 ];
@@ -164,11 +165,12 @@ const pyro =
 		stats: 
 		[
 			{ text: "+50% bullets per shot", color: "Positive" },
-			{ text: "+20% faster firing speed", color: "Positive" },
+			{ text: "+25% faster firing speed", color: "Positive" },
 			{ text: "Knockback on the target and shooter", color: "Positive" },
 			{ text: "Alt-Fire: Fires a Meathook, which launches you toward the target", color: "Positive" },
 			{ text: "Weapon spread increases as health decreases", color: "Negative" },
 			{ text: "-67% clip size penalty", color: "Negative" },
+			{ text: "-20% damage penalty", color: "Negative" },
 		]
 	},
 	{ 

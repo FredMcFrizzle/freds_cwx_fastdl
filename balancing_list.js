@@ -238,7 +238,20 @@ const soldier =
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "hidden -33% clip size penalty", color: "Negative" },
 		]
-	}
+	},
+	{ 
+		id: "Freds Website/items/multi/Panic Attack.png", 
+		name: "The Panic Attack", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Revert:", color: "Neutral" },
+			{ text: "+33% faster reload time", color: "Positive" },
+			{ text: "Fire rate increases as health decreases", color: "Positive" },
+			{ text: "Hold fire to load up to 4 shells", color: "Neutral" },
+			{ text: "-50% less accurate", color: "Negative" },
+		]
+	},
 ]
 ;
 
@@ -404,7 +417,20 @@ const pyro =
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "-20% damage penalty", color: "Negative" },
 		]
-	}
+	},
+	{ 
+		id: "Freds Website/items/multi/Panic Attack.png", 
+		name: "The Panic Attack", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Revert:", color: "Neutral" },
+			{ text: "+33% faster reload time", color: "Positive" },
+			{ text: "Fire rate increases as health decreases", color: "Positive" },
+			{ text: "Hold fire to load up to 4 shells", color: "Neutral" },
+			{ text: "-50% less accurate", color: "Negative" },
+		]
+	},
 ];
 
 const demoman = 
@@ -694,7 +720,20 @@ const heavy =
 			{ text: "While weapon is active", color: "Neutral" },
 			{ text: "30% damage vulnerability on wearer", color: "Negative" }
 		]
-	}
+	},
+	{ 
+		id: "Freds Website/items/multi/Panic Attack.png", 
+		name: "The Panic Attack", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Revert:", color: "Neutral" },
+			{ text: "+33% faster reload time", color: "Positive" },
+			{ text: "Fire rate increases as health decreases", color: "Positive" },
+			{ text: "Hold fire to load up to 4 shells", color: "Neutral" },
+			{ text: "-50% less accurate", color: "Negative" },
+		]
+	},
 ];
 
 const engineer = 
@@ -786,6 +825,19 @@ const engineer =
 		[
 			{ text: "Removed:", color: "Neutral" },
 			{ text: "Wrangled sentries gain a shield that reduces damage and repairs by 66%", color: "Neutral" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/multi/Panic Attack.png", 
+		name: "The Panic Attack", 
+		quantity: 1, 
+		quality: "Unique",
+		stats: [
+			{ text: "Revert:", color: "Neutral" },
+			{ text: "+33% faster reload time", color: "Positive" },
+			{ text: "Fire rate increases as health decreases", color: "Positive" },
+			{ text: "Hold fire to load up to 4 shells", color: "Neutral" },
+			{ text: "-50% less accurate", color: "Negative" },
 		]
 	},
 ];
