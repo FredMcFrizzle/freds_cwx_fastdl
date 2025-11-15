@@ -1,0 +1,26 @@
+
+!!!MAKE THE ANESTHETIZER WORK AGAIN!!!
+
+The Hypodermic Injector:
+- make "slowheal teammate on hit" attribute
+
+The Baleful Beacon:
+- make "fire builds crit" only work on afterburn
+- make "heal on after" attribute
+- make "extinguish on death" attribute
+
+The Auto Matilda:
+- Figure out a way to make this enjoyable for both sniping and playing against.
+
+The En Passant:
+- Make more lenient on sidestab or figure out better stat.
+
+The Gambit:
+- Make more fun to use
+
+The Double Trouble:
+- Rebalance to make it closer to the Panic Attack for damage.
+
+The Panic Attack:
+- Revert to old sneeze gun because it was fun.
+

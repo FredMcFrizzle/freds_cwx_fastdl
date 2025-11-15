@@ -103,7 +103,7 @@ const soldier =
 		stats: 
 		[
 			{ text: "+50% bullets per shot", color: "Positive" },
-			{ text: "+30% faster firing speed", color: "Positive" },
+			{ text: "+20% faster firing speed", color: "Positive" },
 			{ text: "Knockback on the target and shooter", color: "Positive" },
 			{ text: "Alt-Fire: Fires a Meathook, which launches you toward the target", color: "Positive" },
 			{ text: "Weapon spread increases as health decreases", color: "Negative" },
@@ -139,7 +139,7 @@ const pyro =
 		[
 			{ text: "On Hit: Freeze target for 8 seconds", color: "Positive" },
 			{ text: "50% fire damage dealt to frozen targets is returned as health", color: "Positive" },
-			{ text: "-24% damage penalty", color: "Negative" },
+			{ text: "-50% health from packs on wearer", color: "Negative" },
 		]
 	},
 	{ 
@@ -164,11 +164,24 @@ const pyro =
 		stats: 
 		[
 			{ text: "+50% bullets per shot", color: "Positive" },
-			{ text: "+30% faster firing speed", color: "Positive" },
+			{ text: "+20% faster firing speed", color: "Positive" },
 			{ text: "Knockback on the target and shooter", color: "Positive" },
 			{ text: "Alt-Fire: Fires a Meathook, which launches you toward the target", color: "Positive" },
 			{ text: "Weapon spread increases as health decreases", color: "Negative" },
 			{ text: "-67% clip size penalty", color: "Negative" },
+		]
+	},
+	{ 
+		id: "Freds Website/items/pyro/Baleful Beacon.png", 
+		name: "The Baleful Beacon", 
+		quantity: 1, 
+		quality: "Unique",
+		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=250",
+		stats: 
+		[
+			{ text: "Burning players charge a crit while active", color: "Positive" },
+			{ text: "+5 health gain per afterburn tick while active", color: "Positive" },
+			{ text: "On death: Enemies are extinguished", color: "Negative" },
 		]
 	},
 ];
@@ -318,7 +331,7 @@ const medic =
 		url: "https://steamcommunity.com/sharedfiles/filedetails/?id=433097312",
 		stats: 
 		[
-			{ text: "On Hit Teammate: Heal +75 health", color: "Positive" },
+			{ text: "On Hit Teammate: Slowly heal +125 health", color: "Positive" },
 			{ text: "On Hit: Bleed for 10 seconds", color: "Positive" },
 			{ text: "-20% damage penalty", color: "Negative" },
 			{ text: "-20% slower firing speed", color: "Negative" },
