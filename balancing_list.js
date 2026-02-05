@@ -102,8 +102,6 @@ const scout =
 			{ text: "Alt-Fire: Launches a flaming baseball that explodes and ignites for 4 seconds on hit.", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Increased damage penalty from -25% to -33%", color: "Negative" },
-			{ text: "Removed:", color: "Neutral" },
-			{ text: "+25% fire damage resistance while deployed", color: "Positive" },
 		]
 	},
 	{ 
@@ -177,8 +175,8 @@ const soldier =
 			{ text: "New Stats:", color: "Neutral" },
 			{ text: "While weapon is active:", color: "Neutral" },
 			{ text: "Deals bonus damage equal to halve the difference between your health and your targets", color: "Positive" },
+			{ text: "Damage vulnerability increases as health increases", color: "Negative" },
 			{ text: "-25% damage penalty", color: "Negative" },
-			{ text: "-90% less healing from Medic sources", color: "Negative" },
 		]
 	},
 	{ 
@@ -188,7 +186,7 @@ const soldier =
 		quality: "Unique",
 		stats: [
 			{ text: "Added:", color: "Neutral" },
-			{ text: "+30% more explosion knockback", color: "Positive" },
+			{ text: "+5% banner rage gained on hit", color: "Positive" },
 			{ text: "Changed:", color: "Neutral" },
 			{ text: "Decreased blast damage from rocket jumps from -25% to -35%", color: "Positive" },
 		]
@@ -597,7 +595,7 @@ const heavy =
 			{ text: "Added:", color: "Neutral" },
 			{ text: "+33% faster recharge rate", color: "Positive" },
 			{ text: "Removed:", color: "Neutral" },
-			{ text: "+20% damage vulernability while active", color: "Negative" }
+			{ text: "+20% damage vulnerability while active", color: "Negative" }
 		]
 	},
 	{ 
