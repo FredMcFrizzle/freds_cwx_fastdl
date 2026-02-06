@@ -7,58 +7,7 @@
 		/////////////////////
 		//  Scout Weapons  //
 		/////////////////////
-		"9000" // Bonk! Atomic Punch
-		{
-			// Name and Description
-			"name"							"Bonk! Atomic Punch"
-			"item_name"						"Bonk! Atomic Punch"
-			"item_logname"					"Bonk! Atomic Punch"
-			"item_type_name"				"Energy Drink"
-			"item_description"				"#TF_Unique_Achievement_EnergyDrink_desc"
-			"item_quality"					"unique"
-			"propername" 					"0"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_lunchbox"
-			"item_slot"						"secondary"
-			"used_by_classes"
-			{
-				"scout"						"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"mod bat launches balls"							"1"
-				
-				///////////////    Negative Attributes    ///////////////
-				"fire rate penalty"									"1.25"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"provide on active"									"1"
-				"special taunt"										"1"
-				"allowed in medieval mode"							"1"
-				"gesture speed increase"							"3"
-				"min_viewmodel_offset"								"10 -3 -10"
-			}
-			"attributes"
-			{
-				"custom lunchbox throwable model"
-				{
-					"attribute_class"		"custom_lunchbox_throwable_model"
-					"value" 				"models/weapons/c_models/c_energy_drink/c_energy_drink.mdl"
-				}
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
-			"model_player"					"models/weapons/c_models/c_energy_drink/c_energy_drink.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_soda_can_pickup.wav"
-			"drop_sound"					"ui/item_soda_can_drop.wav"
-			"anim_slot"						"item1"
-		}
-		"9001" // The Sandman
+		"9000" // The Sandman
 		{
 			// Name and Description
 			"name"							"Sandman"
@@ -97,7 +46,7 @@
 			"drop_sound"					"ui/item_wood_pole_drop.wav"
 			"item_iconname"					"sandman"
 		}
-		"9002" // The Candy Cane
+		"9001" // The Candy Cane
 		{
 			// Name and Description
 			"name"							"Candy Cane"
@@ -138,7 +87,7 @@
 			"drop_sound"					"ui/item_wood_pole_drop.wav"
 			"item_iconname"					"candy_cane"
 		}
-		"9003" // The Atomizer
+		"9002" // The Atomizer
 		{
 			// Name and Description
 			"name"							"Atomizer"
@@ -196,7 +145,7 @@
 				"skin" "0"
 			}
 		}
-		"9004" // The Force-a-Nature
+		"9003" // The Force-a-Nature
 		{
 			// Name and Description
 			"name"							"Force-a-Nature"
@@ -240,6 +189,22 @@
 			"drop_sound"					"ui/item_metal_weapon_drop.wav"
 			"item_iconname"					"force_a_nature"
 			"anim_slot"						"item2"
+			"visuals_red"
+			{
+				"skin" "0"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+			}
+			"visuals_grn"
+			{
+				"skin" "1"
+			}
+			"visuals_ylw"
+			{
+				"skin" "2"
+			}
 			"visuals"
 			{
 				"sound_single_shot"	"Weapon_Scatter_Gun_Double.Single"
@@ -263,7 +228,7 @@
 				}
 			}
 		}
-		"9005" // The Soda Popper
+		"9004" // The Soda Popper
 		{
 			// Name and Description
 			"name"							"Soda Popper"
@@ -329,7 +294,7 @@
 				}
 			}
 		}
-		"9006" // Baby Face's Blaster
+		"9005" // Baby Face's Blaster
 		{
 			// Name and Description
 			"name"							"Baby Face's Blaster"
@@ -377,46 +342,6 @@
 				"sound_burst"				"Weapon_Brawler_Blaster.SingleCrit"
 			}
 		}
-		"9007" // The Holy Mackerel
-		{
-			// Name and Description
-			"name"							"Holy Mackerel"
-			"item_name"						"Holy Mackerel"
-			"item_logname"					"Holy Mackerel"
-			"item_type_name"				"#TF_Weapon_Fish"
-			"item_description"				"#TF_TheHolyMackerel_Desc"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_bat_fish"
-			"item_slot"						"melee"
-			"used_by_classes"
-			{
-				"scout"					"1"
-			}
-			"static_attrs"
-			{
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"kill eater score type"								"7"
-				"kill eater kill type"								"7"
-				"min_viewmodel_offset"								"10 0 -7"		
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_holymackerel/c_holymackerel"
-			"model_player"					"models/workshop/weapons/c_models/c_holymackerel/c_holymackerel.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_gooey_pickup.wav"
-			"drop_sound"					"ui/item_gooey_pickup.wav"
-			"item_iconname"					"holymackerel"
-			"visuals"
-			{
-				"sound_melee_hit"			"Weapon_HolyMackerel.HitFlesh"
-				"sound_melee_hit_world"		"Weapon_HolyMackerel.HitWorld"
-			}
-		}
 		
 		///////////////////////
 		//  Soldier Weapons  //
@@ -453,6 +378,14 @@
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
 				"min_viewmodel_offset"								"10 -3 -10"		
+			}
+			"attributes"
+			{
+				"no self blast dmg"
+				{
+					"attribute_class"								"no_self_blast_dmg"
+					"value"											"1"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -834,6 +767,46 @@
 				"sound_melee_hit_world"		"Weapon_Shovel.HitWorld"
 			}
 		}
+		"9108" // The Direct Hit
+		{
+			// Name and Description
+			"name"							"Direct Hit"
+			"item_name"						"Direct Hit"
+			"item_logname"					"Direct Hit"
+			"item_type_name"				"#TF_Weapon_RocketLauncher"
+			"item_description"				"I've have taken back liberty from the weak and French!"
+			"item_quality"					"unique"
+			"propername" 					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_rocketlauncher_directhit"
+			"item_slot"						"primary"
+			"used_by_classes"
+			{
+				"soldier"					"1"
+			}
+			"static_attrs"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"damage bonus"										"1.25"
+				"Projectile speed increased"						"1.8"
+				"mod mini-crit airborne"							"1"
+				
+				///////////////    Negative Attributes    ///////////////
+				"Blast radius decreased"							"0.3"
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"min_viewmodel_offset"								"10 -3 -10"
+			}
+			
+			// Sounds & Visuals
+			"image_inventory"				"backpack/weapons/c_models/c_directhit/c_directhit"
+			"model_player"					"models/weapons/c_models/c_directhit/c_directhit.mdl"
+			"attach_to_hands" 				"1"
+			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"					"ui/item_heavy_gun_drop.wav"
+		}
 		
 		////////////////////
 		//  Pyro Weapons  //
@@ -845,7 +818,7 @@
 			"item_name"						"Backburner"
 			"item_logname"					"Backburner"
 			"item_type_name"				"#TF_Weapon_Flamethrower"
-			"item_description"				"back burngr"
+			"item_description"				"Why does spy get to have all the fun?"
 			"item_quality"					"unique"
 			"propername" 					"1"
 			
@@ -888,6 +861,22 @@
 			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"					"ui/item_heavy_gun_drop.wav"
 			"item_iconname"					"backburner"
+			"visuals_red"
+			{
+				"skin" "0"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+			}
+			"visuals_grn"
+			{
+				"skin" "1"
+			}
+			"visuals_ylw"
+			{
+				"skin" "0"
+			}
 			"visuals"
 			{
 				"sound_single_shot"			"Weapon_BackBurner.FireStart"
@@ -1547,10 +1536,185 @@
 		/////////////////////
 		//  Heavy Weapons  //
 		/////////////////////
+		"9400" // The Dalokohs Bar
+		{
+			// Name and Description
+			"name"							"Dalokohs Bar"
+			"item_name"						"Dalokohs Bar"
+			"item_logname"					"Dalokohs Bar"
+			"item_type_name"				"#TF_Weapon_Sandvich"
+			"item_description"				"#TF_Lunchbox_Chocolate_desc"
+			"item_quality"					"unique"
+			"propername" 					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_lunchbox"
+			"item_slot"						"secondary"
+			"used_by_classes"
+			{
+				"heavy"						"1"
+			}
+			"static_attrs"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"lunchbox adds maxhealth bonus"						"1"
+				"mult_item_meter_charge_rate_desc"					"0.4"
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"kill eater score type"								"50"
+				"min_viewmodel_offset"								"10 0 -11"
+				"special taunt"										"1"
+				"allowed in medieval mode"							"1"
+				"item_meter_charge_type"							"1"
+				"item_meter_charge_rate"							"10"
+				"meter_label"										"#TF_Sandwich"
+			}
+			// Sounds & Visuals
+			"anim_slot"						"item1"
+			"image_inventory"				"backpack/workshop/weapons/c_models/c_chocolate/c_chocolate"
+			"model_player"					"models/workshop/weapons/c_models/c_chocolate/c_chocolate.mdl"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_sandwich_pickup.wav"
+			"drop_sound"					"ui/item_sandwich_drop.wav"
+		}
+		"9401" // The Buffalo Steak Sandvich
+		{
+			// Name and Description
+			"name"							"Buffalo Steak Sandvich"
+			"item_name"						"Buffalo Steak Sandvich"
+			"item_logname"					"Buffalo Steak Sandvich"
+			"item_type_name"				"#TF_Weapon_Sandvich"
+			"item_description"				"#TF_BuffaloSteak_Desc"
+			"item_quality"					"unique"
+			"propername" 					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_lunchbox"
+			"item_slot"						"secondary"
+			"used_by_classes"
+			{
+				"heavy"						"1"
+			}
+			"static_attrs"
+			{
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"lunchbox adds minicrits"							"2"
+				"kill eater score type"								"50"
+				"min_viewmodel_offset"								"10 0 -11"
+				"special taunt"										"1"
+				"allowed in medieval mode"							"1"
+				"item_meter_charge_type"							"1"
+				"item_meter_charge_rate"							"20"
+				"meter_label"										"#TF_Sandwich"
+			}
+			// Sounds & Visuals
+			"anim_slot"						"item1"
+			"image_inventory"				"backpack/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak"
+			"model_player"					"models/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak.mdl"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_sandwich_pickup.wav"
+			"drop_sound"					"ui/item_sandwich_drop.wav"
+		}
 		
 		////////////////////////
 		//  Engineer Weapons  //
 		////////////////////////
+		"9500" // The Frontier Justice
+		{
+			// Name and Description
+			"name"							"Frontier Justice"
+			"item_name"						"Frontier Justice"
+			"item_logname"					"Frontier Justice"
+			"item_type_name"				"#TF_Weapon_Shotgun"
+			"item_description"				"Now your making me mad!"
+			"item_quality"					"unique"
+			"propername" 					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_sentry_revenge"
+			"item_slot"						"primary"
+			"used_by_classes"
+			{
+				"Engineer"						"1"
+			}
+			"static_attrs"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"mod sentry killed revenge"							"1"
+				"lose revenge crits on death DISPLAY ONLY"			"1"
+				
+				///////////////    Negative Attributes    ///////////////
+				"crit mod disabled"									"0"
+				"clip size penalty"									"0.5"
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"min_viewmodel_offset"								"10 0 -11"
+			}
+			// Sounds & Visuals
+			"image_inventory"				"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
+			"model_player"					"models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
+			"item_iconname"					"frontier_kill"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"					"ui/item_heavy_gun_drop.wav"
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_FrontierJustice.Single"
+				"sound_burst"				"Weapon_FrontierJustice.SingleCrit"
+			}	
+		}
+		"9501" // The Gunslinger
+		{
+			// Name and Description
+			"name"							"Gunslinger"
+			"item_name"						"Gunslinger"
+			"item_logname"					"Gunslinger"
+			"item_type_name"				"#TF_Weapon_Robot_Arm"
+			"item_description"				"Funny robot arm"
+			"item_quality"					"unique"
+			"propername" 					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_robot_arm"
+			"item_slot"						"melee"
+			"used_by_classes"
+			{
+				"Engineer"					"1"
+			}
+			"static_attrs"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"max health additive bonus"							"25"
+				"engineer sentry build rate multiplier"				"2.5"
+				
+				///////////////    Negative Attributes    ///////////////
+				"mod wrench builds minisentry"						"1"
+				"crit mod disabled"									"0"
+				"clip size penalty"									"0.5"
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"min_viewmodel_offset"								"10 0 -11"
+			}
+			// Sounds & Visuals
+			"image_inventory"				"backpack/weapons/gunslinger"
+			"item_iconname"					"frontier_kill"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_robot_arm_pickup.wav"
+			"drop_sound"					"ui/item_robot_arm_drop.wav"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"rightarm"				"1"
+				}
+				"sound_single_shot"			"Weapon_FrontierJustice.Single"
+				"sound_burst"				"Weapon_FrontierJustice.SingleCrit"
+			}	
+		}
 		
 		/////////////////////
 		//  Medic Weapons  //
@@ -1654,6 +1818,46 @@
 				"sound_single_shot"			"Weapon_SydneySleeper.Single"
 				"sound_burst"				"Weapon_SydneySleeper.SingleCrit"
 			}
+		}
+		"9702"	// The Tribalman's Shiv
+		{
+			// Name and Description
+			"name"							"Tribalman's Shiv"
+			"item_name"						"Tribalman's Shiv"
+			"item_logname"					"Tribalman's Shiv"
+			"item_type_name"				"#TF_Weapon_Club"
+			"item_description"				"This is wall climbing in the bush!"
+			"item_quality"					"unique"
+			"propername"					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_club"
+			"item_slot"						"melee"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"static_attrs"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"bleeding duration"									"6"
+				
+				///////////////    Negative Attributes    ///////////////
+				"damage penalty"									"0.6"
+				hit self on miss									"1"
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"min_viewmodel_offset"								"10 0 -6"
+			}
+			
+			// Sounds & Visuals
+			"image_inventory"				"backpack/workshop/weapons/c_models/c_wood_machete/c_wood_machete"
+			"model_player"					"models/workshop/weapons/c_models/c_wood_machete/c_wood_machete.mdl"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_knife_small_pickup.wav"
+			"drop_sound"					"ui/item_metal_weapon_drop.wav"
+			"item_iconname"					"tribalkukri"
 		}
 		
 		///////////////////
@@ -1788,6 +1992,16 @@
 			"attribute_class"		"golfclub_knockback_desc"
 			"description_string"		"#Attrib_DeflectOnSmack"
 			"description_format"		"value_is_additive"
+			"hidden"		"0"
+			"effect_type"		"positive"
+			"stored_as_integer"		"0"
+		}
+		"9002"
+		{
+			"name"		"mult_item_meter_charge_rate_desc"
+			"attribute_class"		"mult_item_meter_charge_rate"
+			"description_string"		"#Attrib_ChargeMeterRateMult"
+			"description_format"		"value_is_inverted_percentage"
 			"hidden"		"0"
 			"effect_type"		"positive"
 			"stored_as_integer"		"0"
