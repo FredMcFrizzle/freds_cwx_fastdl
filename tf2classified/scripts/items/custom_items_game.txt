@@ -1844,7 +1844,7 @@
 				
 				///////////////    Negative Attributes    ///////////////
 				"damage penalty"									"0.6"
-				hit self on miss									"1"
+				"hit self on miss"									"1"
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
