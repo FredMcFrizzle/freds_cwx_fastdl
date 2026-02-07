@@ -27,15 +27,23 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -7"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"mod bat launches balls"							"1"
+				"mod bat launches balls"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"fire rate penalty"									"1.25"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -7"
+				"fire rate penalty"
+				{
+					"attribute_class"								"mult_postfiredelay"
+					"value"											"1.25"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -46,48 +54,7 @@
 			"drop_sound"					"ui/item_wood_pole_drop.wav"
 			"item_iconname"					"sandman"
 		}
-		"9001" // The Candy Cane
-		{
-			// Name and Description
-			"name"							"Candy Cane"
-			"item_name"						"Candy Cane"
-			"item_logname"					"Candy Cane"
-			"item_type_name"				"#TF_Weapon_Bat"
-			"item_description"				"In the badlands its Christmas every day!"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_bat"
-			"item_slot"						"melee"
-			"used_by_classes"
-			{
-				"scout"						"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"drop health pack on kill"							"1"
-				"health from packs increased"						"2"
-				
-				///////////////    Negative Attributes    ///////////////
-				"max health additive penalty"						"-15"
-				"health from healers reduced"						"0"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -7"
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
-			"model_player"					"models/workshop/weapons/c_models/c_candy_cane/c_candy_cane.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_wood_pole_pickup.wav"
-			"drop_sound"					"ui/item_wood_pole_drop.wav"
-			"item_iconname"					"candy_cane"
-		}
-		"9002" // The Atomizer
+		"9001" // The Atomizer
 		{
 			// Name and Description
 			"name"							"Atomizer"
@@ -107,16 +74,28 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -7"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"air dash count"									"1"
+				"air dash count"
+				{
+					"attribute_class"								"air_dash_count"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"single wep deploy time increased"					"1.5"
-				"dmg penalty vs players"							"0.85"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -7"
+				"single wep deploy time increased"
+				{
+					"attribute_class"								"mult_single_wep_deploy_time"
+					"value"											"1.5"
+				}
+				"dmg penalty vs players"
+				{
+					"attribute_class"								"mult_dmg_vs_players"
+					"value"											"0.85"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -145,7 +124,7 @@
 				"skin" "0"
 			}
 		}
-		"9003" // The Force-a-Nature
+		"9002" // The Force-a-Nature
 		{
 			// Name and Description
 			"name"							"Force-a-Nature"
@@ -165,20 +144,47 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -10"	
+				"class select override vcd"							"class_select_nailgun"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"scattergun has knockback"							"1"
-				"fire rate bonus"									"0.5"
-				"bullets per shot bonus"							"1.2"
+				"scattergun has knockback"
+				{
+					"attribute_class"								"set_scattergun_has_knockback"
+					"value"											"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"								"mult_postfiredelay"
+					"value"											"0.5"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class"								"mult_bullets_per_shot"
+					"value"											"1.2"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"damage penalty"									"0.9"
-				"clip size penalty"									"0.34"
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value"											"0.9"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"								"mult_clipsize"
+					"value"											"0.34"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"scattergun no reload single"						"1"
-				"min_viewmodel_offset"								"10 0 -10"	
-				"class select override vcd"							"class_select_nailgun"
+				"scattergun no reload single"
+				{
+					"attribute_class"								"set_scattergun_no_reload_single"
+					"value"											"1"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -199,7 +205,7 @@
 			}
 			"visuals_grn"
 			{
-				"skin" "1"
+				"skin" "2"
 			}
 			"visuals_ylw"
 			{
@@ -228,73 +234,7 @@
 				}
 			}
 		}
-		"9004" // The Soda Popper
-		{
-			// Name and Description
-			"name"							"Soda Popper"
-			"item_name"						"Soda Popper"
-			"item_logname"					"Soda Popper"
-			"item_type_name"				"#TF_Weapon_Scattergun"
-			"item_description"				"#TF_SodaPopper_Desc"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_soda_popper"
-			"item_slot"						"primary"
-			"used_by_classes"
-			{
-				"scout"						"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"hype on damage"									"1"
-				"fire rate bonus"									"0.5"
-				"Reload time decreased"								"0.75"
-				
-				///////////////    Negative Attributes    ///////////////
-				"clip size penalty"									"0.34"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"scattergun no reload single"						"1"
-				"min_viewmodel_offset"								"10 0 -10"	
-				"class select override vcd"							"class_select_nailgun"
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_soda_popper/c_soda_popper"
-			"model_player"					"models/workshop/weapons/c_models/c_soda_popper/c_soda_popper.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"					"ui/item_heavy_gun_drop.wav"
-			"item_iconname"					"soda_popper"
-			"anim_slot"						"item2"
-			"visuals"
-			{
-				"sound_single_shot"			"Weapon_Soda_Popper.Single"
-				"sound_burst"				"Weapon_Soda_Popper.SingleCrit"
-				"muzzle_flash"				"muzzle_bignasty"
-				"tracer_effect"				"bullet_bignasty_tracer01"
-
-				"animation_replacement"
-				{
-					"ACT_VM_IDLE"						"ACT_ITEM2_VM_IDLE"
-					"ACT_VM_DRAW"						"ACT_ITEM2_VM_DRAW"
-					"ACT_VM_HOLSTER"					"ACT_ITEM2_VM_HOLSTER"
-					"ACT_VM_PULLBACK"					"ACT_ITEM2_VM_PULLBACK"
-					"ACT_VM_PRIMARYATTACK"				"ACT_ITEM2_VM_PRIMARYATTACK"
-					"ACT_VM_SECONDARYATTACK"			"ACT_ITEM2_VM_SECONDARYATTACK"
-					"ACT_VM_RELOAD"						"ACT_ITEM2_VM_RELOAD"
-					"ACT_VM_DRYFIRE"					"ACT_ITEM2_VM_DRYFIRE"
-					"ACT_VM_IDLE_TO_LOWERED"			"ACT_ITEM2_VM_IDLE_TO_LOWERED"
-					"ACT_VM_IDLE_LOWERED"				"ACT_ITEM2_VM_IDLE_LOWERED"
-					"ACT_VM_LOWERED_TO_IDLE"			"ACT_ITEM2_VM_LOWERED_TO_IDLE"
-				}
-			}
-		}
-		"9005" // Baby Face's Blaster
+		"9003" // Baby Face's Blaster
 		{
 			// Name and Description
 			"name"							"Baby Face's Blaster"
@@ -314,18 +254,38 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -12"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"boost on damage"									"1"
+				"boost on damage"
+				{
+					"attribute_class"								"boost_on_damage"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"clip size penalty"									"0.66"
-				"move speed penalty"								"0.8"
-				"hype resets on jump"								"50"
-				"lose hype on take damage"							"1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"	
-				"min_viewmodel_offset"								"10 0 -12"
+				"clip size penalty"
+				{
+					"attribute_class"								"mult_clipsize"
+					"value"											"0.66"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"								"mult_player_movespeed"
+					"value"											"0.8"
+				}
+				"hype resets on jump"
+				{
+					"attribute_class"								"hype_resets_on_jump"
+					"value"											"50"
+				}
+				"lose hype on take damage"
+				{
+					"attribute_class"								"lose_hype_on_take_damage"
+					"value"											"1"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -366,24 +326,36 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"no self blast dmg"									"1"
-				"maxammo primary increased"							"3"
-				
-				///////////////    Negative Attributes    ///////////////
-				"damage penalty"									"0"
-				"crit mod disabled"									"0"
-				"cannot pick up intelligence"						"1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"min_viewmodel_offset"								"10 -3 -10"		
 			}
 			"attributes"
 			{
+				///////////////    Positive Attributes    ///////////////
 				"no self blast dmg"
 				{
 					"attribute_class"								"no_self_blast_dmg"
+					"value"											"1"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"								"mult_maxammo_primary"
+					"value"											"3"
+				}
+				
+				///////////////    Negative Attributes    ///////////////
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value"											"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
+				"cannot pick up intelligence"
+				{
+					"attribute_class"								"cannot_pick_up_intelligence"
 					"value"											"1"
 				}
 			}
@@ -400,54 +372,7 @@
 				"sound_special1"			"Weapon_Rocket_Jumper.Explode"
 			}
 		}
-		"9101" // The Liberty Launcher
-		{
-			// Name and Description
-			"name"							"Liberty Launcher"
-			"item_name"						"Liberty Launcher"
-			"item_logname"					"Liberty Launcher"
-			"item_type_name"				"#TF_Weapon_RocketLauncher"
-			"item_description"				"I've have taken back liberty from the weak and French!"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_rocketlauncher"
-			"item_slot"						"primary"
-			"used_by_classes"
-			{
-				"soldier"					"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"clip size bonus"									"1.25"
-				"Projectile speed increased"						"1.4"
-				"rocket jump damage reduction"						"0.65"
-				"mod rage on hit bonus"								"5"
-				
-				///////////////    Negative Attributes    ///////////////
-				"damage penalty"									"0.75"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 -3 -10"
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_liberty_launcher/c_liberty_launcher"
-			"model_player"					"models/workshop/weapons/c_models/c_liberty_launcher/c_liberty_launcher.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"					"ui/item_heavy_gun_drop.wav"
-			"item_iconname"					"liberty_launcher"
-			"visuals"
-			{
-				"sound_single_shot"			"Weapon_Liberty_Launcher.Single"
-				"sound_burst"				"Weapon_Liberty_Launcher.SingleCrit"
-			}
-		}
-		"9102" // The Beggar's Bazooka
+		"9101" // The Beggar's Bazooka
 		{
 			// Name and Description
 			"name"							"Beggar's Bazooka"
@@ -467,20 +392,51 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 -3 -10"				
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"auto fires full clip"								"1"
-				
+				"auto fires full clip"
+				{
+					"attribute_class"								"auto_fires_full_clip"
+					"value"											"1"
+				}
+
 				///////////////    Negative Attributes    ///////////////
-				"can overload"										"1"
-				"projectile spread angle penalty"					"3"
-				"blast radius decreased"							"0.8"
+				"can overload"
+				{
+					"attribute_class"								"can_overload"
+					"value"											"1"
+				}
+				"projectile spread angle penalty"
+				{
+					"attribute_class"								"projectile_spread_angle"
+					"value"											"3"
+				}
+				"blast radius decreased"
+				{
+					"attribute_class"								"mult_explosion_radius"
+					"value"											"0.8"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"fire rate bonus HIDDEN"							"0.3"
-				"reload time increased hidden"						"1.3"
-				"clip size penalty HIDDEN"							"0.75"
-				"min_viewmodel_offset"								"10 -3 -10"				
+				"fire rate bonus HIDDEN"
+				{
+					"attribute_class"								"mult_postfiredelay"
+					"value"											"0.3"
+				}
+				"reload time increased hidden"
+				{
+					"attribute_class"								"mult_reload_time_hidden"
+					"value"											"1.3"
+				}
+				"clip size penalty HIDDEN"
+				{
+					"attribute_class"								"mult_clipsize"
+					"value"											"0.75"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -497,7 +453,7 @@
 				"sound_reload"				"Weapon_DumpsterRocket.Reload"
 			}
 		}
-		"9103" // The Buff Banner
+		"9102" // The Buff Banner
 		{
 			// Name and Description
 			"name"							"Buff Banner"
@@ -517,15 +473,30 @@
 			}
 			"static_attrs"
 			{
+				"allowed in medieval mode"							"1"
+				"min_viewmodel_offset"								"10 -2 -5"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"maxammo primary increased"							"1.25"
+				"maxammo primary increased"
+				{
+					"attribute_class"								"mult_maxammo_primary"
+					"value"											"1.25"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"mod soldier buff type"								"1"
-				"kill eater score type"								"51"
-				"allowed in medieval mode"							"1"
-				"min_viewmodel_offset"								"10 -2 -5"
+				"mod soldier buff type"
+				{
+					"attribute_class"								"set_buff_type"
+					"value"											"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"51"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -546,7 +517,7 @@
 				}
 			}
 		}
-		"9104" // The Battalion's Backup
+		"9103" // The Battalion's Backup
 		{
 			// Name and Description
 			"name"							"Battalion's Backup"
@@ -566,15 +537,30 @@
 			}
 			"static_attrs"
 			{
+				"allowed in medieval mode"							"1"
+				"min_viewmodel_offset"								"10 -2 -5"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"max health additive bonus"							"20"
+				"max health additive bonus"
+				{
+					"attribute_class"								"add_maxhealth"
+					"value"											"20"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"kill eater score type"								"51"
-				"mod soldier buff type"								"2"
-				"allowed in medieval mode"							"1"
-				"min_viewmodel_offset"								"10 -2 -5"
+				"mod soldier buff type"
+				{
+					"attribute_class"								"set_buff_type"
+					"value"											"2"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"51"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -595,7 +581,7 @@
 				}
 			}
 		}
-		"9105" // The Concheror
+		"9104" // The Concheror
 		{
 			// Name and Description
 			"name"							"Concheror"
@@ -615,41 +601,29 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"health regen"										"4"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"kill eater score type"								"51"
-				"mod soldier buff type"								"3"
 				"allowed in medieval mode"							"1"
 				"min_viewmodel_offset"								"10 -2 -5"
 			}
 			"attributes"
 			{
-				// Positive Attributes
+				///////////////    Positive Attributes    ///////////////
 				"health regen"
 				{
-					"attribute_class"	"add_health_regen"
-					"value"	"4"
+					"attribute_class"								"add_health_regen"
+					"value"											"4"
 				}
-				// Negative Attributes
-				// Hidden Attributes
-				"hidden separator"	"1"
-				"kill eater score type"
-				{
-					"attribute_class"	"kill_eater_score_type"
-					"value" 	"51" 
-				}
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
 				"mod soldier buff type"
 				{
-					"attribute_class"	"set_buff_type"
-					"value"	"3"
+					"attribute_class"								"set_buff_type"
+					"value"											"3"
 				}
-				"allowed in medieval mode"
+				"kill eater score type"
 				{
-					"attribute_class"	"allowed_in_medieval_mode"
-					"value"	"1"
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"51"
 				}
 			}
 			
@@ -671,7 +645,7 @@
 				}
 			}
 		}
-		"9106" // The Mantreads
+		"9105" // The Mantreads
 		{
 			// Name and Description
 			"name"							"Mantreads"
@@ -693,19 +667,50 @@
 			}
 			"static_attrs"
 			{
+				"allowed in medieval mode"							"1"
+				"min_viewmodel_offset"								"10 -2 -5"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"damage force reduction"							"0.25"
-				"boots falling stomp"								"1"
-				"mod_air_control_blast_jump"						"3.0"
-				"airblast vulnerability multiplier"					"0.25"
-				"move speed bonus"									"1.15"
+				"damage force reduction"
+				{
+					"attribute_class"								"damage_force_reduction"
+					"value"											"0.25"
+				}
+				"boots falling stomp"
+				{
+					"attribute_class"								"boots_falling_stomp"
+					"value"											"1"
+				}
+				"mod_air_control_blast_jump"
+				{
+					"attribute_class"								"mod_air_control_blast_jump"
+					"value"											"3"
+				}
+				"airblast vulnerability multiplier"
+				{
+					"attribute_class"								"airblast_vulnerability_multiplier"
+					"value"											"0.25"
+				}
+				"move speed bonus"
+				{
+					"attribute_class"								"mult_player_movespeed"
+					"value"											"1.15"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"kill eater score type"								"26"
-				"kill eater kill type"								"26"
-				"allowed in medieval mode"							"1"
-				"min_viewmodel_offset"								"10 -2 -5"
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"26"
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"								"kill_eater_kill_type"
+					"value"											"26"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -717,7 +722,7 @@
 			"anim_slot"						"FORCE_NOT_USED"
 			"equip_region"					"feet"
 		}
-		"9107" // The Escape Plan
+		"9106" // The Escape Plan
 		{
 			// Name and Description
 			"name"							"Escape Plan"
@@ -737,19 +742,43 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"provide on active"									"1"
-				"mod shovel speed boost"							"2"
-				"dmg bonus while half dead"							"1.305"
-				
-				///////////////    Negative Attributes    ///////////////
-				"self mark for death"								"1"
-				"reduced_healing_from_medics"						"0.1"
-				"crit mod disabled"									"0"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"min_viewmodel_offset"								"10 -3 -11"			
+			}
+			"attributes"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"provide on active"
+				{
+					"attribute_class"								"provide_on_active"
+					"value"											"1"
+				}
+				"mod shovel speed boost"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value"											"2"
+				}
+				"dmg bonus while half dead"
+				{
+					"attribute_class"								"mult_dmg_bonus_while_half_dead"
+					"value"											"1.305"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"self mark for death"
+				{
+					"attribute_class"								"self_mark_for_death"
+					"value"											"1"
+				}
+				"reduced_healing_from_medics"
+				{
+					"attribute_class"								"mult_healing_from_medics"
+					"value"											"0.1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -767,131 +796,11 @@
 				"sound_melee_hit_world"		"Weapon_Shovel.HitWorld"
 			}
 		}
-		"9108" // The Direct Hit
-		{
-			// Name and Description
-			"name"							"Direct Hit"
-			"item_name"						"Direct Hit"
-			"item_logname"					"Direct Hit"
-			"item_type_name"				"#TF_Weapon_RocketLauncher"
-			"item_description"				"I've have taken back liberty from the weak and French!"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_rocketlauncher_directhit"
-			"item_slot"						"primary"
-			"used_by_classes"
-			{
-				"soldier"					"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"damage bonus"										"1.25"
-				"Projectile speed increased"						"1.8"
-				"mod mini-crit airborne"							"1"
-				
-				///////////////    Negative Attributes    ///////////////
-				"Blast radius decreased"							"0.3"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 -3 -10"
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/weapons/c_models/c_directhit/c_directhit"
-			"model_player"					"models/weapons/c_models/c_directhit/c_directhit.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"					"ui/item_heavy_gun_drop.wav"
-		}
 		
 		////////////////////
 		//  Pyro Weapons  //
 		////////////////////
-		"9200" // The Backburner
-		{
-			// Name and Description
-			"name"							"Backburner"
-			"item_name"						"Backburner"
-			"item_logname"					"Backburner"
-			"item_type_name"				"#TF_Weapon_Flamethrower"
-			"item_description"				"Why does spy get to have all the fun?"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_flamethrower"
-			"item_slot"						"primary"
-			"used_by_classes"
-			{
-				"pyro"						"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"mod flamethrower back crit"						"1"
-				"extinguish restores health"						"20"
-				
-				///////////////    Negative Attributes    ///////////////
-				"airblast cost increased"							"2"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 -3 -10"	
-
-				///////////////  Flamethrower Attributes  ///////////////
-				"flame_gravity"					"0"
-				"flame_drag"					"8.500000"
-				"flame_up_speed"				"50"
-				"flame_speed"					"2450"
-				"flame_spread_degree"			"2.800000"
-				"flame_lifetime"				"0.600000"
-				"flame_random_life_time_offset"	"0.100000"
-				"flame_velocity_fade_start"		"0.300000"
-				"flame_velocity_fade_end"		"0.500000"				
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/weapons/c_models/c_backburner/c_backburner"
-			"model_player"					"models/weapons/c_models/c_flamethrower/c_backburner.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"					"ui/item_heavy_gun_drop.wav"
-			"item_iconname"					"backburner"
-			"visuals_red"
-			{
-				"skin" "0"
-			}
-			"visuals_blu"
-			{
-				"skin" "1"
-			}
-			"visuals_grn"
-			{
-				"skin" "1"
-			}
-			"visuals_ylw"
-			{
-				"skin" "0"
-			}
-			"visuals"
-			{
-				"sound_single_shot"			"Weapon_BackBurner.FireStart"
-				"sound_special1"			"Weapon_BackBurner.FireLoop"
-				"sound_burst"				"Weapon_BackBurner.FireLoopCrit"
-				"attached_models"
-				{
-					"0"
-					{
-						"model"	"models/weapons/c_models/c_flamethrower/c_flamethrower_pilotlight.mdl"
-					}
-				}
-			}
-		}
-		"9201" // The Dragon's Fury
+		"9200" // The Dragon's Fury
 		{
 			// Name and Description
 			"name"							"Dragon's Fury"
@@ -911,22 +820,49 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"dragons fury neutral properties"					"1"
-				"extinguish restores health"						"20"
-				"dragons fury positive properties"					"1"
-				
-				///////////////    Negative Attributes    ///////////////
-				"dragons fury negative properties"					"1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"hidden primary max ammo bonus"						"0.2"
-				"airblast cost scale hidden"						"0.25"
 				"min_viewmodel_offset"								"10 -3 -10"
 				"item_meter_charge_type"							"1"
 				"item_meter_charge_rate"							"0.8"
 				"meter_label"										"#TF_Pressure"				
+			}
+			"attributes"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"dragons fury neutral properties"
+				{
+					"attribute_class"								"dragons_fury_neutral_properties"
+					"value"											"1"
+				}
+				"extinguish restores health"
+				{
+					"attribute_class"								"extinguish_restores_health"
+					"value"											"20"
+				}
+				"dragons fury positive properties"
+				{
+					"attribute_class"								"dragons_fury_positive_properties"
+					"value"											"1"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"dragons fury negative properties"
+				{
+					"attribute_class"								"dragons_fury_negative_properties"
+					"value"											"1"
+				}
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"hidden primary max ammo bonus"
+				{
+					"attribute_class"								"mult_maxammo_primary"
+					"value"											"0.2"
+				}
+				"airblast cost scale hidden"
+				{
+					"attribute_class"								"mult_airblast_cost"
+					"value"											"0.25"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -938,7 +874,7 @@
 			"item_iconname"					"dragons_fury"
 			"particle_suffix"				"dragons_fury"
 		}
-		"9202" // The Thermal Thruster
+		"9201" // The Thermal Thruster
 		{
 			// Name and Description
 			"name"							"Thermal Thruster"
@@ -958,19 +894,46 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"thermal_thruster_air_launch_desc"					"1"
-				"boots falling stomp"								"1"
-				"falling_impact_radius_pushback"					"1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"thermal_thruster"									"1"
-				"holster_anim_time"									"0"
-				"damage force increase hidden"						"0"
 				"min_viewmodel_offset"								"10 0 -9"	
 				"item_meter_charge_type"							"1"
 				"item_meter_charge_rate"							"30"
+			}
+			"attributes"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"thermal_thruster_air_launch_desc"
+				{
+					"attribute_class"								"thermal_thruster_air_launch"
+					"value"											"1"
+				}
+				"boots falling stomp"
+				{
+					"attribute_class"								"boots_falling_stomp"
+					"value"											"1"
+				}
+				"falling_impact_radius_pushback"
+				{
+					"attribute_class"								"falling_impact_radius_pushback"
+					"value"											"1"
+				}
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"thermal_thruster"
+				{
+					"attribute_class"								"thermal_thruster"
+					"value"											"1"
+				}
+				"holster_anim_time"
+				{
+					"attribute_class"								"holster_anim_time"
+					"value"											"0"
+				}
+				"damage force increase hidden"
+				{
+					"attribute_class"								"damage_force_reduction"
+					"value"											"1.5"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1008,7 +971,7 @@
 				}
 			}
 		}
-		"9203" // The Axtinguisher
+		"9202" // The Axtinguisher
 		{
 			// Name and Description
 			"name"							"Axtinguisher"
@@ -1028,17 +991,33 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -9"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"attack_minicrits_and_consumes_burning"				"1"
+				"attack_minicrits_and_consumes_burning"
+				{
+					"attribute_class"								"attack_minicrits_and_consumes_burning"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"single wep holster time increased"					"1.35"
-				"damage penalty"									"0.75"
-				"crit mod disabled"									"0"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -9"
+				"single wep holster time increased"
+				{
+					"attribute_class"								"mult_switch_from_wep_deploy_time"
+					"value"											"1.35"
+				}
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value"											"0.75"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1048,91 +1027,6 @@
 			"mouse_pressed_sound"			"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"					"ui/item_metal_weapon_drop.wav"
 			"item_iconname"					"axtinguisher"
-		}
-		"9204" // The Powerjack
-		{
-			// Name and Description
-			"name"							"Powerjack"
-			"item_name"						"Powerjack"
-			"item_logname"					"Powerjack"
-			"item_type_name"				"#TF_Weapon_SledgeHammer"
-			"item_description"				"v-v-vROOOOOooom!"
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_fireaxe"
-			"item_slot"						"melee"
-			"used_by_classes"
-			{
-				"pyro"						"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"provide on active"									"1"
-				"move speed bonus"									"1.2"
-				
-				///////////////    Negative Attributes    ///////////////
-				"dmg taken increased"								"1.2"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 2 -9"
-			}
-
-			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
-			"model_player"					"models/workshop/weapons/c_models/c_powerjack/c_powerjack.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"					"ui/item_heavy_gun_drop.wav"
-			"item_iconname"					"powerjack"
-			"visuals"
-			{
-				"sound_melee_hit"			"Weapon_Machete.HitFlesh"
-			}
-		}
-		"9205" // The Back Scratcher
-		{
-			// Name and Description
-			"name"							"Back Scratcher"
-			"item_name"						"Back Scratcher"
-			"item_logname"					"Back Scratcher"
-			"item_type_name"				"#TF_Weapon_GardenRake"
-			"item_description"				"You scratch my back I scratch yours."
-			"item_quality"					"unique"
-			"propername" 					"1"
-			
-			// Weapon Attributes
-			"item_class"					"tf_weapon_fireaxe"
-			"item_slot"						"melee"
-			"used_by_classes"
-			{
-				"pyro"						"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"damage bonus"										"1.25"
-				"health from packs increased"						"1.5"
-				"restore health on kill"							"20"
-				
-				///////////////    Negative Attributes    ///////////////
-				"health from healers reduced"						"0.25"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -10"
-			}
-			
-			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_back_scratcher/c_back_scratcher"
-			"model_player"					"models/workshop/weapons/c_models/c_back_scratcher/c_back_scratcher.mdl"
-			"attach_to_hands" 				"1"
-			"mouse_pressed_sound"			"ui/item_wood_pole_pickup.wav"
-			"drop_sound"					"ui/item_wood_pole_drop.wav"
-			"item_iconname"					"back_scratcher"
 		}
 		
 		///////////////////////
@@ -1158,24 +1052,44 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"no self blast dmg"									"1"
-				"maxammo secondary increased"						"3.0"
-				
-				///////////////    Negative Attributes    ///////////////
-				"damage penalty"									"0"
-				"crit mod disabled"									"0"
-				"cannot pick up intelligence"						"1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"min_viewmodel_offset"								"10 0 -10"
 			}
 			"attributes"
 			{
+				///////////////    Positive Attributes    ///////////////
+				"no self blast dmg"
+				{
+					"attribute_class"								"no_self_blast_dmg"
+					"value"											"1"
+				}
+				"maxammo secondary increased"
+				{
+					"attribute_class"								"mult_maxammo_secondary"
+					"value"											"3"
+				}
+				
+				///////////////    Negative Attributes    ///////////////
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value"											"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
+				"cannot pick up intelligence"
+				{
+					"attribute_class"								"cannot_pick_up_intelligence"
+					"value"											"1"
+				}
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
 				"override projectile type"
 				{
-					"attribute_class"		"override_projectile_type" // Strangely this attribute cannot be in Static Attributes for stickybomb launchers?
+					"attribute_class"		"override_projectile_type"
 					"value"					"14"
 				}
 			}
@@ -1213,20 +1127,51 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -10"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"grenade launcher mortar mode"						"1"
-				"Projectile speed increased"						"1.2"
-				"cannonball push back"								"1"
+				"grenade launcher mortar mode"
+				{
+					"attribute_class"								"grenade_launcher_mortar_mode"
+					"value"											"1"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"								"mult_projectile_speed"
+					"value"											"1.2"
+				}
+				"cannonball push back"
+				{
+					"attribute_class"								"cannonball_push_back"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"grenade not explode on impact"						"1"
+				"grenade not explode on impact"
+				{
+					"attribute_class"								"grenade_not_explode_on_impact"
+					"value"											"1"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"provide on active"									"1"
-				"rocket jump damage reduction"						"0.7"
-				"override projectile type"							"17"
-				"min_viewmodel_offset"								"10 0 -10"
+				"provide on active"
+				{
+					"attribute_class"		"provide_on_active"
+					"value"					"1"
+				}
+				"rocket jump damage reduction"
+				{
+					"attribute_class"		"rocket_jump_dmg_reduction"
+					"value"					"0.7"
+				}
+				"override projectile type"
+				{
+					"attribute_class"		"override_projectile_type"
+					"value"					"17"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1238,63 +1183,7 @@
 			"drop_sound"					"ui/item_heavy_gun_drop.wav"
 			"item_iconname"					"loose_cannon_explosion"
 		}
-		"9302" // The Loch-n-Load
-		{
-			// Name and Description
-			"name"							"Loch-n-Load"
-			"item_name"						"Loch-n-Load"
-			"item_logname"					"Loch-n-Load"
-			"item_type_name"				"#TF_Weapon_GrenadeLauncher"
-			"item_description"				"Watch the pretty fireworks!"
-			"item_quality"					"unique"
-			"propername"					"1"
-
-			// Weapon Attributes
-			"item_class"					"tf_weapon_grenadelauncher"
-			"item_slot"						"primary"
-			"used_by_classes"
-			{
-				"Demoman"					"1"
-			}
-			"static_attrs"
-			{
-				///////////////    Positive Attributes    ///////////////
-				"dmg bonus vs buildings"							"1.2"
-				"Projectile speed increased"						"1.25"
-				"mod mini-crit airborne"							"1"
-				
-				///////////////    Negative Attributes    ///////////////
-				"Blast radius decreased"							"0.75"
-				"sticky air burst mode"								"2"
-				"clip size penalty"									"0.75"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"grenade no spin"									"1"
-				"min_viewmodel_offset"								"10 0 -10"
-			}
-			
-			// Sounds & Visuals
-			"anim_slot"						"secondary"
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_lochnload/c_lochnload"
-			"model_player"					"models/workshop/weapons/c_models/c_lochnload/c_lochnload.mdl"
-			"attach_to_hands"				"1"
-			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"					"ui/item_heavy_gun_drop.wav"
-			"item_iconname"					"loch_n_load"
-			"visuals"
-			{
-				"sound_single_shot"			"Weapon_LochnLoad.Single"
-				"sound_burst"				"Weapon_LochnLoad.SingleCrit"
-				"animation_replacement"
-				{
-					"ACT_RELOAD_START"		"ACT_PRIMARY_RELOAD_START_2"
-					"ACT_VM_RELOAD"			"ACT_PRIMARY_VM_RELOAD_2"
-					"ACT_RELOAD_FINISH"		"ACT_PRIMARY_RELOAD_FINISH_2"
-				}
-			}
-		}
-		"9303" // The Bootlegger
+		"9302" // The Bootlegger
 		{
 			// Name and Description
 			"name"							"Bootlegger"
@@ -1314,17 +1203,41 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"mult charge turn control"							"3.0"
-				"mod_air_control_blast_jump"						"3.0"
-				"kill refills meter"								"0.25"
-				"airblast vulnerability multiplier"					"0.25"
-				"max health additive bonus"							"25"
-				"move speed bonus shield required"					"1.1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"allowed in medieval mode"							"1"
+			}
+			"attributes"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"mult charge turn control"
+				{
+					"attribute_class"								"charge_turn_control"
+					"value"											"3"
+				}
+				"mod_air_control_blast_jump"
+				{
+					"attribute_class"								"mod_air_control_blast_jump"
+					"value"											"3"
+				}
+				"kill refills meter"
+				{
+					"attribute_class"								"kill_refills_meter"
+					"value"											"0.25"
+				}
+				"airblast vulnerability multiplier"
+				{
+					"attribute_class"								"airblast_vulnerability_multiplier"
+					"value"											"0.25"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"								"add_maxhealth"
+					"value"											"25"
+				}
+				"move speed bonus shield required"
+				{
+					"attribute_class"								"mult_player_movespeed_shieldrequired"
+					"value"											"1.1"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1343,7 +1256,7 @@
 				}
 			}
 		}
-		"9304" // The Chargin' Targe
+		"9303" // The Chargin' Targe
 		{
 			// Name and Description
 			"name"							"Chargin' Targe"
@@ -1363,15 +1276,34 @@
 			}
 			"static_attrs"
 			{
+				"allowed in medieval mode"							"1"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"dmg taken from fire reduced"						"0.5"
-				"dmg taken from blast reduced"						"0.7"
+				"dmg taken from fire reduced"
+				{
+					"attribute_class"								"mult_dmgtaken_from_fire"
+					"value"											"0.5"
+				}
+				"dmg taken from blast reduced"
+				{
+					"attribute_class"								"mult_dmgtaken_from_explosions"
+					"value"											"0.7"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"charge impact damage increased"					"1.5"
-				"charge recharge rate increased"					"1.5"
-				"allowed in medieval mode"							"1"
+				"charge impact damage increased"
+				{
+					"attribute_class"		"charge_impact_damage"
+					"value"					"1.5"
+				}
+				"charge recharge rate increased"
+				{
+					"attribute_class"		"charge_recharge_rate"
+					"value"					"1.5"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1386,7 +1318,7 @@
 			"mouse_pressed_sound"			"ui/item_wood_pole_pickup.wav"
 			"drop_sound"					"ui/item_wood_pole_drop.wav"
 		}
-		"9305" // The Scottish Resistance
+		"9304" // The Scottish Resistance
 		{
 			// Name and Description
 			"name"							"Scottish Resistance"
@@ -1406,19 +1338,43 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"10 0 -10"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"fire rate bonus"									"0.75"
-				"max pipebombs increased"							"6"
-				"stickies detonate stickies"						"1"
-				"maxammo secondary increased"						"1.5"
-				"sticky detonate mode"								"1"
+				"fire rate bonus"
+				{
+					"attribute_class"								"mult_postfiredelay"
+					"value"											"0.75"
+				}
+				"max pipebombs increased"
+				{
+					"attribute_class"								"add_max_pipebombs"
+					"value"											"6"
+				}
+				"stickies detonate stickies"
+				{
+					"attribute_class"								"stickies_detonate_stickies"
+					"value"											"1"
+				}
+				"maxammo secondary increased"
+				{
+					"attribute_class"								"mult_maxammo_secondary"
+					"value"											"1.5"
+				}
+				"sticky detonate mode"
+				{
+					"attribute_class"								"set_detonate_mode"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"sticky arm time penalty"							"0.8"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -10"
+				"sticky arm time penalty"
+				{
+					"attribute_class"								"sticky_arm_time"
+					"value"											"0.8"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1429,7 +1385,7 @@
 			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"					"ui/item_heavy_gun_drop.wav"
 		}
-		"9306" // The Eyelander
+		"9305" // The Eyelander
 		{
 			// Name and Description
 			"name"							"Eyelander"
@@ -1449,19 +1405,46 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"12 -3 -10"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"is_a_sword"										"72"
+				"is_a_sword"
+				{
+					"attribute_class"								"is_a_sword"
+					"value"											"72"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"max health additive penalty"						"-25"
-				"crit mod disabled"									"0"
+				"max health additive penalty"
+				{
+					"attribute_class"								"add_maxhealth"
+					"value"											"-25"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"decapitate type"									"1"
-				"kill eater score type"								"6"
-				"kill eater kill type"								"6"
-				"min_viewmodel_offset"								"12 -3 -10"
+				"decapitate type"
+				{
+					"attribute_class"								"decapitate_type"
+					"value"											"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"6"
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"								"kill_eater_kill_type"
+					"value"											"6"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1481,7 +1464,7 @@
 				"sound_special2"			"Sword.Idle"
 			}
 		}
-		"9307" // Nessie's Nine Iron
+		"9306" // Nessie's Nine Iron
 		{
 			// Name and Description
 			"name"							"Nessie's Nine Iron"
@@ -1501,19 +1484,43 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"12 -3 -10"
+			}
+			"attributes"
+			{
 				///////////////    Positive Attributes    ///////////////
-				"mod mini-crit airborne"							"1"
+				"mod mini-crit airborne"
+				{
+					"attribute_class"								"mini_crit_airborne"
+					"value"											"1"
+				}
 				
 				///////////////    Negative Attributes    ///////////////
-				"single wep deploy time increased"					"1.5"
-				"crits_become_minicrits"							"1"
+				"single wep deploy time increased"
+				{
+					"attribute_class"								"mult_single_wep_deploy_time"
+					"value"											"1.5"
+				}
+				"crits_become_minicrits"
+				{
+					"attribute_class"								"crits_become_minicrits"
+					"value"											"1"
+				}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"add condition on hit weapon"						"TF_COND_ROCKETPACK 99.0"
-				"apply z velocity on damage"						"420"
-				"min_viewmodel_offset"								"12 -3 -10"
+				"add condition on hit weapon"
+				{
+					"attribute_class"								"add_onhit_addcond_weapon"
+					"value"											"TF_COND_ROCKETPACK 99.0"
+				}
+				"apply z velocity on damage"
+				{
+					"attribute_class"								"apply_z_velocity_on_damage"
+					"value"											"400"
+				}
 			}
+			
 			// Sounds & Visuals
 			"anim_slot"						"item1"
 			"image_inventory"				"backpack/workshop/weapons/c_models/c_golfclub/c_golfclub"
@@ -1556,20 +1563,40 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"lunchbox adds maxhealth bonus"						"1"
-				"mult_item_meter_charge_rate_desc"					"0.4"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"kill eater score type"								"50"
 				"min_viewmodel_offset"								"10 0 -11"
-				"special taunt"										"1"
 				"allowed in medieval mode"							"1"
 				"item_meter_charge_type"							"1"
 				"item_meter_charge_rate"							"10"
-				"meter_label"										"#TF_Sandwich"
+				"meter_label"										"Chocolate"
 			}
+			"attributes"
+			{
+				///////////////    Positive Attributes    ///////////////
+				"lunchbox adds maxhealth bonus"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value"											"1"
+				}
+				"mult_item_meter_charge_rate_desc"
+				{
+					"attribute_class"								"mult_item_meter_charge_rate"
+					"value"											"0.4"
+				}
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"50"
+				}
+				"special taunt"
+				{
+					"attribute_class"								"special_taunt"
+					"value"											"1"
+				}
+			}
+			
 			// Sounds & Visuals
 			"anim_slot"						"item1"
 			"image_inventory"				"backpack/workshop/weapons/c_models/c_chocolate/c_chocolate"
@@ -1598,17 +1625,33 @@
 			}
 			"static_attrs"
 			{
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
-				"lunchbox adds minicrits"							"2"
-				"kill eater score type"								"50"
 				"min_viewmodel_offset"								"10 0 -11"
-				"special taunt"										"1"
 				"allowed in medieval mode"							"1"
 				"item_meter_charge_type"							"1"
 				"item_meter_charge_rate"							"20"
-				"meter_label"										"#TF_Sandwich"
+				"meter_label"										"Steak"
 			}
+			"attributes"
+			{	
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value"											"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value"											"50"
+				}
+				"special taunt"
+				{
+					"attribute_class"								"special_taunt"
+					"value"											"1"
+				}
+			}
+			
 			// Sounds & Visuals
 			"anim_slot"						"item1"
 			"image_inventory"				"backpack/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak"
@@ -1641,18 +1684,35 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"mod sentry killed revenge"							"1"
-				"lose revenge crits on death DISPLAY ONLY"			"1"
-				
-				///////////////    Negative Attributes    ///////////////
-				"crit mod disabled"									"0"
-				"clip size penalty"									"0.5"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"min_viewmodel_offset"								"10 0 -11"
 			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"mod sentry killed revenge"
+				{
+					"attribute_class"								"sentry_killed_revenge"
+					"value"											"1"
+				}
+				"lose revenge crits on death DISPLAY ONLY"
+				{
+					"attribute_class"								"lose_revenge_crits_on_death_DISPLAY_ONLY"
+					"value"											"1"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"								"mult_clipsize"
+					"value"											"0.5"
+				}
+			}
+			
 			// Sounds & Visuals
 			"image_inventory"				"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
 			"model_player"					"models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
@@ -1686,22 +1746,56 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"max health additive bonus"							"25"
-				"engineer sentry build rate multiplier"				"2.5"
-				
-				///////////////    Negative Attributes    ///////////////
-				"mod wrench builds minisentry"						"1"
-				"crit mod disabled"									"0"
-				"clip size penalty"									"0.5"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"min_viewmodel_offset"								"10 0 -11"
 			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"gunslinger punch combo"
+				{
+					"attribute_class"								"gunslinger_punch_combo"
+					"value"											"1"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"								"add_maxhealth"
+					"value"											"25"
+				}
+				"engineer sentry build rate multiplier"
+				{
+					"attribute_class"								"sentry_build_rate_multiplier"
+					"value"											"2.5"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"mod wrench builds minisentry"
+				{
+					"attribute_class"								"wrench_builds_minisentry"
+					"value"											"1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
+
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"kill eater score type"
+				{
+					"attribute_class"								"kill_eater_score_type"
+					"value" 										"3"									
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"								"kill_eater_score_type_2"
+					"value" 										"0"									
+				}
+			}
+			
 			// Sounds & Visuals
 			"image_inventory"				"backpack/weapons/gunslinger"
-			"item_iconname"					"frontier_kill"
+			"item_iconname"					"robot_arm_kill"
 			"attach_to_hands"				"1"
 			"mouse_pressed_sound"			"ui/item_robot_arm_pickup.wav"
 			"drop_sound"					"ui/item_robot_arm_drop.wav"
@@ -1743,20 +1837,51 @@
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"5 0 -8"
+			}
+			"attributes"
+			{	
 				///////////////    Positive Attributes    ///////////////
-				"sniper crit no scope"								"1"
-				"aiming movespeed increased"						"1.5"
-				
+				"sniper crit no scope"
+				{
+					"attribute_class"								"sniper_crit_no_scope"
+					"value"											"1"
+				}
+				"aiming movespeed increased"
+				{
+					"attribute_class"								"mult_player_aiming_movespeed"
+					"value"											"1.5"
+				}
+
 				///////////////    Negative Attributes    ///////////////
-				"damage penalty on bodyshot"						"0.9"
-				"sniper no headshot without full charge"			"1"
-				
+				"damage penalty on bodyshot"
+				{
+					"attribute_class"								"bodyshot_damage_modify"
+					"value"											"0.9"
+				}
+				"sniper no headshot without full charge"
+				{
+					"attribute_class"								"sniper_no_headshot_without_full_charge"
+					"value"											"1"
+				}
+
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"crit on hard hit"									"1"
-				"sniper fires tracer HIDDEN"						"1"
-				"lunchbox adds minicrits"							"3"
-				"min_viewmodel_offset"								"5 0 -8"
+				"crit on hard hit"
+				{
+					"attribute_class"								"crit_on_hard_hit"
+					"value" 										"1"									
+				}
+				"sniper fires tracer HIDDEN"
+				{
+					"attribute_class"								"sniper_fires_tracer_HIDDEN"
+					"value" 										"1"									
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value" 										"3"									
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1792,17 +1917,33 @@
 			}
 			"static_attrs"
 			{
-				///////////////    Positive Attributes    ///////////////
-				"jarate duration"									"8"
-				"headshot damage increase"							"1.11"
-				"sniper charge per sec"								"1.25"
-				
-				///////////////    Negative Attributes    ///////////////
-				"crits_become_minicrits"							"1"
-				
-				///////////////     Hidden Attributes     ///////////////
-				"hidden separator"									"1"
 				"min_viewmodel_offset"								"5 0 -8"
+			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"jarate duration"
+				{
+					"attribute_class"								"jarate_duration"
+					"value"											"8"
+				}
+				"headshot damage increase"
+				{
+					"attribute_class"								"headshot_damage_modify"
+					"value"											"1.1"
+				}
+				"sniper charge per sec"
+				{
+					"attribute_class"								"mult_sniper_charge_per_sec"
+					"value"											"1.25"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"crits_become_minicrits"
+				{
+					"attribute_class"								"crits_become_minicrits"
+					"value"											"1"
+				}
 			}
 			
 			// Sounds & Visuals
@@ -1819,50 +1960,351 @@
 				"sound_burst"				"Weapon_SydneySleeper.SingleCrit"
 			}
 		}
-		"9702"	// The Tribalman's Shiv
+		"9702"	// The Cozy Camper
 		{
 			// Name and Description
-			"name"							"Tribalman's Shiv"
-			"item_name"						"Tribalman's Shiv"
-			"item_logname"					"Tribalman's Shiv"
-			"item_type_name"				"#TF_Weapon_Club"
-			"item_description"				"This is wall climbing in the bush!"
+			"name"							"Cozy Camper"
+			"item_name"						"Cozy Camper"
+			"item_logname"					"Cozy Camper"
+			"item_type_name"				"#TF_Wearable_Backpack"
+			"item_description"				"Maybe I'll survive for 3 minutes this time"
 			"item_quality"					"unique"
 			"propername"					"1"
 			
 			// Weapon Attributes
-			"item_class"					"tf_weapon_club"
-			"item_slot"						"melee"
+			"item_class"					"tf_wearable"
+			"item_slot"						"secondary"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"health regen"
+				{
+					"attribute_class"								"add_health_regen"
+					"value"											"5"
+				}
+				"ammo regen"
+				{
+					"attribute_class"								"addperc_ammo_regen"
+					"value"											"0.1"
+				}
+				"aiming no flinch"
+				{
+					"attribute_class"								"aiming_no_flinch"
+					"value"											"1"
+				}
+				"aiming knockback resistance"
+				{
+					"attribute_class"								"mult_aiming_knockback_resistance"
+					"value"											"0.5"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"								"allowed_in_medieval_mode"
+					"value"											"1"
+				}
+			}
+			
+			// Sounds & Visuals
+			"image_inventory"				"backpack/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack"
+			"model_player"					"models/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack.mdl"
+			"attach_to_hands"				"0"
+			"act_as_wearable"				"1"
+			"mouse_pressed_sound"			"ui/item_pack_pickup.wav"
+			"drop_sound"					"ui/item_pack_drop.wav"
+			"equip_region"					"back"
+		}
+		"9703"	// The Spearfisher
+		{
+			// Name and Description
+			"name"							"Spearfisher"
+			"item_name"						"Spearfisher"
+			"item_logname"					"Spearfisher"
+			"item_type_name"				"Harpoon Gun"
+			"item_description"				
+			"Fires large harpoons that pull targets toward you
+
+			Like shooting fish out a barrel."
+			"item_quality"					"community"
+			"propername"					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_crossbow"
+			"item_slot"						"primary"
 			"used_by_classes"
 			{
 				"sniper"					"1"
 			}
 			"static_attrs"
 			{
+				"min_viewmodel_offset"								"5 0 -8"
+			}
+			"attributes"
+			{	
 				///////////////    Positive Attributes    ///////////////
-				"bleeding duration"									"6"
-				
+				"apply look velocity on damage"
+				{
+					"attribute_class"								"apply_look_velocity_on_damage"
+					"value"											"-600"
+				}
+				"apply z velocity on damage"
+				{
+					"attribute_class"								"apply_z_velocity_on_damage"
+					"value"											"250"
+				}
+
 				///////////////    Negative Attributes    ///////////////
-				"damage penalty"									"0.6"
-				"hit self on miss"									"1"
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value"											"0.6"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"								"mult_maxammo_primary"
+					"value"											"0.5"
+				}
+				
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
-				"min_viewmodel_offset"								"10 0 -6"
+				"override projectile type"
+				{
+					"attribute_class"								"override_projectile_type"
+					"value" 										"8"
+				}
+				"custom projectile model"
+				{
+					"attribute_class"								"crits_become_minicrits"
+					"value"											"models/ffs/projectiles/w_harpoon.mdl"
+				}
 			}
 			
 			// Sounds & Visuals
-			"image_inventory"				"backpack/workshop/weapons/c_models/c_wood_machete/c_wood_machete"
-			"model_player"					"models/workshop/weapons/c_models/c_wood_machete/c_wood_machete.mdl"
-			"attach_to_hands"				"1"
-			"mouse_pressed_sound"			"ui/item_knife_small_pickup.wav"
-			"drop_sound"					"ui/item_metal_weapon_drop.wav"
-			"item_iconname"					"tribalkukri"
+			"image_inventory"				"ffs/backpack/c_harpoon_gun/c_harpoon_gun_large.vmt"
+			"model_world"					"models/ffs/sniper/c_harpoon_gun/w_harpoon_gun.mdl"
+			"model_player"					"models/ffs/sniper/c_harpoon_gun/v_harpoon_gun.mdl"
+			"attach_to_hands"				"2"
+			"mouse_pressed_sound"			"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"					"ui/item_heavy_gun_drop.wav"
+			"item_iconname"					"harpoon"
+			"brass_eject_model"				""
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_CrusadersCrossbow.Single"
+				"sound_burst"				"Weapon_CrusadersCrossbow.SingleCrit"
+			}
 		}
 		
 		///////////////////
 		//  Spy Weapons  //
 		///////////////////
+		"9800"	// The Ambassador
+		{
+			// Name and Description
+			"name"							"Ambassador"
+			"item_name"						"Ambassador"
+			"item_logname"					"Ambassador"
+			"item_type_name"				"#TF_Weapon_Revolver"
+			"item_description"				"There are two sorts of men in this world: the sort with blood pouring out of a hole in their heads, and the sort holding the Ambassador."
+			"item_quality"					"unique"
+			"propername"					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_revolver"
+			"item_slot"						"secondary"
+			"used_by_classes"
+			{
+				"spy"						"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"								"10 0 -6"
+			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"revolver use hit locations"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value"											"1"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value" 										"0.85"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"								"mult_postfiredelay"
+					"value"											"2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"								"mult_crit_chance"
+					"value"											"0"
+				}
+			}
+			
+			// Sounds & Visuals
+			"image_inventory"				"backpack/weapons/c_models/c_ambassador/parts/c_ambassador_opt"
+			"model_player"					"models/weapons/c_models/c_ambassador/c_ambassador.mdl"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_light_gun_pickup.wav"
+			"drop_sound"					"ui/item_light_gun_drop.wav"
+			"item_iconname"					"ambassador"
+			"visuals"
+			{
+				"sound_single_shot" 		"Weapon_Ambassador.Single"
+				"sound_burst" 				"Weapon_Ambassador.SingleCrit"
+			}
+		}
+		"9801"	// The L'Etranger
+		{
+			// Name and Description
+			"name"							"L'Etranger"
+			"item_name"						"L'Etranger"
+			"item_logname"					"L'Etranger"
+			"item_type_name"				"#TF_Weapon_Revolver"
+			"item_description"				"A masterwork of 20th century existentialist philosophy."
+			"item_quality"					"unique"
+			"propername"					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_revolver"
+			"item_slot"						"secondary"
+			"used_by_classes"
+			{
+				"spy"						"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"								"10 0 -6"
+			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"cloak consume rate decreased"
+				{
+					"attribute_class"								"mult_cloak_meter_consume_rate"
+					"value" 										"0.6"
+				}
+				"add cloak on hit"
+				{
+					"attribute_class"								"add_cloak_on_hit"
+					"value" 										"15"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"damage penalty"
+				{
+					"attribute_class"								"mult_dmg"
+					"value"											"0.8"
+				}
+			}
+			
+			// Sounds & Visuals
+			"image_inventory"				"backpack/workshop/weapons/c_models/c_letranger/c_letranger"
+			"model_player"					"models/workshop/weapons/c_models/c_letranger/c_letranger.mdl"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_light_gun_pickup.wav"
+			"drop_sound"					"ui/item_light_gun_drop.wav"
+			"item_iconname"					"letranger"
+			"visuals"
+			{
+				"sound_single_shot"			"Weapon_Letranger.Single"
+				"sound_burst"				"Weapon_Letranger.SingleCrit"
+			}
+		}
+		"9802"	// Your Eternal Reward
+		{
+			// Name and Description
+			"name"							"Your Eternal Reward"
+			"item_name"						"Your Eternal Reward"
+			"item_logname"					"Your Eternal Reward"
+			"item_type_name"				"#TF_Weapon_Knife"
+			"item_description"				"And here is your reward!"
+			"item_quality"					"unique"
+			"propername"					"1"
+			
+			// Weapon Attributes
+			"item_class"					"tf_weapon_knife"
+			"item_slot"						"melee"
+			"used_by_classes"
+			{
+				"spy"						"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"								"5 0 -4"
+			}
+			"attributes"
+			{	
+				///////////////    Positive Attributes    ///////////////
+				"disguise on backstab"
+				{
+					"attribute_class"								"set_disguise_on_backstab"
+					"value" 										"1"
+				}
+				"silent killer"
+				{
+					"attribute_class"								"set_silent_killer"
+					"value" 										"1"
+				}
+
+				///////////////    Negative Attributes    ///////////////
+				"mult cloak meter consume rate"
+				{
+					"attribute_class"								"mult_cloak_meter_consume_rate"
+					"value" 										"1.33"
+				}
+				"mod_disguise_consumes_cloak"
+				{
+					"attribute_class"								"mod_disguise_consumes_cloak"
+					"value"											"1"
+				}
+				
+				///////////////     Hidden Attributes     ///////////////
+				"hidden separator"									"1"
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"								"set_weapon_mode"
+					"value" 										"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"								"special_taunt"
+					"value" 										"1"
+				}
+			}
+			
+			// Sounds & Visuals
+			"image_inventory"				"backpack/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward"
+			"model_player"					"models/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward.mdl"
+			"attach_to_hands"				"1"
+			"mouse_pressed_sound"			"ui/item_light_gun_pickup.wav"
+			"drop_sound"					"ui/item_light_gun_drop.wav"
+			"item_iconname"					"eternal_reward"
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"			"ACT_ITEM2_VM_DRAW"
+					"ACT_VM_IDLE"			"ACT_ITEM2_VM_IDLE"
+					"ACT_VM_HITCENTER"		"ACT_ITEM2_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"		"ACT_ITEM2_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM2_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM2_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM2_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"		"ACT_MELEE_VM_ITEM2_STUN"
+				}
+			}
+		}
 		
 		////////////////////////
 		//  Civilian Weapons  //
