@@ -2055,6 +2055,11 @@
 					"attribute_class"								"apply_z_velocity_on_damage"
 					"value"											"250"
 				}
+				"max health additive bonus"
+				{
+					"attribute_class"								"add_maxhealth"
+					"value"											"15"
+				}
 
 				///////////////    Negative Attributes    ///////////////
 				"damage penalty"
