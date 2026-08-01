@@ -136,6 +136,7 @@
 			"item_logname"											"American Eagle"
 			"item_iconname"											"american eagle"
 			"item_type_name"										"#TF_Weapon_Shotgun"
+			"prefab"												"hasTaunt_Laugh"
 			"item_description"										"SCREAMIN' EAGLES!
 
 			Model by: NapyDaWise & Parazit"
@@ -177,13 +178,6 @@
 			"attach_to_hands"										"2"
 			"mouse_pressed_sound"									"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"											"ui/item_heavy_gun_drop.wav"
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"soldier"				"scenes/player/soldier/low/taunt04_musket.vcd"
-				}
-			}
 			"visuals"
 			{
 			}	
