@@ -135,7 +135,6 @@
 			"item_name"												"American Eagle"
 			"item_logname"											"American Eagle"
 			"item_iconname"											"american eagle"
-			"prefab"												"hasTaunt_Laugh"
 			"item_type_name"										"#TF_Weapon_Shotgun"
 			"item_description"										"SCREAMIN' EAGLES!
 
@@ -178,6 +177,13 @@
 			"attach_to_hands"										"2"
 			"mouse_pressed_sound"									"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"											"ui/item_heavy_gun_drop.wav"
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"soldier"				"scenes/player/soldier/low/taunt04_musket.vcd"
+				}
+			}
 			"visuals"
 			{
 			}	
@@ -544,7 +550,9 @@
 			"item_logname"											"Poacher's Pumpshot"
 			"item_iconname"											"poachers_pumpshot"
 			"item_type_name"										"#TF_Weapon_Shotgun"
-			"item_description"										"Pack a punch from any range!"
+			"item_description"										"Pack a punch from any range!
+
+			Model by: Haau"
 			"item_quality"											"Community"
 			"propername"											"0"
 			
