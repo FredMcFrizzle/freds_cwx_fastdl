@@ -1,0 +1,43 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "ffs/models/soldier/gate_crasher/c_siegeflag"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "1.5"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[0.25 0.5 1.0]"
+	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "3"	
+	"$rimlightboost" "2"
+
+	"$glowcolor" "1"
+	
+	"$nocull" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}
+

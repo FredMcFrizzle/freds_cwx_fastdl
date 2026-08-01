@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "ffs/backpack/american_eagle/american_eagle"
+	"$translucent" 1
+	"$vertexcolor" 1
+}

@@ -1,0 +1,55 @@
+//--------------------------------------------------//
+//-- Freds Fight Starters! - Weapon Sound Scripts --//
+//--------------------------------------------------//
+//
+// This is just the sounds for the weapons. unsure if theres a proper way to make this work with other mods like the custom item scripts but oh well...
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+"Weapon_Burgess.Shells"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"ffs/burgess/burgess_reload.wav"
+}
+
+"Weapon_Burgess.Close"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"ffs/burgess/burgess_close.wav"
+}
+
+"Weapon_Burgess.Cock_Back"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"ffs/burgess/burgess_pumpback.wav"
+}
+
+"Weapon_Burgess.Cock_Forward"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"ffs/burgess/burgess_pumpforward.wav"
+}
+
+"Weapon_Burgess.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"volume"	"0.4"
+	"wave"		"ffs/burgess/burgess_shoot.wav"
+}
+
+"Weapon_Burgess.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"volume"	"0.4"
+	"wave"		"ffs/burgess/burgess_shoot_crit.wav"
+}
