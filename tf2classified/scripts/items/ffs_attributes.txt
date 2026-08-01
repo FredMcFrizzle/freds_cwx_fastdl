@@ -1,0 +1,114 @@
+"items_game"
+{
+	// These are the Freds Fight Starters custom attributes. used for descriptions mostly.
+	"attributes"
+	{
+		"9000"
+		{
+			"name"		"bullets per shot penalty"
+			"attribute_class"		"mult_bullets_per_shot"
+			"description_string"		"%s1% bullets per shot"
+			"description_format"		"value_is_percentage"
+			"hidden"		"0"
+			"effect_type"		"negative"
+			"stored_as_integer"		"0"
+		}
+		"9001"
+		{
+			"name"		"damage penalty DISPLAY"
+			"attribute_class"		"item_meter_starts_empty_DISPLAY_ONLY"
+			"description_string"		"#Attrib_DamageDone_Negative"
+			"description_format"		"value_is_percentage"
+			"hidden"		"0"
+			"effect_type"		"negative"
+			"stored_as_integer"		"0"
+		}
+		"9002"	
+		{
+			"name"			"longer damage falloff distance TXT"
+			"attribute_class"		"mult_falloff_distance"
+			"description_string"	"+%s1% damage falloff distance"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+			"hidden"				"0"
+			"stored_as_integer"		"0"
+		}
+		"9003"	
+		{
+			"name"			"aiming movespeed increased SNIPER"
+			"attribute_class"		"mult_player_aiming_movespeed"
+			"description_string"	"+%s1% faster move speed while charging"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+			"hidden"				"0"
+			"stored_as_integer"		"0"
+		}
+		"9004"	
+		{
+			"name"			"on kill quickheal"
+			"description_string"	"On Kill: apply a healing effect to all nearby teammates."
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+			"hidden"				"0"
+			"stored_as_integer"		"0"
+		}
+		"9005"	
+		{
+			"name"			"on miss become drunk"
+			"description_string"	"On Miss: CHUG! CHUG! CHUG!"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+			"hidden"				"0"
+			"stored_as_integer"		"0"
+		}
+		"9006"
+		{
+			"name"		"spread penalty SNIPER"
+			"attribute_class"		"mult_spread_scale"
+			"description_string"	"Bullets have random spread"
+			"description_format"	"value_is_additive"
+			"hidden"				"0"
+			"effect_type"			"negative"
+			"stored_as_integer"		"0"
+		}
+		"9007"
+		{
+			"name"		"can headshot SNIPER"
+			"attribute_class"		"can_headshot"
+			"description_string"	"Can headshot independent of zoom"
+			"description_format"	"value_is_additive"
+			"hidden"				"0"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"9008"
+		{
+			"name"		"bullets per shot bonus SNIPER"
+			"attribute_class"		"mult_bullets_per_shot"
+			"description_string"	"Fires multiple pellets"
+			"description_format"	"value_is_percentage"
+			"hidden"				"0"
+			"effect_type"			"positive"
+			"stored_as_integer"		"0"
+		}
+		"9009"
+		{
+			"name"		"gate crasher EXPLAIN"
+			"description_string"	"Provides an increase in health regen, fire rate, and reload rate while banner is active."
+			"description_format"	"value_is_percentage"
+			"hidden"				"0"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"0"
+		}
+		"9010"
+		{
+			"name"		"dmg taken from burntarget reduced on active TEXT"
+			"attribute_class"	"mult_dmgtaken_from_burning_target_active"
+			"description_string"	"+%s1% damage resistance from burning players while active."
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+	}
+}

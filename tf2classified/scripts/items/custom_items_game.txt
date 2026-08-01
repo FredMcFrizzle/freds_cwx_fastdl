@@ -1,4 +1,8 @@
+///////// DO NOT REMOVE! ///////////
 #base "items_game.txt"
+#base "tf2c_unlisted_attributes.txt"
+#base "ffs_attributes.txt"
+///////// DO NOT REMOVE! ///////////
 
 "items_game"
 {
@@ -35,12 +39,18 @@
 			"attributes"
 			{
 				///////////////    Positive Attributes    ///////////////
-				"deflect on swing"									{"value"	"1"}
+				"provide on active"									{"value"	"1"} // This is unnessicary. just for the description for the player
+				"lifeleech on damage"								{"value"	"1"}
+				"mult dmg with reduced health"						{"value"	"1311"}
+				"bleeding duration"									{"value"	"5"}
 				 
 				///////////////    Negative Attributes    ///////////////
+				"damage penalty DISPLAY"							{"value"	"0"}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
+				"mult dmg crit multiplier"							{"value"	"0.995"} // I like round numbers
+				"damage penalty"									{"value"	"0.001"}
 			}
 			
 			// Sounds & Visuals
@@ -87,8 +97,8 @@
 			"attributes"
 			{
 				///////////////    Positive Attributes    ///////////////
-				"deploy time decreased"								{"value"	"0.5"}
-				"maxammo primary reduced"							{"value"	"0.5"}
+				"maxammo primary increased"							{"value"	"1.25"}
+				"gate crasher EXPLAIN"								{"value"	"1"}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"
@@ -135,8 +145,8 @@
 			"item_name"												"American Eagle"
 			"item_logname"											"American Eagle"
 			"item_iconname"											"american eagle"
-			"item_type_name"										"#TF_Weapon_Shotgun"
 			"prefab"												"hasTaunt_Laugh"
+			"item_type_name"										"#TF_Weapon_Shotgun"
 			"item_description"										"SCREAMIN' EAGLES!
 
 			Model by: NapyDaWise & Parazit"
@@ -214,7 +224,7 @@
 			"attributes"
 			{
 				///////////////    Positive Attributes    ///////////////
-				"dmg taken from burning target reduced on active"	{"value"	"0.5"}
+				"dmg taken from burntarget reduced on active TEXT"	{"value"	"0.5"}
 				
 				///////////////    Negative Attributes    ///////////////
 				"dmg penalty vs nonburning"							{"value"	"0.5"}
@@ -544,9 +554,7 @@
 			"item_logname"											"Poacher's Pumpshot"
 			"item_iconname"											"poachers_pumpshot"
 			"item_type_name"										"#TF_Weapon_Shotgun"
-			"item_description"										"Pack a punch from any range!
-
-			Model by: Haau"
+			"item_description"										"Pack a punch from any range!"
 			"item_quality"											"Community"
 			"propername"											"0"
 			
@@ -719,147 +727,6 @@
 				"taunt attack name"									"TAUNTATK_SCOUT_GRAND_SLAM"
 				"taunt attack time"									"3.2"
 			}
-		}
-	}
-	"attributes"
-	{
-		"9000"
-		{
-			"name"		"thermal_thruster_air_launch_desc"
-			"attribute_class"		"thermal_thruster_air_launch"
-			"description_string"		"#Attrib_ThermalThrusterAirLaunch"
-			"description_format"		"value_is_additive"
-			"hidden"		"0"
-			"effect_type"		"positive"
-			"stored_as_integer"		"0"
-		}
-		"9001"
-		{
-			"name"		"golfclub_knockback_desc"
-			"attribute_class"		"golfclub_knockback_desc"
-			"description_string"		"On Hit: Launches target upward"
-			"description_format"		"value_is_additive"
-			"hidden"		"0"
-			"effect_type"		"positive"
-			"stored_as_integer"		"0"
-		}
-		"9002"
-		{
-			"name"		"mult_item_meter_charge_rate_desc"
-			"attribute_class"		"mult_item_meter_charge_rate"
-			"description_string"		"#Attrib_ChargeMeterRateMult"
-			"description_format"		"value_is_percentage"
-			"hidden"		"0"
-			"effect_type"		"positive"
-			"stored_as_integer"		"0"
-		}
-		"9003"
-		{
-			"name"		"mod soldier buff range positive"
-			"attribute_class"		"mod_soldier_buff_range"
-			"description_string"		"%s1% banner radius"
-			"description_format"		"value_is_percentage"
-			"hidden"		"0"
-			"effect_type"		"positive"
-			"stored_as_integer"		"0"
-		}
-		"9004"
-		{
-			"name"		"mod soldier buff range negative"
-			"attribute_class"		"mod_soldier_buff_range"
-			"description_string"		"%s1% banner radius"
-			"description_format"		"value_is_percentage"
-			"hidden"		"0"
-			"effect_type"		"negative"
-			"stored_as_integer"		"0"
-		}
-		"9005"
-		{
-			"name"		"bullets per shot penalty"
-			"attribute_class"		"mult_bullets_per_shot"
-			"description_string"		"%s1% bullets per shot"
-			"description_format"		"value_is_percentage"
-			"hidden"		"0"
-			"effect_type"		"negative"
-			"stored_as_integer"		"0"
-		}
-		"9006"
-		{
-			"name"		"damage penalty DISPLAY"
-			"attribute_class"		"item_meter_starts_empty_DISPLAY_ONLY"
-			"description_string"		"#Attrib_DamageDone_Negative"
-			"description_format"		"value_is_percentage"
-			"hidden"		"0"
-			"effect_type"		"negative"
-			"stored_as_integer"		"0"
-		}
-		"9007"	
-		{
-			"name"			"longer damage falloff distance TXT"
-			"attribute_class"		"mult_falloff_distance"
-			"description_string"	"+%s1% damage falloff distance"
-			"description_format"	"value_is_percentage"
-			"effect_type"			"positive"
-			"hidden"				"0"
-			"stored_as_integer"		"0"
-		}
-		"9008"	
-		{
-			"name"			"aiming movespeed increased SNIPER"
-			"attribute_class"		"mult_player_aiming_movespeed"
-			"description_string"	"+%s1% faster move speed while charging"
-			"description_format"	"value_is_percentage"
-			"effect_type"			"positive"
-			"hidden"				"0"
-			"stored_as_integer"		"0"
-		}
-		"9009"	
-		{
-			"name"			"on kill quickheal"
-			"description_string"	"On Kill: apply a healing effect to all nearby teammates."
-			"description_format"	"value_is_percentage"
-			"effect_type"			"positive"
-			"hidden"				"0"
-			"stored_as_integer"		"0"
-		}
-		"9010"	
-		{
-			"name"			"on miss become drunk"
-			"description_string"	"On Miss: CHUG! CHUG! CHUG!"
-			"description_format"	"value_is_percentage"
-			"effect_type"			"negative"
-			"hidden"				"0"
-			"stored_as_integer"		"0"
-		}
-		"9011"
-		{
-			"name"		"spread penalty SNIPER"
-			"attribute_class"		"mult_spread_scale"
-			"description_string"	"Bullets have random spread"
-			"description_format"	"value_is_additive"
-			"hidden"				"0"
-			"effect_type"			"negative"
-			"stored_as_integer"		"0"
-		}
-		"9012"
-		{
-			"name"		"can headshot SNIPER"
-			"attribute_class"		"can_headshot"
-			"description_string"	"Can headshot independent of zoom"
-			"description_format"	"value_is_additive"
-			"hidden"				"0"
-			"effect_type"			"positive"
-			"stored_as_integer"		"1"
-		}
-		"9013"
-		{
-			"name"		"bullets per shot bonus SNIPER"
-			"attribute_class"		"mult_bullets_per_shot"
-			"description_string"	"Fires multiple pellets"
-			"description_format"	"value_is_percentage"
-			"hidden"				"0"
-			"effect_type"			"positive"
-			"stored_as_integer"		"0"
 		}
 	}
 	"prefabs"

@@ -1,0 +1,967 @@
+"items_game"
+{
+	"attributes"
+	{
+// (AID 4323~4403) |	Hidden TF2 Attributes				|	Tags: (Attribute)
+//-----
+// [Overview: Weapon stats hidden within Live TF2's code - dragged in for clarity! Some may not necessarily work, or have code commented out. Attribute ID's, names, and descriptions are subject to change per-mod.]
+//--------------------------------------------------
+		"4323"
+		{
+			"name"					"fires healing bolts"
+			"attribute_class"		"fires_healing_bolts"
+			"description_string"	"#Attrib_FiresHealingBolts"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4324"
+		{
+			"name"					"parachute disabled"
+			"attribute_class"		"parachute_disabled"
+			"description_string"	"Cannot deploy parachutes on wearer"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+		}
+		"4325"
+		{
+			"name"					"fires milk bolt"
+			"attribute_class"		"fires_milk_bolt"
+			"description_string"	"Alt-Fire: Fires and applies Mad Milk to your shot!"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4326"
+		{
+			"name"					"force distribute currency on death"
+			"attribute_class"		"force_distribute_currency_on_death"
+			"description_string"	"Automatically distributes credits to killer on death"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4327"
+		{
+			"name"					"airblast dashes"
+			"attribute_class"		"airblast_dashes"
+			"description_string"	"Airblasting flings you forwards! Unable to deflect enemies or projectiles"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"1"
+		}
+		"4328"
+		{
+			"name"					"melee cleave attack"
+			"attribute_class"		"melee_cleave_attack"	// Non-functional? Also crashes the game.
+			"description_string"	"Attack hits all enemies around you!"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4329"
+		{
+			"name"					"extra damage on hit penalty"
+			"attribute_class"		"extra_damage_on_hit_penalty"
+			"description_string"	"Deal less damage with each hit"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+		}
+		"4330"
+		{
+			"name"					"extra damage on hit"
+			"attribute_class"		"extra_damage_on_hit"
+			"description_string"	"Deal more damage with each hit"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4331"
+		{
+			"name"					"mod teleporter speed boost"
+			"attribute_class"		"mod_teleporter_speed_boost"
+			"description_string"	"Teleporters grant a speed-boost after use"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4332"
+		{
+			"name"					"set turn to ice"
+			"attribute_class"		"set_turn_to_ice"	// Non-functional?
+			"description_string"	"Victims turn to ice"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4333"
+		{
+			"name"					"can breathe under water"
+			"attribute_class"		"can_breathe_under_water"
+			"description_string"	"Able to breathe underwater"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4334"
+		{
+			"name"					"cannot swim"
+			"attribute_class"		"cannot_swim"
+			"description_string"	"Wearer cannot swim, and moves -80% slower underwater"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+		}
+		"4335"
+		{
+			"name"					"swimming mastery"
+			"attribute_class"		"swimming_mastery"
+			"description_string"	"Move at full speed while underwater"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4336"
+		{
+			"name"					"ability doubletap teleport"
+			"attribute_class"		"ability_doubletap_teleport"	// Non-functional?
+			"description_string"	"Perform a teleport by double-tapping your movement keys"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4337"
+		{
+			"name"					"mod ignore resists absorbs"
+			"attribute_class"		"mod_ignore_resists_absorbs"	// Non-functional?
+			"description_string"	"Damage ignores resistances"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4338"
+		{
+			"name"					"scoreboard resistances"
+			"attribute_class"		"scoreboard_minigame"
+			"description_string"	"Settle the score!
+While playing, you'll gain 1 extra point for every kill you score, but lose 3 points for every death you take."
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"1"
+		}
+		"4339"
+		{
+			"name"					"wet immunity"
+			"attribute_class"		"wet_immunity"
+			"description_string"	"Immune to the effects of water and throwable liquids"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4340"
+		{
+			"name"					"ability master sniper"
+			"attribute_class"		"ability_master_sniper"
+			"description_string"	"+50% charge rate (+35% for Bows) per point"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4341"
+		{
+			"name"					"last shot crits"
+			"attribute_class"		"last_shot_crits"
+			"description_string"	"100% critical hit on the last shot in a clip"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4344"
+		{
+			"name"					"add give health to teammate on hit"
+			"attribute_class"		"add_give_health_to_teammate_on_hit"
+			"description_string"	"On Hit Teammate: Heal +%s1 health to an ally, draining yours"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4345"
+		{
+			"name"					"airblast functionality flags"
+			"attribute_class"		"airblast_functionality_flags"	// Non-functional?
+			"description_string"	"Airblast is limited"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4346"
+		{
+			"name"					"reverse airblast"
+			"attribute_class"		"reverse_airblast"	// Non-functional?
+			"description_string"	"Airblast pulls enemies closer instead of pushing"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4347"
+		{
+			"name"					"mod minigun can holster while spinning"
+			"attribute_class"		"mod_minigun_can_holster_while_spinning"
+			"description_string"	"Can switch weapons while spun-up"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4348"
+		{
+			"name"					"sapper deploy time"
+			"attribute_class"		"sapper_deploy_time"	// Non-functional?
+			"description_string"	"Sapper has deploy time"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"1"
+			"hidden"				"1"
+		}
+		"4349"
+		{
+			"name"					"kill combo fire rate boost"
+			"attribute_class"		"kill_combo_fire_rate_boost"
+			"description_string"	"Raises firing speed after killing any class
+increasing with up to 2 more same-class kills"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4350"
+		{
+			"name"					"mult dispenser rate"
+			"attribute_class"		"mult_dispenser_rate"
+			"description_string"	"+%s1% Dispenser healing and resupply rate"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4351"
+		{
+			"name"					"mvm sentry ammo"
+			"attribute_class"		"mvm_sentry_ammo"
+			"description_string"	"+%s1% max sentry ammo on wearer"	// Has a real string, #Attrib_SentryAmmo, but it's too short.
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4353"
+		{
+			"name"					"build small sentries"
+			"attribute_class"		"build_small_sentries"
+			"description_string"	"Sentry guns are smaller and cost less to upgrade"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4354"
+		{
+			"name"					"mult teleporter recharge rate"
+			"attribute_class"		"mult_teleporter_recharge_rate"
+			"description_string"	"+%s1% faster teleporter recharge rate"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4355"
+		{
+			"name"					"disguise as dispenser on crouch"
+			"attribute_class"		"disguise_as_dispenser_on_crouch"
+			"description_string"	"Disguise as an enemy Dispenser when crouching"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4356"
+		{
+			"name"					"ubercharge transfer"
+			"attribute_class"		"ubercharge_transfer"
+			"description_string"	"On Hit: Victim loses a small amount of ÜberCharge"	// I can't really predict any other sane use-case for this extremely conditional attribute, so let's just go with this I guess.
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4357"
+		{
+			"name"					"teleport instead of die"
+			"attribute_class"		"teleport_instead_of_die"
+			"description_string"	"+%s1% chance to teleport to spawn instead of dying"	// Has a real string, #Attrib_TeleportInsteadOfDie, but it's way too wordy.
+			"description_format"	"value_is_additive_percentage"
+			"effect_type"			"positive"
+		}
+		"4358"
+		{
+			"name"					"mod projectile heat seek power"
+			"attribute_class"		"mod_projectile_heat_seek_power"
+			"description_string"	"Flares are heat seeking toward burning targets"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4359"
+		{
+			"name"					"mult dmg vs same class"
+			"attribute_class"		"mult_dmg_vs_same_class"
+			"description_string"	"+%s1% damage bonus vs your own class"	// Has a real string, #Attrib_DamageSameClass, but it's formatted weirdly compared to other damage bonuses (or penalties).
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4360"
+		{
+			"name"					"uber on damage taken"
+			"attribute_class"		"uber_on_damage_taken"
+			"description_string"	"+%s1% chance to become Übercharged on taking damage"	// Has a real string, #Attrib_UberOnHitChance, but it's a little too informally written.
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4361"
+		{
+			"name"					"mult dmgtaken from melee"
+			"attribute_class"		"mult_dmgtaken_from_melee"
+			"description_string"	"%s1% melee damage vulnerability on wearer"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"4362"
+		{
+			"name"					"mult crit when health is below percent"
+			"attribute_class"		"mult_crit_when_health_is_below_percent"
+			"description_string"	"Become crit-boosted while below %s1% health"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4363"
+		{
+			"name"					"penetration damage penalty"
+			"attribute_class"		"penetration_damage_penalty"
+			"description_string"	"%s1% damage penalty per penetrated enemy"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"4364"
+		{
+			"name"					"firing forward pull"
+			"attribute_class"		"firing_forward_pull"
+			"description_string"	"Move forward automatically while firing"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4365"
+		{
+			"name"					"mod soldier buff range"
+			"attribute_class"		"mod_soldier_buff_range"
+			"description_string"	"+%s1% buff range"	// Has a real string, #Attrib_SoldierBackpackRange, but it's too short.
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4366"
+		{
+			"name"					"mult rocketjump deploy time"
+			"attribute_class"		"mult_rocketjump_deploy_time"
+			"description_string"	"#Attrib_RocketJump_DeployTime_DecreasedSingle"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4367"
+		{
+			"name"					"aoe heal chance"
+			"attribute_class"		"aoe_heal_chance"
+			"description_string"	"On Hit: Roll the dice! Gain a brief healing aura on success"	// Has a real string, #Attrib_AOEHealChance_Small, but it's way too wordy.
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4368"
+		{
+			"name"					"crits on damage"
+			"attribute_class"		"crits_on_damage"
+			"description_string"	"On Hit: Roll the dice! Gain 100% critical hits on success"	// Has a real string, #Attrib_CritStreakChance_Small, but it's way too wordy.
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4369"
+		{
+			"name"					"stun on damage"
+			"attribute_class"		"stun_on_damage"
+			"description_string"	"On Hit: Roll the dice! Inflict stun on enemies on success"	// Has a real string, #Attrib_StunChance_Small, but it's way too wordy.
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4370"
+		{
+			"name"					"aoe blast on damage"
+			"attribute_class"		"aoe_blast_on_damage"
+			"description_string"	"On Hit: Roll the dice! Shock nearby enemies on success"	// Has a real string, #Attrib_AOEDamageChance_Small, but it's way too wordy.
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4371"
+		{
+			"name"					"ubercharge ammo"
+			"attribute_class"		"ubercharge_ammo"
+			"description_string"	"Depletes %s1 ÜberCharge per shot"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4372"
+		{
+			"name"					"mul nonrocketjump attackrate"
+			"attribute_class"		"mul_nonrocketjump_attackrate"
+			"description_string"	"Decreased attack speed while not blast jumping"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"4373"
+		{
+			"name"					"mult dmg with reduced health"
+			"attribute_class"		"mult_dmg_with_reduced_health"
+			"description_string"	"Damage increases as health decreases"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"4374"
+		{
+			"name"					"mult airblast primary refire time"
+			"attribute_class"		"mult_airblast_primary_refire_time"
+			"description_string"	"%s1% slower firing speed on airblast"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"4375"
+		{
+			"name"					"mod flamethrower spinup time"
+			"attribute_class"		"mod_flamethrower_spinup_time"
+			"description_string"	"Flamethrower has a spin-up delay"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4376"
+		{
+			"name"					"mult airblast cone scale"
+			"attribute_class"		"mult_airblast_cone_scale"
+			"description_string"	"+%s1% airblast width"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4377"
+		{
+			"name"					"mult sniper charge per sec with enemy under crosshair"
+			"attribute_class"		"mult_sniper_charge_per_sec_with_enemy_under_crosshair"
+			"description_string"	"+%s1% charge rate while aiming at an enemy"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4378"
+		{
+			"name"					"sniper beep with enemy under crosshair"
+			"attribute_class"		"sniper_beep_with_enemy_under_crosshair"
+			"description_string"	"Receive an alert while aiming at an enemy"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4379"
+		{
+			"name"					"flame waterfall"
+			"attribute_class"		"flame_waterfall"	// Non-functional?
+			"description_string"	"Flamethrower waterfall"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4380"
+		{
+			"name"					"custom charge meter"
+			"attribute_class"		"custom_charge_meter"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4381"
+		{
+			"name"					"override hand model index"
+			"attribute_class"		"override_hand_model_index"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4382"
+		{
+			"name"					"lifeleech on damage"
+			"attribute_class"		"lifeleech_on_damage"
+			"description_string"	"Gain back health based on damage done"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4383" // Most of these ones don't work, included for posterity...
+		{
+			"name"					"arrow mastery"
+			"attribute_class"		"arrow_mastery"	// Non-functional?
+			"description_string"	"Arrow mastery"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4384"
+		{
+			"name"					"add sniper glow enemies in scope"
+			"attribute_class"		"add_sniper_glow_enemies_in_scope"	// Non-functional?
+			"description_string"	"While scoped, enemies under your crosshair are highlighted"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4385"
+		{
+			"name"					"ability cloak sniper"
+			"attribute_class"		"ability_cloak_sniper"	// Non-functional?
+			"description_string"	"Become invisible to enemies while zoomed in"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4386"
+		{
+			"name"					"ability cloak phase"
+			"attribute_class"		"ability_cloak_phase"	// Non-functional?
+			"description_string"	"Pass through enemies while fully cloaked"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4387"
+		{
+			"name"					"ability spy traps"
+			"attribute_class"		"ability_spy_traps"	// Non-functional?
+			"description_string"	"Gain access to 4 different spy-gadgets"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4388"
+		{
+			"name"					"sapper explodes on det"
+			"attribute_class"		"sapper_explodes_on_det"	// Non-functional?
+			"description_string"	"Sapper explodes"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4389"
+		{
+			"name"					"sapper explodes on timer"
+			"attribute_class"		"sapper_explodes_on_timer"	// Non-functional?
+			"description_string"	"Sapper explodes after timer runs out"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4390"
+		{
+			"name"					"disable buildings on hit"
+			"attribute_class"		"disable_buildings_on_hit"	// Non-functional?
+			"description_string"	"On Hit: Disable building functions for %s1 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4391"
+		{
+			"name"					"teleporter carry speed"
+			"attribute_class"		"teleporter_carry_speed"	// Non-functional?
+			"description_string"	"+%s1% faster move speed hauling Teleporters"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4392"
+		{
+			"name"					"teleporter is speedpad"
+			"attribute_class"		"teleporter_is_speedpad"	// Non-functional?
+			"description_string"	"Replaces the Teleporter with a Speed-Pad"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4393"
+		{
+			"name"					"allows building minidispenser"
+			"attribute_class"		"allows_building_minidispenser"	// Non-functional?
+			"description_string"	"Replaces the Dispenser with a Mini-Dispenser"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4394"
+		{
+			"name"					"override engineer object type"
+			"attribute_class"		"override_engineer_object_type"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4395"
+		{
+			"name"					"override engineer object type 2"
+			"attribute_class"		"override_engineer_object_type_2"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4396"
+		{
+			"name"					"medic machinery beam"
+			"attribute_class"		"medic_machinery_beam"	// Non-functional?
+			"description_string"	"Can heal and repair friendly buildings"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4397"
+		{
+			"name"					"permanent medic shield"
+			"attribute_class"		"permanent_medic_shield"	// Non-functional?
+			"description_string"	"Projectile shield never expires"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4398"
+		{
+			"name"					"appear as mvm robot"
+			"attribute_class"		"appear_as_mvm_robot"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"hidden"				"1"
+		}
+		"4399"
+		{
+			"name"					"mvm see cash through wall"
+			"attribute_class"		"mvm_see_cash_through_wall"	// Non-functional?
+			"description_string"	"See uncollected credits through walls"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4400"
+		{
+			"name"					"rocket pack"
+			"attribute_class"		"rocket_pack"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4401"
+		{
+			"name"					"mod flamethrower napalm"
+			"attribute_class"		"mod_flamethrower_napalm"	// Non-functional?
+			"description_string"	"Flamethrower is napalm"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+		"4402"
+		{
+			"name"					"righthand_pose_parameter"
+			"attribute_class"		"righthand pose parameter"	// Non-functional?
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"hidden"				"1"
+		}
+
+// (AID 4900~4912) |	TF2 Set Bonuses Fix					|	Tags: (Attribute)
+//-----
+// [Overview: Set bonus weapon stats from Live TF2, fixed to be functional in TF2 Classified. Ignores stats that already exist in other entries.]
+//--------------------------------------------------
+		"4900"
+		{
+			"name"					"cloak blink time penalty"
+			"attribute_class"		"cloak_blink_time_penalty"
+			"description_string"	"#Attrib_CloakBlinkTimePenalty"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4901"
+		{
+			"name"					"quiet unstealth"
+			"attribute_class"		"set_quiet_unstealth"
+			"description_string"	"#Attrib_QuietUnstealth"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4902"
+		{
+			"name"					"dmg from sentry reduced"
+			"attribute_class"		"dmg_from_sentry_reduced"
+			"description_string"	"#Attrib_DmgFromSentryReduced"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"4903"
+		{
+			"name"					"no death from headshots"
+			"attribute_class"		"no_death_from_headshots"
+			"description_string"	"#Attrib_NoDeathFromHeadshots"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4904"
+		{
+			"name"					"special dsp"
+			"attribute_class"		"special_dsp"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4905"
+		{
+			"name"					"mystery solving time decrease"
+			"attribute_class"		"mystery_solving_time_decrease"
+			"description_string"	"#Attrib_MysterySolvingTimeDecrease"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4906"
+		{
+			"name"					"chance of hunger decrease"
+			"attribute_class"		"chance_of_hunger_decrease"
+			"description_string"	"#Attrib_ChanceOfHungerDecrease"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4907"
+		{
+			"name"					"custom taunt particle attr"
+			"attribute_class"		"custom_taunt_particle_attr"
+			"description_string"	"#Attrib_TauntParticles"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4908"
+		{
+			"name"					"calling card on kill"
+			"attribute_class"		"calling_card_on_kill"
+			"description_string"	"#Attrib_CallingCardOnKill"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4909"
+		{
+			"name"					"alien isolation xeno bonus pos"
+			"attribute_class"		"alien_isolation_xeno_bonus_pos"
+			"description_format"	"value_is_additive"
+			"description_string"	"#Attrib_AiXenoSetBonusPos"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4910"
+		{
+			"name"					"alien isolation xeno bonus neg"
+			"attribute_class"		"alien_isolation_xeno_bonus_neg"
+			"description_format"	"value_is_additive"
+			"description_string"	"#Attrib_AiXenoSetBonusNeg"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+		}
+		"4911"
+		{
+			"name"					"alien isolation merc bonus pos"
+			"attribute_class"		"alien_isolation_merc_bonus_pos"
+			"description_format"	"value_is_additive"
+			"description_string"	"#Attrib_AiMercSetBonusPos"
+			"effect_type"			"positive"
+			"stored_as_integer"		"1"
+		}
+		"4912"
+		{
+			"name"					"alien isolation merc bonus neg"
+			"attribute_class"		"alien_isolation_merc_bonus_neg"
+			"description_format"	"value_is_additive"
+			"description_string"	"#Attrib_AiMercSetBonusNeg"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+		}
+
+// (AID 4950~4999) |	Hidden TF2C Attributes				|	Tags: (Attribute)
+//-----
+// [Overview: Weapon stats hidden within TF2 Classified's code - dragged in for clarity! Attribute ID's, names, and descriptions are subject to change per-mod.]
+//--------------------------------------------------
+		"4951"	// From Legacy TF2C's schema
+		{
+			"name"					"gravity mod wearer increased"
+			"attribute_class"		"gravity_mod_wearer"
+			"description_string"	"+%s1% gravity on wearer"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"negative"
+		}
+		"4952"	// From Legacy TF2C's schema
+		{
+			"name"					"gravity mod wearer reduced"
+			"attribute_class"		"gravity_mod_wearer"
+			"description_string"	"%s1% gravity on wearer"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4953"	// From Legacy TF2C's schema
+		{
+			"name"					"civ boost aura override"
+			"attribute_class"		"add_civ_aura_override"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4954"	// From Legacy TF2C's schema
+		{
+			"name"					"civ boost targets enemies"
+			"attribute_class"		"add_civ_boost_enemies"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4955"	// From Legacy TF2C's schema
+		{
+			"name"					"minigun spindown time increased"
+			"attribute_class"		"mult_minigun_spindown_time"
+			"description_string"	"#Attrib_MinigunSpindown_Increased"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"4956"	// From Legacy TF2C's schema
+		{
+			"name"					"minigun spindown time decreased"
+			"attribute_class"		"mult_minigun_spindown_time"
+			"description_string"	"#Attrib_MinigunSpindown_Decreased"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"4957"	// From Legacy TF2C's schema
+		{
+			"name"					"no sticky detonation"
+			"attribute_class"		"mod_sticky_no_detonation"
+			"description_string"	"#Attrib_NoDetonation"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+			"stored_as_integer"		"1"
+		}
+		"4958"	// From Legacy TF2C's schema
+		{
+			"name"					"no melee crit from tranq"
+			"attribute_class"		"no_melee_crit_from_tranq"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4959"	// From Legacy TF2C's schema
+		{
+			"name"					"medkits cannot overheal unless injured modifier"
+			"attribute_class"		"health_kits_cannot_overheal_unless_injured_modifier"
+			"description_string"	"#Attrib_HealthKitsCannotOverhealUnlessInjuredModifier"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"1"
+		}
+		"4960"	// From Legacy TF2C's schema
+		{
+			"name"					"residual heal rate"
+			"attribute_class"		"residual_heal_rate"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4961"	// From Legacy TF2C's schema
+		{
+			"name"					"residual heal duration"
+			"attribute_class"		"residual_heal_duration"
+			"description_string"	"#Attrib_ResidualHealDuration"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4962"	// From Legacy TF2C's schema
+		{
+			"name"					"proxy mine detonation time decreased"
+			"attribute_class"		"mult_proxymine_detonate_time"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"4963"	// From Legacy TF2C's schema
+		{
+			"name"					"proxy mine detonation time increased"
+			"attribute_class"		"mult_proxymine_detonate_time"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"4964"	// From Legacy TF2C's schema
+		{
+			"name"					"proxy mine no sound"
+			"attribute_class"		"mod_proxymine_no_sound"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4965"	// From Legacy TF2C's schema
+		{
+			"name"					"mod explosive bullet delay time"
+			"attribute_class"		"mod_explosive_bullet_delay_time"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4966"	// From Legacy TF2C's schema
+		{
+			"name"					"stickies dont stick"
+			"attribute_class"		"stickies_dont_stick"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"	
+		}
+		"4967"	// From Legacy TF2C's schema
+		{
+			"name" 					"custom magazine model"
+			"attribute_class"		"custom_magazine_model"
+			"attribute_type"		"string"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4968"	// From Legacy TF2C's schema
+		{
+			"name"					"mod proxymine crouchwalk ignore"
+			"attribute_class"		"mod_proxymine_crouchwalk_ignore"
+			"description_string"	"Bombs can't detect crouching enemies"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4969"	// From Legacy TF2C's schema
+		{
+			"name"					"mod proxymine crouchwalk ignore owner"
+			"attribute_class"		"mod_proxymine_crouchwalk_ignore_owner"
+			"description_string"	"Bombs can't detect crouching owner"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4971"	// From Legacy TF2C's schema
+		{
+			"name"					"add civ boost to self"
+			"attribute_class"		"add_civ_boost_to_self"
+			"attribute_type"		"string"	// Changed to work; not default settings for this attribute in Legacy TF2C
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4972"	// From Legacy TF2C's schema
+		{
+			"name"					"mod coilgun explode time"
+			"attribute_class"		"mod_coilgun_explode_time"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+
+		"4200"
+		{
+			"name"					"dmg taken from fall active"
+			"attribute_class"		"mult_dmgtaken_from_fall_active"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"neutral"
+		}
+		"4201"
+		{
+			"name"					"lunchbox force cooldown"
+			"attribute_class"		"lunchbox_force_cooldown"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+	}
+}
