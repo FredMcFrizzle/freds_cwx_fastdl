@@ -1,0 +1,19 @@
+// Choreo version 1
+actor "sniper"
+{
+  channel "audio"
+  {
+    event speak "sniper_mvm_loot_rare02"
+    {
+      time 0.000000 2.994000
+      param "sniper_mvm_loot_rare02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,134 @@
+// Choreo version 1
+event stoppoint "end"
+{
+  time 7.048442 -1.000000
+  param "noaction"
+}
+actor "Soldier"
+{
+  channel "Animation"
+  {
+    event sequence "taunt_yetipunch"
+    {
+      time 0.0000 4.835748
+      param "taunt_yetipunch"
+      fixedlength
+    }
+    event speak "Soldier.PainSharp01"
+    {
+      time 0.00000 5.046690
+      param "Soldier.PainSharp01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "happyBig"
+    {
+      time 0.574879 5.574879
+      param "player\soldier\emotion\emotion"
+      param2 "happyBig"
+      event_ramp
+      {
+		0.0000 0.2000
+        0.1000 1.0000 "curve_easein_to_curve_easein"
+		1.0000 0.1000 "curve_easein_to_curve_easein"
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 0.934108 1.159777
+      param "Taunt.Engineer01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStompLight"
+    {
+      time 1.554264 1.642790
+      param "Taunt.Engineer01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStompLight"
+    {
+      time 4.577520 4.666046
+      param "Taunt.Engineer01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy03ClothesRustle"
+    {
+      time 0.189922 1.899129
+      param "Taunt.Heavy03ClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 0.616279 1.190610
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy01EquipmentGun"
+    {
+      time 0.857629 1.977992
+      param "Taunt.Heavy01EquipmentGun"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01HandClap"
+    {
+      time 2.008792 2.062307
+      param "Taunt.Engineer01HandClap"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy03ClothesSwipe"
+    {
+      time 2.377009 2.677463
+      param "Taunt.Heavy03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Spy01TieFix"
+    {
+      time 2.012668 2.642509
+      param "Taunt.Spy01TieFix"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy02EquipmentJingle"
+    {
+      time 2.970032 3.483501
+      param "Taunt.Heavy02EquipmentJingle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+  faceposermodel "D:\dev\staging\game\tf\models\player\heavy.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "172"
+  "RampTool" "60"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

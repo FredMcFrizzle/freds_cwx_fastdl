@@ -1,0 +1,114 @@
+// Choreo version 1
+actor "snip"
+{
+  channel "body"
+  {
+    event sequence "taunt_highFiveSuccessFull"
+    {
+      time 0.000000 3.800000
+      param "taunt_highFiveSuccessFull"
+      fixedlength
+    }
+    event speak "Sniper.Go02"
+    {
+      time 0.086956 1.689133
+      param "Sniper.Go02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Sniper.GoodJob03"
+    {
+      time 2.456522 3.097973
+      param "Sniper.GoodJob03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "Cocky"
+    {
+      time 0.202899 2.181159
+      param "player\sniper\emotion\emotion"
+      param2 "Cocky"
+      event_ramp
+      {
+        0.0576 0.9961
+        1.8061 0.9804
+      }
+    }
+    event expression "happyBigClosed"
+    {
+      time 2.144928 3.768116
+      param "player\sniper\emotion\emotion"
+      param2 "happyBigClosed"
+      event_ramp
+      {
+        0.1333 0.7922
+        1.6121 0.7608
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Fist.Miss"
+    {
+      time 1.833333 2.388027
+      param "Weapon_Fist.Miss"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Sniper02FootStomp"
+    {
+      time 2.186667 2.412336
+      param "Taunt.Sniper02FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 2.733333 3.307664
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 0.980000 1.280454
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Sniper03MacheteUnsheath"
+    {
+      time 0.633333 1.353152
+      param "Taunt.Sniper03MacheteUnsheath"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy03EquipmentJingleShort"
+    {
+      time 0.200000 0.713469
+      param "Taunt.Heavy03EquipmentJingleShort"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

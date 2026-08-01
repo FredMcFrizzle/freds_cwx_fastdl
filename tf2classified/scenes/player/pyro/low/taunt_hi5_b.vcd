@@ -1,0 +1,100 @@
+// Choreo version 1
+actor "Pyro"
+{
+  channel "body"
+  {
+    event sequence "taunt_highFiveSuccess"
+    {
+      time -0.000539 4.332795
+      param "taunt_highFiveSuccess"
+      fixedlength
+    }
+    event speak "Pyro.HighFiveSuccess02"
+    {
+      time 2.365079 3.748480
+      param "Pyro.HighFiveSuccess02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Fist.Miss"
+    {
+      time 1.833333 2.398911
+      param "Weapon_Fist.Miss"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierKnuckleCrack"
+    {
+      time 0.606667 0.925851
+      param "Taunt.SoldierKnuckleCrack"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo02EquipmentJingle2"
+    {
+      time 1.500000 1.839229
+      param "Taunt.Demo02EquipmentJingle2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01FootStomp"
+    {
+      time 1.380000 1.605669
+      param "Taunt.Pyro01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01FootStomp"
+    {
+      time 2.106667 2.332336
+      param "Taunt.Pyro01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.PyroClothesRustle"
+    {
+      time 2.453334 4.162540
+      param "Selection.PyroClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01Equipment2"
+    {
+      time 3.200001 4.320364
+      param "Taunt.Pyro01Equipment2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo01FootSpin"
+    {
+      time 2.460000 3.185624
+      param "Taunt.Demo01FootSpin"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

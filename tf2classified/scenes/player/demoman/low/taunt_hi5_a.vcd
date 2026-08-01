@@ -1,0 +1,149 @@
+// Choreo version 1
+actor "demo"
+{
+  channel "body"
+  {
+    event sequence "taunt_highFiveSuccessFull"
+    {
+      time 0.000000 4.166667
+      param "taunt_highFiveSuccessFull"
+      fixedlength
+    }
+    event expression "drunkHappy"
+    {
+      time -0.002315 2.829504
+      param "player\demo\emotion\emotion"
+      param2 "evilHappy"
+      event_ramp
+      {
+        0.0000 0.0000
+        0.2000 0.1333
+        0.5040 0.8902
+        2.5807 0.8902
+        2.8091 0.0000
+      }
+    }
+    event expression "openJaw"
+    {
+      time 1.879295 2.558540
+      param "player\demo\emotion\emotion"
+      param2 "openJaw"
+      event_ramp
+      {
+        0.0000 0.0000
+        0.1420 0.5059
+        0.2960 0.2275
+        0.4640 0.1176
+        0.5340 0.1137
+        0.6740 0.0000
+      }
+    }
+    event expression "happy"
+    {
+      time 2.655092 4.134259
+      param "player\demo\emotion\emotion"
+      param2 "happy"
+      event_ramp
+      {
+        0.0000 0.0000
+        0.1220 1.0000
+        1.4129 1.0000
+      }
+    }
+    event speak "Demoman.LaughShort05"
+    {
+      time 0.057870 1.320455
+      param "Demoman.LaughShort05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Demoman.LaughShort03"
+    {
+      time 3.300926 3.853851
+      param "Demoman.LaughShort03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Fist.Miss"
+    {
+      time 1.833333 2.388027
+      param "Weapon_Fist.Miss"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo01HandClap2"
+    {
+      time 0.286666 0.333832
+      param "Taunt.Demo01HandClap2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Spy01TieFix"
+    {
+      time 0.293333 0.923174
+      param "Taunt.Spy01TieFix"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo02EquipmentJingle3"
+    {
+      time 1.266667 1.780136
+      param "Taunt.Demo02EquipmentJingle3"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 2.706667 3.007120
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 2.680000 2.768526
+      param "Taunt.Demo01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 2.360000 2.448526
+      param "Taunt.Demo01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 3.300001 3.874332
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

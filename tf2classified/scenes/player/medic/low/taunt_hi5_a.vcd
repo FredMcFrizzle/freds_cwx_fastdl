@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "body"
+  {
+    event sequence "taunt_highFiveSuccessFull"
+    {
+      time 0.000000 4.000000
+      param "taunt_highFiveSuccessFull"
+      fixedlength
+    }
+  }
+  channel "sync"
+  {
+    event speak "Medic.Cheers01"
+    {
+      time 2.806210 3.827888
+      param "Medic.Cheers01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "emotion"
+  {
+    event expression "happyFull"
+    {
+      time 2.365686 3.990686
+      param "player\medic\emotion\emotion"
+      param2 "happy"
+      event_ramp
+      {
+        0.4625 0.7412
+        1.4208 1.0000
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Fist.Miss"
+    {
+      time 1.833333 2.388027
+      param "Weapon_Fist.Miss"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Weapon_PDA.AntennaeEngineer"
+    {
+      time 0.926666 1.029977
+      param "Taunt.Spy03KnifeCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.MedicFootStomp"
+    {
+      time 0.320000 0.545669
+      param "Selection.MedicFootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.MedicHeelClick"
+    {
+      time 1.506667 1.958141
+      param "Selection.MedicHeelClick"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 1.273333 1.847664
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 2.886667 3.187120
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

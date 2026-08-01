@@ -1,0 +1,77 @@
+// Choreo version 1
+event stoppoint "end"
+{
+  time 2.685217 -1.000000
+  param "noaction"
+}
+actor "Medic"
+{
+  channel "Animation"
+  {
+    event sequence "pyro_taunt_replay"
+    {
+      time 0.000000 2.500000
+      param "taunt06"
+      fixedlength
+    }
+    event expression "player\civilian\emotion\emotion/madUpper"
+    {
+      time -0.000000 0.301887
+      param "player\civilian\emotion\emotion"
+      param2 "madUpper"
+      event_ramp
+      {
+        0.0633 0.7746
+        0.2694 0.9930
+      }
+    }
+    event expression "player\civilian\emotion\emotion/happySmallUpper"
+    {
+      time 0.380503 2.245283
+      param "player\civilian\emotion\emotion"
+      param2 "happySmallUpper"
+      event_ramp
+      {
+        0.2880 0.5775
+        1.1741 0.3028
+      }
+    }
+  }
+  channel "audio"
+  {
+    event speak "Civilian.LaughLong01"
+    {
+      time 0.056604 2.483316
+      param "Civilian.LaughLong01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "player\medic\emotion\emotion/happyFull"
+    {
+      time 0.000001 2.600630
+      param "player\civilian\emotion\emotion"
+      param2 "happyBig"
+      event_ramp
+      {
+        0.1683 0.7324
+        0.2683 1.0000
+        2.3361 0.9859
+        2.5006 0.0634
+      }
+    }
+  }
+  faceposermodel "D:\dev\staging\game\tf\models\player\medic.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "192"
+  "RampTool" "54"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

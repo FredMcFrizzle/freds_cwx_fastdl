@@ -1,0 +1,91 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "body"
+  {
+    event sequence "taunt_highFiveSuccess"
+    {
+      time 0.000000 4.000000
+      param "taunt_highFiveSuccess"
+      fixedlength
+    }
+  }
+  channel "sync"
+  {
+  }
+  channel "emotion"
+  {
+    event expression "happyFull"
+    {
+      time 2.649019 3.990686
+      param "player\medic\emotion\emotion"
+      param2 "happyFull"
+      event_ramp
+      {
+        0.1625 0.7725
+        1.1375 1.0000
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Fist.Miss"
+    {
+      time 1.833333 2.398911
+      param "Weapon_Fist.Miss"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Weapon_PDA.AntennaeEngineer"
+    {
+      time 0.926666 1.029977
+      param "Taunt.Spy03KnifeCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.MedicFootStomp"
+    {
+      time 0.320000 0.545669
+      param "Selection.MedicFootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.MedicHeelClick"
+    {
+      time 1.506667 1.958141
+      param "Selection.MedicHeelClick"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 1.273333 1.847664
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 2.886667 3.187120
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

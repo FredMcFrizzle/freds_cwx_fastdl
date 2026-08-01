@@ -1,0 +1,108 @@
+// Choreo version 1
+actor "pyro"
+{
+  channel "body"
+  {
+    event sequence "taunt_scorch_shot"
+    {
+      time 0.000000 3.791667
+      param "taunt_scorch_shot"
+      fixedlength
+    }
+    event speak "Taunt.Pyro01Equipment1"
+    {
+      time 0.018519 0.411081
+      param "Taunt.Pyro01Equipment1"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "pyro_taunt_dosi_end_09"
+    {
+      time 1.586420 2.657440
+      param "pyro_taunt_dosi_end_09"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Pyro.LaughEvil02"
+    {
+      time 2.746913 3.632264
+      param "Pyro.LaughEvil02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "Weapon_FlareGun.TubeCloseStart"
+    {
+      time 1.253087 1.470774
+      param "Weapon_FlareGun.TubeCloseStart"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Weapon_FlareGun.TubeCloseFinish"
+    {
+      time 1.314815 1.651505
+      param "Weapon_FlareGun.TubeCloseFinish"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01Equipment2"
+    {
+      time 1.185186 2.305548
+      param "Taunt.Pyro01Equipment2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Weapon_FlareGun.ClipEmpty"
+    {
+      time 1.845679 1.884047
+      param "Weapon_FlareGun.ClipEmpty"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+  channel "footsteps"
+  {
+    event speak "Taunt.Engineer01FootStompLight"
+    {
+      time 0.487655 0.576181
+      param "Taunt.Engineer01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01FootStomp"
+    {
+      time 1.012346 1.238015
+      param "Taunt.Pyro01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01FootStomp"
+    {
+      time 3.253086 3.478755
+      param "Taunt.Pyro01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "RampTool" "100"
+  "ExpressionTool" "74"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

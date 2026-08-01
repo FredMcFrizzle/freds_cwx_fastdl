@@ -38,7 +38,6 @@
 				"deflect on swing"									{"value"	"1"}
 				 
 				///////////////    Negative Attributes    ///////////////
-				"airblast functionality flags"						{"value"	"2"}
 				
 				///////////////     Hidden Attributes     ///////////////
 				"hidden separator"									"1"

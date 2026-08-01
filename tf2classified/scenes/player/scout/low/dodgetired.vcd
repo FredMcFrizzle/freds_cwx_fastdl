@@ -1,0 +1,58 @@
+// Choreo version 1
+actor "scout"
+{
+  channel "sound"
+  {
+    event speak "dodgeTired"
+    {
+      time 0.000000 4.278276
+      param "Scout.DodgeTired"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "player\scout\emotion\emotion/painSmall"
+    {
+      time 0.013333 3.506667
+      param "player\scout\emotion\emotion"
+      param2 "painBigUpper"
+      event_ramp
+      {
+        0.1726 0.5148
+        0.6167 0.1361
+        1.1155 0.8166
+        1.6381 0.3432
+        2.2717 0.5917
+        2.6883 0.0473
+      }
+    }
+    event expression "player\scout\phonemes\phonemes_weak/ao"
+    {
+      time 0.033334 3.513334
+      param "player\scout\phonemes\phonemes_weak"
+      param2 "ao"
+      event_ramp
+      {
+        0.1809 0.9231
+        0.6334 0.4142
+        1.1155 0.8639
+        1.6381 0.3846
+        2.2634 0.7160
+        2.5750 0.3846
+        3.1133 0.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "24"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

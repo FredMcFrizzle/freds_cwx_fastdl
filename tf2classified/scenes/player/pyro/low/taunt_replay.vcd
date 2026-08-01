@@ -1,0 +1,90 @@
+// Choreo version 1
+event stoppoint "end"
+{
+  time 2.828768 -1.000000
+  param "noaction"
+}
+actor "Heavy"
+{
+  channel "Animation"
+  {
+    event sequence "pyro_taunt_replay"
+    {
+      time 0.000000 2.833333
+      param "pyro_taunt_replay2"
+      fixedlength
+    }
+  }
+  channel "audio"
+  {
+    event speak "Taunt.Pyro01FootStomp"
+    {
+      time 0.502283 0.727952
+      param "Taunt.Pyro01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Pyro01FootStomp"
+    {
+      time 0.531964 0.757632
+      param "Taunt.Pyro01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 0.266000 0.491669
+      param "Taunt.Engineer01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 0.226027 0.800359
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 0.773972 1.074426
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.PyroEquipment1"
+    {
+      time 0.874429 1.387898
+      param "Selection.PyroEquipment1"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.PyroEquipment2"
+    {
+      time 1.735160 2.074389
+      param "Selection.PyroEquipment2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+  faceposermodel "D:\dev\staging\game\tf\models\player\pyro.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "292"
+  "RampTool" "60"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

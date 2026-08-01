@@ -1,0 +1,118 @@
+// Choreo version 1
+actor "eng"
+{
+  channel "body"
+  {
+    event sequence "taunt_hifiveSuccess"
+    {
+      time 0.000000 3.966666
+      param "taunt_hifiveSuccess"
+      fixedlength
+    }
+    event expression "defaultFace"
+    {
+      time 0.014493 0.536232
+      param "player\engineer\emotion\emotion"
+      param2 "defaultFace"
+      event_ramp
+      {
+        0.0000 0.9922
+        0.3848 0.9961
+      }
+    }
+    event expression "happyBig"
+    {
+      time 0.362319 2.644928
+      param "player\engineer\emotion\emotion"
+      param2 "happyBig"
+      event_ramp
+      {
+        0.1576 0.9569
+        2.0545 0.9569
+        2.2697 0.0000
+      }
+    }
+    event expression "happyBigClosed"
+    {
+      time 2.528986 3.971014
+      param "player\engineer\emotion\emotion"
+      param2 "happyBigClosed"
+      event_ramp
+      {
+        0.1394 1.0000
+        1.4299 0.9922
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Fist.Miss"
+    {
+      time 1.833333 2.398911
+      param "Weapon_Fist.Miss"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStompLight"
+    {
+      time 0.455122 0.543648
+      param "Taunt.Engineer01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStompLight"
+    {
+      time 1.348455 1.436981
+      param "Taunt.Engineer01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 2.188455 2.414124
+      param "Taunt.Engineer01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.MedicGloveStretch"
+    {
+      time 0.561788 1.711176
+      param "Taunt.MedicGloveStretch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 0.635122 0.935576
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo02EquipmentJingle4"
+    {
+      time 2.695121 2.986096
+      param "Taunt.Demo02EquipmentJingle4"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

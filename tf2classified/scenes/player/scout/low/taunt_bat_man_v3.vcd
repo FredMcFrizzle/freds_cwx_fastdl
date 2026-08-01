@@ -1,0 +1,245 @@
+// Choreo version 1
+actor "scout"
+{
+  channel "body"
+  {
+    event sequence "taunt_bat_man"
+    {
+      time 0.000000 5.233333
+      param "taunt_bat_man"
+      fixedlength
+    }
+  }
+  channel "audio"
+  {
+    event speak "scout_taunt_batman_1_twirl"
+    {
+      time 0.166667 1.838504
+      param "scout_taunt_batman_1_twirl"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "scout_taunt_batman_2_yawn"
+    {
+      time 2.530303 4.802956
+      param "scout_taunt_nun_63"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "expression"
+  {
+    event expression "painSmallUpper"
+    {
+      time 0.026667 1.026667
+      param "player\scout\emotion\emotion"
+      param2 "painSmallUpper"
+      event_ramp
+      {
+        0.0520 0.9686
+        0.9560 0.9765
+      }
+    }
+    event expression "happyBigUpper"
+    {
+      time 1.106667 1.684646
+      param "player\scout\emotion\emotion"
+      param2 "happyBigUpper"
+      event_ramp
+      {
+        0.0940 0.9882
+        0.3860 0.9882
+      }
+    }
+    event expression "specialAction01"
+    {
+      time 0.846666 1.213333
+      param "player\scout\emotion\emotion"
+      param2 "specialAction01"
+      event_ramp
+      {
+        0.0360 0.9725
+        0.3280 0.9765
+      }
+    }
+    event expression "aa"
+    {
+      time 1.133333 1.753333
+      param "player\scout\phonemes\phonemes_strong"
+      param2 "aa"
+      event_ramp
+      {
+        0.0480 0.9765
+        0.5740 0.9765
+      }
+      active 0
+    }
+    event expression "painSmallUpper"
+    {
+      time 1.606263 2.313333
+      param "player\scout\emotion\emotion"
+      param2 "painSmallUpper"
+      event_ramp
+      {
+        0.0860 1.0000
+        0.6371 1.0000
+      }
+    }
+    event expression "painBigUpper"
+    {
+      time 2.026666 3.107878
+      param "player\scout\emotion\emotion"
+      param2 "painBigUpper"
+      event_ramp
+      {
+        0.2840 0.7176
+        0.6759 0.9804
+      }
+    }
+    event expression "happySmallUpper"
+    {
+      time 2.540000 4.040001
+      param "player\scout\emotion\emotion"
+      param2 "happySmallUpper"
+      event_ramp
+      {
+        0.3220 0.9725
+        1.0640 1.0000
+        1.2160 0.9961
+      }
+    }
+    event expression "aa"
+    {
+      time 1.941435 3.340425
+      param "player\scout\phonemes\phonemes_strong"
+      param2 "aa"
+      event_ramp
+      {
+        0.2740 0.3569
+        0.5920 0.9686
+        0.9770 1.0000
+      }
+    }
+    event expression "happySmall"
+    {
+      time 3.424242 5.217172
+      param "player\scout\emotion\emotion"
+      param2 "happySmall"
+      event_ramp
+      {
+        0.2980 0.5843
+        0.6240 0.1882
+        1.0400 0.2549
+        1.4640 0.0235
+      }
+    }
+    event expression "happyBigUpper"
+    {
+      time 3.808081 4.207071
+      param "player\scout\emotion\emotion"
+      param2 "happyBigUpper"
+      event_ramp
+      {
+        0.0500 0.5255
+        0.1580 0.8157
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Weapon_Wrench.HitHand"
+    {
+      time 0.246667 0.300182
+      param "Taunt.Soldier02ShovelCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy02ShotgunSpin"
+    {
+      time 0.700000 2.116417
+      param "Taunt.Heavy02ShotgunSpin"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Scout03Run"
+    {
+      time 2.420000 2.645669
+      param "Taunt.Scout03Run"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier02GrenadeCatch"
+    {
+      time 2.700001 2.803312
+      param "Taunt.Soldier02GrenadeCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier02GrenadeCatch"
+    {
+      time 3.120000 3.223310
+      param "Taunt.Soldier02GrenadeCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier02GrenadeCatch"
+    {
+      time 3.733334 3.836645
+      param "Taunt.Soldier02GrenadeCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Sniper03MacheteCatch"
+    {
+      time 4.533334 4.689343
+      param "Taunt.Sniper03MacheteCatch"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.ScoutShotgunTwirl"
+    {
+      time 2.726667 3.154059
+      param "Selection.ScoutShotgunTwirl"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.ScoutShotgunTwirl"
+    {
+      time 3.186667 3.614059
+      param "Selection.ScoutShotgunTwirl"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.ScoutShotgunTwirl"
+    {
+      time 3.780000 4.207392
+      param "Selection.ScoutShotgunTwirl"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

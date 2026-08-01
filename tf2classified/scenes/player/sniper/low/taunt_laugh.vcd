@@ -1,0 +1,95 @@
+// Choreo version 1
+actor "sniper"
+{
+  channel "body"
+  {
+    event sequence "taunt_laugh"
+    {
+      time 0.000000 3.500000
+      param "taunt_laugh"
+      fixedlength
+    }
+  }
+  channel "audio"
+  {
+    event speak "sniper_laughlong02"
+    {
+      time 0.000000 3.192744
+      param "Sniper.LaughLong02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event expression "happyBig"
+    {
+      time 0.012346 3.493827
+      param "player\sniper\emotion\emotion"
+      param2 "happyBig"
+      event_ramp
+      {
+        0.1976 0.0000 "curve_easein_to_curve_easeout"
+        0.5119 0.8352 "curve_easein_to_curve_easeout"
+        2.3952 0.8307 "curve_easein_to_curve_easeout"
+        2.8000 0.4851
+        2.9452 0.7918
+        3.0881 0.3913
+        3.2381 0.7071 "curve_easein_to_curve_easeout"
+      }
+    }
+  }
+  channel "s"
+  {
+    event speak "Taunt.Sniper02FootStomp"
+    {
+      time 0.265432 0.491101
+      param "Taunt.Sniper02FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 0.160494 0.460948
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy03EquipmentJingleShort"
+    {
+      time 0.487655 1.001124
+      param "Taunt.Heavy03EquipmentJingleShort"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Spy01TieFix"
+    {
+      time 1.709877 2.339718
+      param "Taunt.Spy01TieFix"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01HandClap2"
+    {
+      time 1.746914 1.794079
+      param "Taunt.Engineer01HandClap2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "RampTool" "84"
+  "ExpressionTool" "74"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

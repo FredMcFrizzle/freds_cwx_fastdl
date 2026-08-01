@@ -1,0 +1,80 @@
+// Choreo version 1
+actor "engineer"
+{
+  channel "body"
+  {
+    event sequence "taunt07"
+    {
+      time 0.000000 3.333333
+      param "taunt_replay"
+      fixedlength
+    }
+    event expression "madUpper"
+    {
+      time 0.086420 0.993827
+      param "player\engineer\emotion\emotion"
+      param2 "madUpper"
+      event_ramp
+      {
+        0.0511 0.9612 "curve_easein_to_curve_easein"
+        0.8500 0.9563 "curve_easein_to_curve_easeout"
+      }
+    }
+    event expression "happyBig"
+    {
+      time 0.925925 3.320988
+      param "player\engineer\emotion\emotion"
+      param2 "happyBig"
+      event_ramp
+      {
+        0.0830 1.0000 "curve_easein_to_curve_easeout"
+        2.2614 1.0000 "curve_easeout_to_curve_easeout"
+        2.3774 0.0218
+      }
+    }
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 0.415237 0.640905
+      param "Taunt.Engineer01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Engineer01FootStomp"
+    {
+      time 0.563384 0.789053
+      param "Taunt.Engineer01FootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo02EquipmentJingle"
+    {
+      time 0.254742 0.701001
+      param "Taunt.Demo02EquipmentJingle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 1.007829 1.308282
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "RampTool" "94"
+  "ExpressionTool" "74"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

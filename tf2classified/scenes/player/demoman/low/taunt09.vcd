@@ -1,0 +1,71 @@
+// Choreo version 1
+actor "demoman"
+{
+  channel "taunt_action"
+  {
+    event sequence "taunt09"
+    {
+      time 0.000000 4.800000
+      param "taunt09"
+      fixedlength
+    }
+    event expression "evilHappy"
+    {
+      time -0.008772 2.587719
+      param "player\demo\emotion\emotion"
+      param2 "evilHappy"
+      event_ramp
+      {
+        0.2970 0.3929
+        2.0113 0.3571
+      }
+    }
+    event expression "madUpper"
+    {
+      time 1.517544 4.771930
+      param "player\demo\emotion\emotion"
+      param2 "madUpper"
+      event_ramp
+      {
+        0.2273 0.6369
+        2.8907 0.7440
+      }
+    }
+    event speak "Selection.ScoutShotgunTwirl"
+    {
+      time 1.578947 2.006340
+      param "Selection.ScoutShotgunTwirl"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo01FootSpin"
+    {
+      time 3.192982 3.918606
+      param "Taunt.Demo01FootSpin"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Spy04CigFlick"
+    {
+      time 3.780703 3.875034
+      param "Taunt.Spy04CigFlick"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "76"
+  "ExpressionTool" "100"
+  "RampTool" "66"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

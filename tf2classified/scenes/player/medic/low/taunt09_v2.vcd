@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "body"
+  {
+    event sequence "taunt09"
+    {
+      time 0.000000 5.000000
+      param "taunt09"
+      fixedlength
+    }
+    event expression "evilHappyUpper"
+    {
+      time 0.000000 2.958333
+      param "player\medic\emotion\emotion"
+      param2 "evilHappyUpper"
+      event_ramp
+      {
+        0.1853 1.0000 "curve_easein_to_curve_easeout"
+        2.7840 1.0000 "curve_easeout_to_curve_easeout"
+      }
+    }
+    event expression "happyFull"
+    {
+      time 2.797619 4.970238
+      param "player\medic\emotion\emotion"
+      param2 "happyFull"
+      event_ramp
+      {
+        0.1647 0.9954 "curve_easein_to_curve_easeout"
+        1.9986 1.0000 "curve_easeout_to_curve_easeout"
+      }
+    }
+    event speak "Selection.MedicFootStomp"
+    {
+      time 0.785714 1.011383
+      param "Selection.MedicFootStomp"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy01EquipmentGun2"
+    {
+      time 0.303571 0.696133
+      param "Taunt.Heavy01EquipmentGun2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Heavy03EquipmentJingleShort"
+    {
+      time 0.654762 1.168231
+      param "Taunt.Heavy03EquipmentJingleShort"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Spy01TieFix"
+    {
+      time 0.886904 1.516746
+      param "Taunt.Spy01TieFix"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Selection.EngineerClothesRustle"
+    {
+      time 1.357144 3.066350
+      param "Selection.EngineerClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 2.696428 3.270759
+      param "Selection.SpyClothesRustle2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+  }
+  channel "taunt fx"
+  {
+    event speak "Medic.LaughShort03"
+    {
+      time 2.696428 3.610714
+      param "Medic.LaughEvil01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "112"
+  "RampTool" "68"
+  "ExpressionTool" "74"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

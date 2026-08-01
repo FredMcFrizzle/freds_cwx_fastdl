@@ -1,0 +1,82 @@
+// Choreo version 1
+actor "demo"
+{
+  channel "body"
+  {
+    event sequence "taunt07"
+    {
+      time -0.000000 3.333333
+      param "taunt_replay"
+      fixedlength
+    }
+    event expression "evilHappy"
+    {
+      time 0.563218 3.327586
+      param "player\demo\emotion\emotion"
+      param2 "evilHappy"
+      event_ramp
+      {
+        0.1605 1.0000 "curve_easein_to_curve_easein"
+        2.6692 1.0000 "curve_easein_to_curve_easein"
+      }
+    }
+    event expression "mad"
+    {
+      time 0.005747 0.747126
+      param "player\demo\emotion\emotion"
+      param2 "mad"
+      event_ramp
+      {
+        0.0209 1.0000 "curve_easein_to_curve_easein"
+        0.6907 1.0000 "curve_easein_to_curve_easein"
+      }
+    }
+  }
+  channel "wav"
+  {
+    event speak "Taunt.Demo01FootStompLight"
+    {
+      time 0.522988 0.611514
+      param "Taunt.Demo01FootStompLight"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Demo02EquipmentJingle2"
+    {
+      time 0.609195 0.948424
+      param "Taunt.Demo02EquipmentJingle2"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.SoldierClothesRustle"
+    {
+      time 0.597701 1.172032
+      param "Taunt.SoldierClothesRustle"
+      fixedlength
+      cctype "cc_disabled"
+      cctoken ""
+    }
+    event speak "Taunt.Soldier03ClothesSwipe"
+    {
+      time 0.166666 0.467120
+      param "Taunt.Soldier03ClothesSwipe"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "116"
+  "RampTool" "86"
+  "ExpressionTool" "74"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
